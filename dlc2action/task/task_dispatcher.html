@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 12.3.0"/>
+    <meta name="generator" content="pdoc 12.3.1"/>
     <title>dlc2action.task.task_dispatcher API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -127,7 +127,7 @@
                         <label class="view-source-button" for="mod-task_dispatcher-view-source"><span>View Source</span></label>
 
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos">   1</span></a><span class="c1">#</span>
-</span><span id="L-2"><a href="#L-2"><span class="linenos">   2</span></a><span class="c1"># Copyright 2020-2022 by A. Mathis Group and contributors. All rights reserved.</span>
+</span><span id="L-2"><a href="#L-2"><span class="linenos">   2</span></a><span class="c1"># Copyright 2020-present by A. Mathis Group and contributors. All rights reserved.</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos">   3</span></a><span class="c1">#</span>
 </span><span id="L-4"><a href="#L-4"><span class="linenos">   4</span></a><span class="c1"># This project and all its files are licensed under GNU AGPLv3 or later version. A copy is included in dlc2action/LICENSE.AGPL.</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos">   5</span></a><span class="c1">#</span>
@@ -159,12 +159,12 @@
 </span><span id="L-31"><a href="#L-31"><span class="linenos">  31</span></a>
 </span><span id="L-32"><a href="#L-32"><span class="linenos">  32</span></a>
 </span><span id="L-33"><a href="#L-33"><span class="linenos">  33</span></a><span class="k">class</span> <span class="nc">TaskDispatcher</span><span class="p">:</span>
-</span><span id="L-34"><a href="#L-34"><span class="linenos">  34</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-34"><a href="#L-34"><span class="linenos">  34</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-35"><a href="#L-35"><span class="linenos">  35</span></a><span class="sd">    A class that manages the interactions between config dictionaries and a Task</span>
 </span><span id="L-36"><a href="#L-36"><span class="linenos">  36</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-37"><a href="#L-37"><span class="linenos">  37</span></a>
 </span><span id="L-38"><a href="#L-38"><span class="linenos">  38</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-39"><a href="#L-39"><span class="linenos">  39</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-39"><a href="#L-39"><span class="linenos">  39</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-40"><a href="#L-40"><span class="linenos">  40</span></a><span class="sd">        Parameters</span>
 </span><span id="L-41"><a href="#L-41"><span class="linenos">  41</span></a><span class="sd">        ----------</span>
 </span><span id="L-42"><a href="#L-42"><span class="linenos">  42</span></a><span class="sd">        parameters : dict</span>
@@ -190,7 +190,7 @@
 </span><span id="L-62"><a href="#L-62"><span class="linenos">  62</span></a>
 </span><span id="L-63"><a href="#L-63"><span class="linenos">  63</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="L-64"><a href="#L-64"><span class="linenos">  64</span></a>    <span class="k">def</span> <span class="nf">complete_function_parameters</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span> <span class="n">function</span><span class="p">,</span> <span class="n">general_dicts</span><span class="p">:</span> <span class="n">List</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-65"><a href="#L-65"><span class="linenos">  65</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-65"><a href="#L-65"><span class="linenos">  65</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-66"><a href="#L-66"><span class="linenos">  66</span></a><span class="sd">        Complete a parameter dictionary with values from other dictionaries if required by a function</span>
 </span><span id="L-67"><a href="#L-67"><span class="linenos">  67</span></a>
 </span><span id="L-68"><a href="#L-68"><span class="linenos">  68</span></a><span class="sd">        Parameters</span>
@@ -217,7 +217,7 @@
 </span><span id="L-89"><a href="#L-89"><span class="linenos">  89</span></a>        <span class="n">data_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="L-90"><a href="#L-90"><span class="linenos">  90</span></a>        <span class="n">annotation_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="L-91"><a href="#L-91"><span class="linenos">  91</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-92"><a href="#L-92"><span class="linenos">  92</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-92"><a href="#L-92"><span class="linenos">  92</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-93"><a href="#L-93"><span class="linenos">  93</span></a><span class="sd">        Complete a parameter dictionary with values from other dictionaries if required by a dataset</span>
 </span><span id="L-94"><a href="#L-94"><span class="linenos">  94</span></a>
 </span><span id="L-95"><a href="#L-95"><span class="linenos">  95</span></a><span class="sd">        Parameters</span>
@@ -246,7 +246,7 @@
 </span><span id="L-118"><a href="#L-118"><span class="linenos"> 118</span></a>
 </span><span id="L-119"><a href="#L-119"><span class="linenos"> 119</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="L-120"><a href="#L-120"><span class="linenos"> 120</span></a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="L-121"><a href="#L-121"><span class="linenos"> 121</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-121"><a href="#L-121"><span class="linenos"> 121</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-122"><a href="#L-122"><span class="linenos"> 122</span></a><span class="sd">        Check whether there is a non-`None` value under the name key in the parameters dictionary</span>
 </span><span id="L-123"><a href="#L-123"><span class="linenos"> 123</span></a>
 </span><span id="L-124"><a href="#L-124"><span class="linenos"> 124</span></a><span class="sd">        Parameters</span>
@@ -269,7 +269,7 @@
 </span><span id="L-141"><a href="#L-141"><span class="linenos"> 141</span></a>
 </span><span id="L-142"><a href="#L-142"><span class="linenos"> 142</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="L-143"><a href="#L-143"><span class="linenos"> 143</span></a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="p">):</span>
-</span><span id="L-144"><a href="#L-144"><span class="linenos"> 144</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-144"><a href="#L-144"><span class="linenos"> 144</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-145"><a href="#L-145"><span class="linenos"> 145</span></a><span class="sd">        Get the value under the name key or the default if it is `None` or does not exist</span>
 </span><span id="L-146"><a href="#L-146"><span class="linenos"> 146</span></a>
 </span><span id="L-147"><a href="#L-147"><span class="linenos"> 147</span></a><span class="sd">        Parameters</span>
@@ -296,7 +296,7 @@
 </span><span id="L-168"><a href="#L-168"><span class="linenos"> 168</span></a>    <span class="k">def</span> <span class="nf">make_dataloader</span><span class="p">(</span>
 </span><span id="L-169"><a href="#L-169"><span class="linenos"> 169</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-170"><a href="#L-170"><span class="linenos"> 170</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataLoader</span><span class="p">:</span>
-</span><span id="L-171"><a href="#L-171"><span class="linenos"> 171</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-171"><a href="#L-171"><span class="linenos"> 171</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-172"><a href="#L-172"><span class="linenos"> 172</span></a><span class="sd">        Make a torch dataloader from a dataset</span>
 </span><span id="L-173"><a href="#L-173"><span class="linenos"> 173</span></a>
 </span><span id="L-174"><a href="#L-174"><span class="linenos"> 174</span></a><span class="sd">        Parameters</span>
@@ -318,7 +318,7 @@
 </span><span id="L-190"><a href="#L-190"><span class="linenos"> 190</span></a>            <span class="k">return</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">batch_size</span><span class="p">),</span> <span class="n">shuffle</span><span class="o">=</span><span class="n">shuffle</span><span class="p">)</span>
 </span><span id="L-191"><a href="#L-191"><span class="linenos"> 191</span></a>
 </span><span id="L-192"><a href="#L-192"><span class="linenos"> 192</span></a>    <span class="k">def</span> <span class="nf">_construct_ssl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-193"><a href="#L-193"><span class="linenos"> 193</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-193"><a href="#L-193"><span class="linenos"> 193</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-194"><a href="#L-194"><span class="linenos"> 194</span></a><span class="sd">        Generate SSL constructors</span>
 </span><span id="L-195"><a href="#L-195"><span class="linenos"> 195</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-196"><a href="#L-196"><span class="linenos"> 196</span></a>
@@ -352,7 +352,7 @@
 </span><span id="L-224"><a href="#L-224"><span class="linenos"> 224</span></a>        <span class="k">return</span> <span class="n">ssl_list</span>
 </span><span id="L-225"><a href="#L-225"><span class="linenos"> 225</span></a>
 </span><span id="L-226"><a href="#L-226"><span class="linenos"> 226</span></a>    <span class="k">def</span> <span class="nf">_construct_model</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
-</span><span id="L-227"><a href="#L-227"><span class="linenos"> 227</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-227"><a href="#L-227"><span class="linenos"> 227</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-228"><a href="#L-228"><span class="linenos"> 228</span></a><span class="sd">        Generate a model</span>
 </span><span id="L-229"><a href="#L-229"><span class="linenos"> 229</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-230"><a href="#L-230"><span class="linenos"> 230</span></a>
@@ -386,7 +386,7 @@
 </span><span id="L-258"><a href="#L-258"><span class="linenos"> 258</span></a>        <span class="k">return</span> <span class="n">model</span>
 </span><span id="L-259"><a href="#L-259"><span class="linenos"> 259</span></a>
 </span><span id="L-260"><a href="#L-260"><span class="linenos"> 260</span></a>    <span class="k">def</span> <span class="nf">_construct_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BehaviorDataset</span><span class="p">:</span>
-</span><span id="L-261"><a href="#L-261"><span class="linenos"> 261</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-261"><a href="#L-261"><span class="linenos"> 261</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-262"><a href="#L-262"><span class="linenos"> 262</span></a><span class="sd">        Generate a dataset</span>
 </span><span id="L-263"><a href="#L-263"><span class="linenos"> 263</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-264"><a href="#L-264"><span class="linenos"> 264</span></a>
@@ -423,7 +423,7 @@
 </span><span id="L-295"><a href="#L-295"><span class="linenos"> 295</span></a>        <span class="k">return</span> <span class="n">dataset</span>
 </span><span id="L-296"><a href="#L-296"><span class="linenos"> 296</span></a>
 </span><span id="L-297"><a href="#L-297"><span class="linenos"> 297</span></a>    <span class="k">def</span> <span class="nf">_construct_transformer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Transformer</span><span class="p">:</span>
-</span><span id="L-298"><a href="#L-298"><span class="linenos"> 298</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-298"><a href="#L-298"><span class="linenos"> 298</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-299"><a href="#L-299"><span class="linenos"> 299</span></a><span class="sd">        Generate a transformer</span>
 </span><span id="L-300"><a href="#L-300"><span class="linenos"> 300</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-301"><a href="#L-301"><span class="linenos"> 301</span></a>
@@ -442,7 +442,7 @@
 </span><span id="L-314"><a href="#L-314"><span class="linenos"> 314</span></a>        <span class="k">return</span> <span class="n">transformer</span>
 </span><span id="L-315"><a href="#L-315"><span class="linenos"> 315</span></a>
 </span><span id="L-316"><a href="#L-316"><span class="linenos"> 316</span></a>    <span class="k">def</span> <span class="nf">_construct_loss</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">:</span>
-</span><span id="L-317"><a href="#L-317"><span class="linenos"> 317</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-317"><a href="#L-317"><span class="linenos"> 317</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-318"><a href="#L-318"><span class="linenos"> 318</span></a><span class="sd">        Generate a loss function</span>
 </span><span id="L-319"><a href="#L-319"><span class="linenos"> 319</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-320"><a href="#L-320"><span class="linenos"> 320</span></a>
@@ -472,7 +472,7 @@
 </span><span id="L-344"><a href="#L-344"><span class="linenos"> 344</span></a>        <span class="k">return</span> <span class="n">loss</span>
 </span><span id="L-345"><a href="#L-345"><span class="linenos"> 345</span></a>
 </span><span id="L-346"><a href="#L-346"><span class="linenos"> 346</span></a>    <span class="k">def</span> <span class="nf">_construct_metrics</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-347"><a href="#L-347"><span class="linenos"> 347</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-347"><a href="#L-347"><span class="linenos"> 347</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-348"><a href="#L-348"><span class="linenos"> 348</span></a><span class="sd">        Generate the metric</span>
 </span><span id="L-349"><a href="#L-349"><span class="linenos"> 349</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-350"><a href="#L-350"><span class="linenos"> 350</span></a>
@@ -517,7 +517,7 @@
 </span><span id="L-389"><a href="#L-389"><span class="linenos"> 389</span></a>        <span class="k">return</span> <span class="n">metrics</span>
 </span><span id="L-390"><a href="#L-390"><span class="linenos"> 390</span></a>
 </span><span id="L-391"><a href="#L-391"><span class="linenos"> 391</span></a>    <span class="k">def</span> <span class="nf">_construct_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optimizer</span><span class="p">:</span>
-</span><span id="L-392"><a href="#L-392"><span class="linenos"> 392</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-392"><a href="#L-392"><span class="linenos"> 392</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-393"><a href="#L-393"><span class="linenos"> 393</span></a><span class="sd">        Generate an optimizer</span>
 </span><span id="L-394"><a href="#L-394"><span class="linenos"> 394</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-395"><a href="#L-395"><span class="linenos"> 395</span></a>
@@ -534,7 +534,7 @@
 </span><span id="L-406"><a href="#L-406"><span class="linenos"> 406</span></a>        <span class="k">return</span> <span class="n">optimizer</span>
 </span><span id="L-407"><a href="#L-407"><span class="linenos"> 407</span></a>
 </span><span id="L-408"><a href="#L-408"><span class="linenos"> 408</span></a>    <span class="k">def</span> <span class="nf">_construct_predict_functions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Callable</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]:</span>
-</span><span id="L-409"><a href="#L-409"><span class="linenos"> 409</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-409"><a href="#L-409"><span class="linenos"> 409</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-410"><a href="#L-410"><span class="linenos"> 410</span></a><span class="sd">        Construct predict functions</span>
 </span><span id="L-411"><a href="#L-411"><span class="linenos"> 411</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-412"><a href="#L-412"><span class="linenos"> 412</span></a>
@@ -612,7 +612,7 @@
 </span><span id="L-484"><a href="#L-484"><span class="linenos"> 484</span></a>        <span class="k">return</span> <span class="n">primary_predict_function</span><span class="p">,</span> <span class="n">predict_function</span>
 </span><span id="L-485"><a href="#L-485"><span class="linenos"> 485</span></a>
 </span><span id="L-486"><a href="#L-486"><span class="linenos"> 486</span></a>    <span class="k">def</span> <span class="nf">_get_parameters_from_training</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-487"><a href="#L-487"><span class="linenos"> 487</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-487"><a href="#L-487"><span class="linenos"> 487</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-488"><a href="#L-488"><span class="linenos"> 488</span></a><span class="sd">        Get the training parameters that need to be passed to the Task</span>
 </span><span id="L-489"><a href="#L-489"><span class="linenos"> 489</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-490"><a href="#L-490"><span class="linenos"> 490</span></a>
@@ -652,7 +652,7 @@
 </span><span id="L-524"><a href="#L-524"><span class="linenos"> 524</span></a>        <span class="k">return</span> <span class="n">task_training_pars</span>
 </span><span id="L-525"><a href="#L-525"><span class="linenos"> 525</span></a>
 </span><span id="L-526"><a href="#L-526"><span class="linenos"> 526</span></a>    <span class="k">def</span> <span class="nf">_update_parameters_from_ssl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ssl_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-527"><a href="#L-527"><span class="linenos"> 527</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-527"><a href="#L-527"><span class="linenos"> 527</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-528"><a href="#L-528"><span class="linenos"> 528</span></a><span class="sd">        Update the necessary parameters given the list of SSL constructors</span>
 </span><span id="L-529"><a href="#L-529"><span class="linenos"> 529</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-530"><a href="#L-530"><span class="linenos"> 530</span></a>
@@ -681,7 +681,7 @@
 </span><span id="L-553"><a href="#L-553"><span class="linenos"> 553</span></a>        <span class="p">]</span>
 </span><span id="L-554"><a href="#L-554"><span class="linenos"> 554</span></a>
 </span><span id="L-555"><a href="#L-555"><span class="linenos"> 555</span></a>    <span class="k">def</span> <span class="nf">_set_loss_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">):</span>
-</span><span id="L-556"><a href="#L-556"><span class="linenos"> 556</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-556"><a href="#L-556"><span class="linenos"> 556</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-557"><a href="#L-557"><span class="linenos"> 557</span></a><span class="sd">        Replace the `&quot;dataset_inverse_weights&quot;` blank in loss parameters with class weight values</span>
 </span><span id="L-558"><a href="#L-558"><span class="linenos"> 558</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-559"><a href="#L-559"><span class="linenos"> 559</span></a>
@@ -714,7 +714,7 @@
 </span><span id="L-586"><a href="#L-586"><span class="linenos"> 586</span></a>    <span class="k">def</span> <span class="nf">_partition_dataset</span><span class="p">(</span>
 </span><span id="L-587"><a href="#L-587"><span class="linenos"> 587</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span>
 </span><span id="L-588"><a href="#L-588"><span class="linenos"> 588</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">]:</span>
-</span><span id="L-589"><a href="#L-589"><span class="linenos"> 589</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-589"><a href="#L-589"><span class="linenos"> 589</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-590"><a href="#L-590"><span class="linenos"> 590</span></a><span class="sd">        Partition the dataset into train, validation and test subsamples</span>
 </span><span id="L-591"><a href="#L-591"><span class="linenos"> 591</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-592"><a href="#L-592"><span class="linenos"> 592</span></a>
@@ -749,7 +749,7 @@
 </span><span id="L-621"><a href="#L-621"><span class="linenos"> 621</span></a>        <span class="k">return</span> <span class="n">train_dataloader</span><span class="p">,</span> <span class="n">test_dataloader</span><span class="p">,</span> <span class="n">val_dataloader</span>
 </span><span id="L-622"><a href="#L-622"><span class="linenos"> 622</span></a>
 </span><span id="L-623"><a href="#L-623"><span class="linenos"> 623</span></a>    <span class="k">def</span> <span class="nf">_initialize_task</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-624"><a href="#L-624"><span class="linenos"> 624</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-624"><a href="#L-624"><span class="linenos"> 624</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-625"><a href="#L-625"><span class="linenos"> 625</span></a><span class="sd">        Create a `dlc2action.task.universal_task.Task` instance</span>
 </span><span id="L-626"><a href="#L-626"><span class="linenos"> 626</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-627"><a href="#L-627"><span class="linenos"> 627</span></a>
@@ -808,7 +808,7 @@
 </span><span id="L-680"><a href="#L-680"><span class="linenos"> 680</span></a>    <span class="k">def</span> <span class="nf">_update_data_blanks</span><span class="p">(</span>
 </span><span id="L-681"><a href="#L-681"><span class="linenos"> 681</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-682"><a href="#L-682"><span class="linenos"> 682</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-683"><a href="#L-683"><span class="linenos"> 683</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-683"><a href="#L-683"><span class="linenos"> 683</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-684"><a href="#L-684"><span class="linenos"> 684</span></a><span class="sd">        Update all blanks from a dataset</span>
 </span><span id="L-685"><a href="#L-685"><span class="linenos"> 685</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-686"><a href="#L-686"><span class="linenos"> 686</span></a>
@@ -870,7 +870,7 @@
 </span><span id="L-742"><a href="#L-742"><span class="linenos"> 742</span></a>                                <span class="bp">self</span><span class="o">.</span><span class="n">blanks</span><span class="p">[</span><span class="n">blank_name</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">name</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">kk</span><span class="p">])</span>
 </span><span id="L-743"><a href="#L-743"><span class="linenos"> 743</span></a>
 </span><span id="L-744"><a href="#L-744"><span class="linenos"> 744</span></a>    <span class="k">def</span> <span class="nf">_update_features_parameter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-745"><a href="#L-745"><span class="linenos"> 745</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-745"><a href="#L-745"><span class="linenos"> 745</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-746"><a href="#L-746"><span class="linenos"> 746</span></a><span class="sd">        Fill the `&quot;model_features&quot;` blank</span>
 </span><span id="L-747"><a href="#L-747"><span class="linenos"> 747</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-748"><a href="#L-748"><span class="linenos"> 748</span></a>
@@ -880,7 +880,7 @@
 </span><span id="L-752"><a href="#L-752"><span class="linenos"> 752</span></a>    <span class="k">def</span> <span class="nf">_update_bodyparts_parameter</span><span class="p">(</span>
 </span><span id="L-753"><a href="#L-753"><span class="linenos"> 753</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-754"><a href="#L-754"><span class="linenos"> 754</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-755"><a href="#L-755"><span class="linenos"> 755</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-755"><a href="#L-755"><span class="linenos"> 755</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-756"><a href="#L-756"><span class="linenos"> 756</span></a><span class="sd">        Fill the `&quot;dataset_bodyparts&quot;` blank</span>
 </span><span id="L-757"><a href="#L-757"><span class="linenos"> 757</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-758"><a href="#L-758"><span class="linenos"> 758</span></a>
@@ -890,7 +890,7 @@
 </span><span id="L-762"><a href="#L-762"><span class="linenos"> 762</span></a>    <span class="k">def</span> <span class="nf">_update_dim_parameter</span><span class="p">(</span>
 </span><span id="L-763"><a href="#L-763"><span class="linenos"> 763</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-764"><a href="#L-764"><span class="linenos"> 764</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-765"><a href="#L-765"><span class="linenos"> 765</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-765"><a href="#L-765"><span class="linenos"> 765</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-766"><a href="#L-766"><span class="linenos"> 766</span></a><span class="sd">        Fill the `&quot;dataset_features&quot;` blank</span>
 </span><span id="L-767"><a href="#L-767"><span class="linenos"> 767</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-768"><a href="#L-768"><span class="linenos"> 768</span></a>
@@ -900,7 +900,7 @@
 </span><span id="L-772"><a href="#L-772"><span class="linenos"> 772</span></a>    <span class="k">def</span> <span class="nf">_update_boundary_parameter</span><span class="p">(</span>
 </span><span id="L-773"><a href="#L-773"><span class="linenos"> 773</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-774"><a href="#L-774"><span class="linenos"> 774</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-775"><a href="#L-775"><span class="linenos"> 775</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-775"><a href="#L-775"><span class="linenos"> 775</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-776"><a href="#L-776"><span class="linenos"> 776</span></a><span class="sd">        Fill the `&quot;dataset_features&quot;` blank</span>
 </span><span id="L-777"><a href="#L-777"><span class="linenos"> 777</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-778"><a href="#L-778"><span class="linenos"> 778</span></a>
@@ -910,7 +910,7 @@
 </span><span id="L-782"><a href="#L-782"><span class="linenos"> 782</span></a>    <span class="k">def</span> <span class="nf">_update_num_classes_parameter</span><span class="p">(</span>
 </span><span id="L-783"><a href="#L-783"><span class="linenos"> 783</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-784"><a href="#L-784"><span class="linenos"> 784</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-785"><a href="#L-785"><span class="linenos"> 785</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-785"><a href="#L-785"><span class="linenos"> 785</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-786"><a href="#L-786"><span class="linenos"> 786</span></a><span class="sd">        Fill in the `&quot;dataset_classes&quot;` blank</span>
 </span><span id="L-787"><a href="#L-787"><span class="linenos"> 787</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-788"><a href="#L-788"><span class="linenos"> 788</span></a>
@@ -920,7 +920,7 @@
 </span><span id="L-792"><a href="#L-792"><span class="linenos"> 792</span></a>    <span class="k">def</span> <span class="nf">_update_len_segment_parameter</span><span class="p">(</span>
 </span><span id="L-793"><a href="#L-793"><span class="linenos"> 793</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-794"><a href="#L-794"><span class="linenos"> 794</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-795"><a href="#L-795"><span class="linenos"> 795</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-795"><a href="#L-795"><span class="linenos"> 795</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-796"><a href="#L-796"><span class="linenos"> 796</span></a><span class="sd">        Fill in the `&quot;dataset_len_segment&quot;` blank</span>
 </span><span id="L-797"><a href="#L-797"><span class="linenos"> 797</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-798"><a href="#L-798"><span class="linenos"> 798</span></a>
@@ -934,7 +934,7 @@
 </span><span id="L-806"><a href="#L-806"><span class="linenos"> 806</span></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span><span id="L-807"><a href="#L-807"><span class="linenos"> 807</span></a>
 </span><span id="L-808"><a href="#L-808"><span class="linenos"> 808</span></a>    <span class="k">def</span> <span class="nf">update_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-809"><a href="#L-809"><span class="linenos"> 809</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-809"><a href="#L-809"><span class="linenos"> 809</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-810"><a href="#L-810"><span class="linenos"> 810</span></a><span class="sd">        Update the `dlc2action.task.universal_task.Task` instance given the parameter updates</span>
 </span><span id="L-811"><a href="#L-811"><span class="linenos"> 811</span></a>
 </span><span id="L-812"><a href="#L-812"><span class="linenos"> 812</span></a><span class="sd">        Parameters</span>
@@ -1121,7 +1121,7 @@
 </span><span id="L-993"><a href="#L-993"><span class="linenos"> 993</span></a>        <span class="n">autostop_threshold</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span>
 </span><span id="L-994"><a href="#L-994"><span class="linenos"> 994</span></a>        <span class="n">loading_bar</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 </span><span id="L-995"><a href="#L-995"><span class="linenos"> 995</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="L-996"><a href="#L-996"><span class="linenos"> 996</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-996"><a href="#L-996"><span class="linenos"> 996</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-997"><a href="#L-997"><span class="linenos"> 997</span></a><span class="sd">        Train the task and return a log of epoch-average loss and metric</span>
 </span><span id="L-998"><a href="#L-998"><span class="linenos"> 998</span></a>
 </span><span id="L-999"><a href="#L-999"><span class="linenos"> 999</span></a><span class="sd">        You can use the autostop parameters to finish training when the parameters are not improving. It will be</span>
@@ -1176,7 +1176,7 @@
 </span><span id="L-1048"><a href="#L-1048"><span class="linenos">1048</span></a>        <span class="k">return</span> <span class="n">logs</span>
 </span><span id="L-1049"><a href="#L-1049"><span class="linenos">1049</span></a>
 </span><span id="L-1050"><a href="#L-1050"><span class="linenos">1050</span></a>    <span class="k">def</span> <span class="nf">save_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-1051"><a href="#L-1051"><span class="linenos">1051</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1051"><a href="#L-1051"><span class="linenos">1051</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1052"><a href="#L-1052"><span class="linenos">1052</span></a><span class="sd">        Save the model of the `dlc2action.task.universal_task.Task` instance</span>
 </span><span id="L-1053"><a href="#L-1053"><span class="linenos">1053</span></a>
 </span><span id="L-1054"><a href="#L-1054"><span class="linenos">1054</span></a><span class="sd">        Parameters</span>
@@ -1193,7 +1193,7 @@
 </span><span id="L-1065"><a href="#L-1065"><span class="linenos">1065</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
 </span><span id="L-1066"><a href="#L-1066"><span class="linenos">1066</span></a>        <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
 </span><span id="L-1067"><a href="#L-1067"><span class="linenos">1067</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="L-1068"><a href="#L-1068"><span class="linenos">1068</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1068"><a href="#L-1068"><span class="linenos">1068</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1069"><a href="#L-1069"><span class="linenos">1069</span></a><span class="sd">        Evaluate the Task model</span>
 </span><span id="L-1070"><a href="#L-1070"><span class="linenos">1070</span></a>
 </span><span id="L-1071"><a href="#L-1071"><span class="linenos">1071</span></a><span class="sd">        Parameters</span>
@@ -1228,7 +1228,7 @@
 </span><span id="L-1100"><a href="#L-1100"><span class="linenos">1100</span></a>        <span class="n">prediction</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
 </span><span id="L-1101"><a href="#L-1101"><span class="linenos">1101</span></a>        <span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">DataLoader</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1102"><a href="#L-1102"><span class="linenos">1102</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="L-1103"><a href="#L-1103"><span class="linenos">1103</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1103"><a href="#L-1103"><span class="linenos">1103</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1104"><a href="#L-1104"><span class="linenos">1104</span></a><span class="sd">        Compute metrics for a prediction</span>
 </span><span id="L-1105"><a href="#L-1105"><span class="linenos">1105</span></a>
 </span><span id="L-1106"><a href="#L-1106"><span class="linenos">1106</span></a><span class="sd">        Parameters</span>
@@ -1258,7 +1258,7 @@
 </span><span id="L-1130"><a href="#L-1130"><span class="linenos">1130</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
 </span><span id="L-1131"><a href="#L-1131"><span class="linenos">1131</span></a>        <span class="n">embedding</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 </span><span id="L-1132"><a href="#L-1132"><span class="linenos">1132</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-</span><span id="L-1133"><a href="#L-1133"><span class="linenos">1133</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1133"><a href="#L-1133"><span class="linenos">1133</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1134"><a href="#L-1134"><span class="linenos">1134</span></a><span class="sd">        Make a prediction with the Task model</span>
 </span><span id="L-1135"><a href="#L-1135"><span class="linenos">1135</span></a>
 </span><span id="L-1136"><a href="#L-1136"><span class="linenos">1136</span></a><span class="sd">        Parameters</span>
@@ -1291,7 +1291,7 @@
 </span><span id="L-1163"><a href="#L-1163"><span class="linenos">1163</span></a>        <span class="p">)</span>
 </span><span id="L-1164"><a href="#L-1164"><span class="linenos">1164</span></a>
 </span><span id="L-1165"><a href="#L-1165"><span class="linenos">1165</span></a>    <span class="k">def</span> <span class="nf">dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;train&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BehaviorDataset</span><span class="p">:</span>
-</span><span id="L-1166"><a href="#L-1166"><span class="linenos">1166</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1166"><a href="#L-1166"><span class="linenos">1166</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1167"><a href="#L-1167"><span class="linenos">1167</span></a><span class="sd">        Get a dataset</span>
 </span><span id="L-1168"><a href="#L-1168"><span class="linenos">1168</span></a>
 </span><span id="L-1169"><a href="#L-1169"><span class="linenos">1169</span></a><span class="sd">        Parameters</span>
@@ -1312,7 +1312,7 @@
 </span><span id="L-1184"><a href="#L-1184"><span class="linenos">1184</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1185"><a href="#L-1185"><span class="linenos">1185</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="L-1186"><a href="#L-1186"><span class="linenos">1186</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-1187"><a href="#L-1187"><span class="linenos">1187</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1187"><a href="#L-1187"><span class="linenos">1187</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1188"><a href="#L-1188"><span class="linenos">1188</span></a><span class="sd">        Compile a prediction for the original input sequences</span>
 </span><span id="L-1189"><a href="#L-1189"><span class="linenos">1189</span></a>
 </span><span id="L-1190"><a href="#L-1190"><span class="linenos">1190</span></a><span class="sd">        Parameters</span>
@@ -1340,7 +1340,7 @@
 </span><span id="L-1212"><a href="#L-1212"><span class="linenos">1212</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1213"><a href="#L-1213"><span class="linenos">1213</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="L-1214"><a href="#L-1214"><span class="linenos">1214</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-1215"><a href="#L-1215"><span class="linenos">1215</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1215"><a href="#L-1215"><span class="linenos">1215</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1216"><a href="#L-1216"><span class="linenos">1216</span></a><span class="sd">        Generate a MABe-22 style submission dictionary</span>
 </span><span id="L-1217"><a href="#L-1217"><span class="linenos">1217</span></a>
 </span><span id="L-1218"><a href="#L-1218"><span class="linenos">1218</span></a><span class="sd">        Parameters</span>
@@ -1366,7 +1366,7 @@
 </span><span id="L-1238"><a href="#L-1238"><span class="linenos">1238</span></a>        <span class="p">)</span>
 </span><span id="L-1239"><a href="#L-1239"><span class="linenos">1239</span></a>
 </span><span id="L-1240"><a href="#L-1240"><span class="linenos">1240</span></a>    <span class="k">def</span> <span class="nf">behaviors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-1241"><a href="#L-1241"><span class="linenos">1241</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1241"><a href="#L-1241"><span class="linenos">1241</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1242"><a href="#L-1242"><span class="linenos">1242</span></a><span class="sd">        Get a behavior dictionary</span>
 </span><span id="L-1243"><a href="#L-1243"><span class="linenos">1243</span></a>
 </span><span id="L-1244"><a href="#L-1244"><span class="linenos">1244</span></a><span class="sd">        Keys are label indices and values are label names.</span>
@@ -1380,7 +1380,7 @@
 </span><span id="L-1252"><a href="#L-1252"><span class="linenos">1252</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">behaviors_dict</span><span class="p">()</span>
 </span><span id="L-1253"><a href="#L-1253"><span class="linenos">1253</span></a>
 </span><span id="L-1254"><a href="#L-1254"><span class="linenos">1254</span></a>    <span class="k">def</span> <span class="nf">count_classes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bouts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-1255"><a href="#L-1255"><span class="linenos">1255</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1255"><a href="#L-1255"><span class="linenos">1255</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1256"><a href="#L-1256"><span class="linenos">1256</span></a><span class="sd">        Get a dictionary of class counts in different modes</span>
 </span><span id="L-1257"><a href="#L-1257"><span class="linenos">1257</span></a>
 </span><span id="L-1258"><a href="#L-1258"><span class="linenos">1258</span></a><span class="sd">        Parameters</span>
@@ -1441,7 +1441,7 @@
 </span><span id="L-1313"><a href="#L-1313"><span class="linenos">1313</span></a>        <span class="n">search_classes</span><span class="p">:</span> <span class="n">Set</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1314"><a href="#L-1314"><span class="linenos">1314</span></a>        <span class="n">smooth_interval_prediction</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1315"><a href="#L-1315"><span class="linenos">1315</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-1316"><a href="#L-1316"><span class="linenos">1316</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1316"><a href="#L-1316"><span class="linenos">1316</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1317"><a href="#L-1317"><span class="linenos">1317</span></a><span class="sd">        Visualize random predictions</span>
 </span><span id="L-1318"><a href="#L-1318"><span class="linenos">1318</span></a>
 </span><span id="L-1319"><a href="#L-1319"><span class="linenos">1319</span></a><span class="sd">        Parameters</span>
@@ -1496,7 +1496,7 @@
 </span><span id="L-1368"><a href="#L-1368"><span class="linenos">1368</span></a>        <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1369"><a href="#L-1369"><span class="linenos">1369</span></a>        <span class="n">behaviors_dict</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="L-1370"><a href="#L-1370"><span class="linenos">1370</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-1371"><a href="#L-1371"><span class="linenos">1371</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1371"><a href="#L-1371"><span class="linenos">1371</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1372"><a href="#L-1372"><span class="linenos">1372</span></a><span class="sd">        Generate frame-wise scores for active learning</span>
 </span><span id="L-1373"><a href="#L-1373"><span class="linenos">1373</span></a>
 </span><span id="L-1374"><a href="#L-1374"><span class="linenos">1374</span></a><span class="sd">        Parameters</span>
@@ -1532,7 +1532,7 @@
 </span><span id="L-1404"><a href="#L-1404"><span class="linenos">1404</span></a>        <span class="n">num_models</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="L-1405"><a href="#L-1405"><span class="linenos">1405</span></a>        <span class="n">kernel_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
 </span><span id="L-1406"><a href="#L-1406"><span class="linenos">1406</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-1407"><a href="#L-1407"><span class="linenos">1407</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1407"><a href="#L-1407"><span class="linenos">1407</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1408"><a href="#L-1408"><span class="linenos">1408</span></a><span class="sd">        Generate frame-wise Bayesian Active Learning by Disagreement scores for active learning</span>
 </span><span id="L-1409"><a href="#L-1409"><span class="linenos">1409</span></a>
 </span><span id="L-1410"><a href="#L-1410"><span class="linenos">1410</span></a><span class="sd">        Parameters</span>
@@ -1562,7 +1562,7 @@
 </span><span id="L-1434"><a href="#L-1434"><span class="linenos">1434</span></a>        <span class="p">)</span>
 </span><span id="L-1435"><a href="#L-1435"><span class="linenos">1435</span></a>
 </span><span id="L-1436"><a href="#L-1436"><span class="linenos">1436</span></a>    <span class="k">def</span> <span class="nf">get_normalization_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-1437"><a href="#L-1437"><span class="linenos">1437</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1437"><a href="#L-1437"><span class="linenos">1437</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1438"><a href="#L-1438"><span class="linenos">1438</span></a><span class="sd">        Get the pre-computed normalization stats</span>
 </span><span id="L-1439"><a href="#L-1439"><span class="linenos">1439</span></a>
 </span><span id="L-1440"><a href="#L-1440"><span class="linenos">1440</span></a><span class="sd">        Returns</span>
@@ -1574,7 +1574,7 @@
 </span><span id="L-1446"><a href="#L-1446"><span class="linenos">1446</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">get_normalization_stats</span><span class="p">()</span>
 </span><span id="L-1447"><a href="#L-1447"><span class="linenos">1447</span></a>
 </span><span id="L-1448"><a href="#L-1448"><span class="linenos">1448</span></a>    <span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="L-1449"><a href="#L-1449"><span class="linenos">1449</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-1449"><a href="#L-1449"><span class="linenos">1449</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-1450"><a href="#L-1450"><span class="linenos">1450</span></a><span class="sd">        Check whether the task has a train/test/validation subset</span>
 </span><span id="L-1451"><a href="#L-1451"><span class="linenos">1451</span></a>
 </span><span id="L-1452"><a href="#L-1452"><span class="linenos">1452</span></a><span class="sd">        Parameters</span>
@@ -1609,12 +1609,12 @@
     </div>
     <a class="headerlink" href="#TaskDispatcher"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher-34"><a href="#TaskDispatcher-34"><span class="linenos">  34</span></a><span class="k">class</span> <span class="nc">TaskDispatcher</span><span class="p">:</span>
-</span><span id="TaskDispatcher-35"><a href="#TaskDispatcher-35"><span class="linenos">  35</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-35"><a href="#TaskDispatcher-35"><span class="linenos">  35</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-36"><a href="#TaskDispatcher-36"><span class="linenos">  36</span></a><span class="sd">    A class that manages the interactions between config dictionaries and a Task</span>
 </span><span id="TaskDispatcher-37"><a href="#TaskDispatcher-37"><span class="linenos">  37</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-38"><a href="#TaskDispatcher-38"><span class="linenos">  38</span></a>
 </span><span id="TaskDispatcher-39"><a href="#TaskDispatcher-39"><span class="linenos">  39</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-40"><a href="#TaskDispatcher-40"><span class="linenos">  40</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-40"><a href="#TaskDispatcher-40"><span class="linenos">  40</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-41"><a href="#TaskDispatcher-41"><span class="linenos">  41</span></a><span class="sd">        Parameters</span>
 </span><span id="TaskDispatcher-42"><a href="#TaskDispatcher-42"><span class="linenos">  42</span></a><span class="sd">        ----------</span>
 </span><span id="TaskDispatcher-43"><a href="#TaskDispatcher-43"><span class="linenos">  43</span></a><span class="sd">        parameters : dict</span>
@@ -1640,7 +1640,7 @@
 </span><span id="TaskDispatcher-63"><a href="#TaskDispatcher-63"><span class="linenos">  63</span></a>
 </span><span id="TaskDispatcher-64"><a href="#TaskDispatcher-64"><span class="linenos">  64</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="TaskDispatcher-65"><a href="#TaskDispatcher-65"><span class="linenos">  65</span></a>    <span class="k">def</span> <span class="nf">complete_function_parameters</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span> <span class="n">function</span><span class="p">,</span> <span class="n">general_dicts</span><span class="p">:</span> <span class="n">List</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-66"><a href="#TaskDispatcher-66"><span class="linenos">  66</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-66"><a href="#TaskDispatcher-66"><span class="linenos">  66</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-67"><a href="#TaskDispatcher-67"><span class="linenos">  67</span></a><span class="sd">        Complete a parameter dictionary with values from other dictionaries if required by a function</span>
 </span><span id="TaskDispatcher-68"><a href="#TaskDispatcher-68"><span class="linenos">  68</span></a>
 </span><span id="TaskDispatcher-69"><a href="#TaskDispatcher-69"><span class="linenos">  69</span></a><span class="sd">        Parameters</span>
@@ -1667,7 +1667,7 @@
 </span><span id="TaskDispatcher-90"><a href="#TaskDispatcher-90"><span class="linenos">  90</span></a>        <span class="n">data_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="TaskDispatcher-91"><a href="#TaskDispatcher-91"><span class="linenos">  91</span></a>        <span class="n">annotation_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="TaskDispatcher-92"><a href="#TaskDispatcher-92"><span class="linenos">  92</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-93"><a href="#TaskDispatcher-93"><span class="linenos">  93</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-93"><a href="#TaskDispatcher-93"><span class="linenos">  93</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-94"><a href="#TaskDispatcher-94"><span class="linenos">  94</span></a><span class="sd">        Complete a parameter dictionary with values from other dictionaries if required by a dataset</span>
 </span><span id="TaskDispatcher-95"><a href="#TaskDispatcher-95"><span class="linenos">  95</span></a>
 </span><span id="TaskDispatcher-96"><a href="#TaskDispatcher-96"><span class="linenos">  96</span></a><span class="sd">        Parameters</span>
@@ -1696,7 +1696,7 @@
 </span><span id="TaskDispatcher-119"><a href="#TaskDispatcher-119"><span class="linenos"> 119</span></a>
 </span><span id="TaskDispatcher-120"><a href="#TaskDispatcher-120"><span class="linenos"> 120</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="TaskDispatcher-121"><a href="#TaskDispatcher-121"><span class="linenos"> 121</span></a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="TaskDispatcher-122"><a href="#TaskDispatcher-122"><span class="linenos"> 122</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-122"><a href="#TaskDispatcher-122"><span class="linenos"> 122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-123"><a href="#TaskDispatcher-123"><span class="linenos"> 123</span></a><span class="sd">        Check whether there is a non-`None` value under the name key in the parameters dictionary</span>
 </span><span id="TaskDispatcher-124"><a href="#TaskDispatcher-124"><span class="linenos"> 124</span></a>
 </span><span id="TaskDispatcher-125"><a href="#TaskDispatcher-125"><span class="linenos"> 125</span></a><span class="sd">        Parameters</span>
@@ -1719,7 +1719,7 @@
 </span><span id="TaskDispatcher-142"><a href="#TaskDispatcher-142"><span class="linenos"> 142</span></a>
 </span><span id="TaskDispatcher-143"><a href="#TaskDispatcher-143"><span class="linenos"> 143</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="TaskDispatcher-144"><a href="#TaskDispatcher-144"><span class="linenos"> 144</span></a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="p">):</span>
-</span><span id="TaskDispatcher-145"><a href="#TaskDispatcher-145"><span class="linenos"> 145</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-145"><a href="#TaskDispatcher-145"><span class="linenos"> 145</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-146"><a href="#TaskDispatcher-146"><span class="linenos"> 146</span></a><span class="sd">        Get the value under the name key or the default if it is `None` or does not exist</span>
 </span><span id="TaskDispatcher-147"><a href="#TaskDispatcher-147"><span class="linenos"> 147</span></a>
 </span><span id="TaskDispatcher-148"><a href="#TaskDispatcher-148"><span class="linenos"> 148</span></a><span class="sd">        Parameters</span>
@@ -1746,7 +1746,7 @@
 </span><span id="TaskDispatcher-169"><a href="#TaskDispatcher-169"><span class="linenos"> 169</span></a>    <span class="k">def</span> <span class="nf">make_dataloader</span><span class="p">(</span>
 </span><span id="TaskDispatcher-170"><a href="#TaskDispatcher-170"><span class="linenos"> 170</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-171"><a href="#TaskDispatcher-171"><span class="linenos"> 171</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataLoader</span><span class="p">:</span>
-</span><span id="TaskDispatcher-172"><a href="#TaskDispatcher-172"><span class="linenos"> 172</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-172"><a href="#TaskDispatcher-172"><span class="linenos"> 172</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-173"><a href="#TaskDispatcher-173"><span class="linenos"> 173</span></a><span class="sd">        Make a torch dataloader from a dataset</span>
 </span><span id="TaskDispatcher-174"><a href="#TaskDispatcher-174"><span class="linenos"> 174</span></a>
 </span><span id="TaskDispatcher-175"><a href="#TaskDispatcher-175"><span class="linenos"> 175</span></a><span class="sd">        Parameters</span>
@@ -1768,7 +1768,7 @@
 </span><span id="TaskDispatcher-191"><a href="#TaskDispatcher-191"><span class="linenos"> 191</span></a>            <span class="k">return</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">batch_size</span><span class="p">),</span> <span class="n">shuffle</span><span class="o">=</span><span class="n">shuffle</span><span class="p">)</span>
 </span><span id="TaskDispatcher-192"><a href="#TaskDispatcher-192"><span class="linenos"> 192</span></a>
 </span><span id="TaskDispatcher-193"><a href="#TaskDispatcher-193"><span class="linenos"> 193</span></a>    <span class="k">def</span> <span class="nf">_construct_ssl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="TaskDispatcher-194"><a href="#TaskDispatcher-194"><span class="linenos"> 194</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-194"><a href="#TaskDispatcher-194"><span class="linenos"> 194</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-195"><a href="#TaskDispatcher-195"><span class="linenos"> 195</span></a><span class="sd">        Generate SSL constructors</span>
 </span><span id="TaskDispatcher-196"><a href="#TaskDispatcher-196"><span class="linenos"> 196</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-197"><a href="#TaskDispatcher-197"><span class="linenos"> 197</span></a>
@@ -1802,7 +1802,7 @@
 </span><span id="TaskDispatcher-225"><a href="#TaskDispatcher-225"><span class="linenos"> 225</span></a>        <span class="k">return</span> <span class="n">ssl_list</span>
 </span><span id="TaskDispatcher-226"><a href="#TaskDispatcher-226"><span class="linenos"> 226</span></a>
 </span><span id="TaskDispatcher-227"><a href="#TaskDispatcher-227"><span class="linenos"> 227</span></a>    <span class="k">def</span> <span class="nf">_construct_model</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
-</span><span id="TaskDispatcher-228"><a href="#TaskDispatcher-228"><span class="linenos"> 228</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-228"><a href="#TaskDispatcher-228"><span class="linenos"> 228</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-229"><a href="#TaskDispatcher-229"><span class="linenos"> 229</span></a><span class="sd">        Generate a model</span>
 </span><span id="TaskDispatcher-230"><a href="#TaskDispatcher-230"><span class="linenos"> 230</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-231"><a href="#TaskDispatcher-231"><span class="linenos"> 231</span></a>
@@ -1836,7 +1836,7 @@
 </span><span id="TaskDispatcher-259"><a href="#TaskDispatcher-259"><span class="linenos"> 259</span></a>        <span class="k">return</span> <span class="n">model</span>
 </span><span id="TaskDispatcher-260"><a href="#TaskDispatcher-260"><span class="linenos"> 260</span></a>
 </span><span id="TaskDispatcher-261"><a href="#TaskDispatcher-261"><span class="linenos"> 261</span></a>    <span class="k">def</span> <span class="nf">_construct_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BehaviorDataset</span><span class="p">:</span>
-</span><span id="TaskDispatcher-262"><a href="#TaskDispatcher-262"><span class="linenos"> 262</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-262"><a href="#TaskDispatcher-262"><span class="linenos"> 262</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-263"><a href="#TaskDispatcher-263"><span class="linenos"> 263</span></a><span class="sd">        Generate a dataset</span>
 </span><span id="TaskDispatcher-264"><a href="#TaskDispatcher-264"><span class="linenos"> 264</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-265"><a href="#TaskDispatcher-265"><span class="linenos"> 265</span></a>
@@ -1873,7 +1873,7 @@
 </span><span id="TaskDispatcher-296"><a href="#TaskDispatcher-296"><span class="linenos"> 296</span></a>        <span class="k">return</span> <span class="n">dataset</span>
 </span><span id="TaskDispatcher-297"><a href="#TaskDispatcher-297"><span class="linenos"> 297</span></a>
 </span><span id="TaskDispatcher-298"><a href="#TaskDispatcher-298"><span class="linenos"> 298</span></a>    <span class="k">def</span> <span class="nf">_construct_transformer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Transformer</span><span class="p">:</span>
-</span><span id="TaskDispatcher-299"><a href="#TaskDispatcher-299"><span class="linenos"> 299</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-299"><a href="#TaskDispatcher-299"><span class="linenos"> 299</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-300"><a href="#TaskDispatcher-300"><span class="linenos"> 300</span></a><span class="sd">        Generate a transformer</span>
 </span><span id="TaskDispatcher-301"><a href="#TaskDispatcher-301"><span class="linenos"> 301</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-302"><a href="#TaskDispatcher-302"><span class="linenos"> 302</span></a>
@@ -1892,7 +1892,7 @@
 </span><span id="TaskDispatcher-315"><a href="#TaskDispatcher-315"><span class="linenos"> 315</span></a>        <span class="k">return</span> <span class="n">transformer</span>
 </span><span id="TaskDispatcher-316"><a href="#TaskDispatcher-316"><span class="linenos"> 316</span></a>
 </span><span id="TaskDispatcher-317"><a href="#TaskDispatcher-317"><span class="linenos"> 317</span></a>    <span class="k">def</span> <span class="nf">_construct_loss</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">:</span>
-</span><span id="TaskDispatcher-318"><a href="#TaskDispatcher-318"><span class="linenos"> 318</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-318"><a href="#TaskDispatcher-318"><span class="linenos"> 318</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-319"><a href="#TaskDispatcher-319"><span class="linenos"> 319</span></a><span class="sd">        Generate a loss function</span>
 </span><span id="TaskDispatcher-320"><a href="#TaskDispatcher-320"><span class="linenos"> 320</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-321"><a href="#TaskDispatcher-321"><span class="linenos"> 321</span></a>
@@ -1922,7 +1922,7 @@
 </span><span id="TaskDispatcher-345"><a href="#TaskDispatcher-345"><span class="linenos"> 345</span></a>        <span class="k">return</span> <span class="n">loss</span>
 </span><span id="TaskDispatcher-346"><a href="#TaskDispatcher-346"><span class="linenos"> 346</span></a>
 </span><span id="TaskDispatcher-347"><a href="#TaskDispatcher-347"><span class="linenos"> 347</span></a>    <span class="k">def</span> <span class="nf">_construct_metrics</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="TaskDispatcher-348"><a href="#TaskDispatcher-348"><span class="linenos"> 348</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-348"><a href="#TaskDispatcher-348"><span class="linenos"> 348</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-349"><a href="#TaskDispatcher-349"><span class="linenos"> 349</span></a><span class="sd">        Generate the metric</span>
 </span><span id="TaskDispatcher-350"><a href="#TaskDispatcher-350"><span class="linenos"> 350</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-351"><a href="#TaskDispatcher-351"><span class="linenos"> 351</span></a>
@@ -1967,7 +1967,7 @@
 </span><span id="TaskDispatcher-390"><a href="#TaskDispatcher-390"><span class="linenos"> 390</span></a>        <span class="k">return</span> <span class="n">metrics</span>
 </span><span id="TaskDispatcher-391"><a href="#TaskDispatcher-391"><span class="linenos"> 391</span></a>
 </span><span id="TaskDispatcher-392"><a href="#TaskDispatcher-392"><span class="linenos"> 392</span></a>    <span class="k">def</span> <span class="nf">_construct_optimizer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optimizer</span><span class="p">:</span>
-</span><span id="TaskDispatcher-393"><a href="#TaskDispatcher-393"><span class="linenos"> 393</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-393"><a href="#TaskDispatcher-393"><span class="linenos"> 393</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-394"><a href="#TaskDispatcher-394"><span class="linenos"> 394</span></a><span class="sd">        Generate an optimizer</span>
 </span><span id="TaskDispatcher-395"><a href="#TaskDispatcher-395"><span class="linenos"> 395</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-396"><a href="#TaskDispatcher-396"><span class="linenos"> 396</span></a>
@@ -1984,7 +1984,7 @@
 </span><span id="TaskDispatcher-407"><a href="#TaskDispatcher-407"><span class="linenos"> 407</span></a>        <span class="k">return</span> <span class="n">optimizer</span>
 </span><span id="TaskDispatcher-408"><a href="#TaskDispatcher-408"><span class="linenos"> 408</span></a>
 </span><span id="TaskDispatcher-409"><a href="#TaskDispatcher-409"><span class="linenos"> 409</span></a>    <span class="k">def</span> <span class="nf">_construct_predict_functions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Callable</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]:</span>
-</span><span id="TaskDispatcher-410"><a href="#TaskDispatcher-410"><span class="linenos"> 410</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-410"><a href="#TaskDispatcher-410"><span class="linenos"> 410</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-411"><a href="#TaskDispatcher-411"><span class="linenos"> 411</span></a><span class="sd">        Construct predict functions</span>
 </span><span id="TaskDispatcher-412"><a href="#TaskDispatcher-412"><span class="linenos"> 412</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-413"><a href="#TaskDispatcher-413"><span class="linenos"> 413</span></a>
@@ -2062,7 +2062,7 @@
 </span><span id="TaskDispatcher-485"><a href="#TaskDispatcher-485"><span class="linenos"> 485</span></a>        <span class="k">return</span> <span class="n">primary_predict_function</span><span class="p">,</span> <span class="n">predict_function</span>
 </span><span id="TaskDispatcher-486"><a href="#TaskDispatcher-486"><span class="linenos"> 486</span></a>
 </span><span id="TaskDispatcher-487"><a href="#TaskDispatcher-487"><span class="linenos"> 487</span></a>    <span class="k">def</span> <span class="nf">_get_parameters_from_training</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-488"><a href="#TaskDispatcher-488"><span class="linenos"> 488</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-488"><a href="#TaskDispatcher-488"><span class="linenos"> 488</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-489"><a href="#TaskDispatcher-489"><span class="linenos"> 489</span></a><span class="sd">        Get the training parameters that need to be passed to the Task</span>
 </span><span id="TaskDispatcher-490"><a href="#TaskDispatcher-490"><span class="linenos"> 490</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-491"><a href="#TaskDispatcher-491"><span class="linenos"> 491</span></a>
@@ -2102,7 +2102,7 @@
 </span><span id="TaskDispatcher-525"><a href="#TaskDispatcher-525"><span class="linenos"> 525</span></a>        <span class="k">return</span> <span class="n">task_training_pars</span>
 </span><span id="TaskDispatcher-526"><a href="#TaskDispatcher-526"><span class="linenos"> 526</span></a>
 </span><span id="TaskDispatcher-527"><a href="#TaskDispatcher-527"><span class="linenos"> 527</span></a>    <span class="k">def</span> <span class="nf">_update_parameters_from_ssl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ssl_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-528"><a href="#TaskDispatcher-528"><span class="linenos"> 528</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-528"><a href="#TaskDispatcher-528"><span class="linenos"> 528</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-529"><a href="#TaskDispatcher-529"><span class="linenos"> 529</span></a><span class="sd">        Update the necessary parameters given the list of SSL constructors</span>
 </span><span id="TaskDispatcher-530"><a href="#TaskDispatcher-530"><span class="linenos"> 530</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-531"><a href="#TaskDispatcher-531"><span class="linenos"> 531</span></a>
@@ -2131,7 +2131,7 @@
 </span><span id="TaskDispatcher-554"><a href="#TaskDispatcher-554"><span class="linenos"> 554</span></a>        <span class="p">]</span>
 </span><span id="TaskDispatcher-555"><a href="#TaskDispatcher-555"><span class="linenos"> 555</span></a>
 </span><span id="TaskDispatcher-556"><a href="#TaskDispatcher-556"><span class="linenos"> 556</span></a>    <span class="k">def</span> <span class="nf">_set_loss_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">):</span>
-</span><span id="TaskDispatcher-557"><a href="#TaskDispatcher-557"><span class="linenos"> 557</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-557"><a href="#TaskDispatcher-557"><span class="linenos"> 557</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-558"><a href="#TaskDispatcher-558"><span class="linenos"> 558</span></a><span class="sd">        Replace the `&quot;dataset_inverse_weights&quot;` blank in loss parameters with class weight values</span>
 </span><span id="TaskDispatcher-559"><a href="#TaskDispatcher-559"><span class="linenos"> 559</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-560"><a href="#TaskDispatcher-560"><span class="linenos"> 560</span></a>
@@ -2164,7 +2164,7 @@
 </span><span id="TaskDispatcher-587"><a href="#TaskDispatcher-587"><span class="linenos"> 587</span></a>    <span class="k">def</span> <span class="nf">_partition_dataset</span><span class="p">(</span>
 </span><span id="TaskDispatcher-588"><a href="#TaskDispatcher-588"><span class="linenos"> 588</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span>
 </span><span id="TaskDispatcher-589"><a href="#TaskDispatcher-589"><span class="linenos"> 589</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">]:</span>
-</span><span id="TaskDispatcher-590"><a href="#TaskDispatcher-590"><span class="linenos"> 590</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-590"><a href="#TaskDispatcher-590"><span class="linenos"> 590</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-591"><a href="#TaskDispatcher-591"><span class="linenos"> 591</span></a><span class="sd">        Partition the dataset into train, validation and test subsamples</span>
 </span><span id="TaskDispatcher-592"><a href="#TaskDispatcher-592"><span class="linenos"> 592</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-593"><a href="#TaskDispatcher-593"><span class="linenos"> 593</span></a>
@@ -2199,7 +2199,7 @@
 </span><span id="TaskDispatcher-622"><a href="#TaskDispatcher-622"><span class="linenos"> 622</span></a>        <span class="k">return</span> <span class="n">train_dataloader</span><span class="p">,</span> <span class="n">test_dataloader</span><span class="p">,</span> <span class="n">val_dataloader</span>
 </span><span id="TaskDispatcher-623"><a href="#TaskDispatcher-623"><span class="linenos"> 623</span></a>
 </span><span id="TaskDispatcher-624"><a href="#TaskDispatcher-624"><span class="linenos"> 624</span></a>    <span class="k">def</span> <span class="nf">_initialize_task</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="TaskDispatcher-625"><a href="#TaskDispatcher-625"><span class="linenos"> 625</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-625"><a href="#TaskDispatcher-625"><span class="linenos"> 625</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-626"><a href="#TaskDispatcher-626"><span class="linenos"> 626</span></a><span class="sd">        Create a `dlc2action.task.universal_task.Task` instance</span>
 </span><span id="TaskDispatcher-627"><a href="#TaskDispatcher-627"><span class="linenos"> 627</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-628"><a href="#TaskDispatcher-628"><span class="linenos"> 628</span></a>
@@ -2258,7 +2258,7 @@
 </span><span id="TaskDispatcher-681"><a href="#TaskDispatcher-681"><span class="linenos"> 681</span></a>    <span class="k">def</span> <span class="nf">_update_data_blanks</span><span class="p">(</span>
 </span><span id="TaskDispatcher-682"><a href="#TaskDispatcher-682"><span class="linenos"> 682</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-683"><a href="#TaskDispatcher-683"><span class="linenos"> 683</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-684"><a href="#TaskDispatcher-684"><span class="linenos"> 684</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-684"><a href="#TaskDispatcher-684"><span class="linenos"> 684</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-685"><a href="#TaskDispatcher-685"><span class="linenos"> 685</span></a><span class="sd">        Update all blanks from a dataset</span>
 </span><span id="TaskDispatcher-686"><a href="#TaskDispatcher-686"><span class="linenos"> 686</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-687"><a href="#TaskDispatcher-687"><span class="linenos"> 687</span></a>
@@ -2320,7 +2320,7 @@
 </span><span id="TaskDispatcher-743"><a href="#TaskDispatcher-743"><span class="linenos"> 743</span></a>                                <span class="bp">self</span><span class="o">.</span><span class="n">blanks</span><span class="p">[</span><span class="n">blank_name</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">name</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">kk</span><span class="p">])</span>
 </span><span id="TaskDispatcher-744"><a href="#TaskDispatcher-744"><span class="linenos"> 744</span></a>
 </span><span id="TaskDispatcher-745"><a href="#TaskDispatcher-745"><span class="linenos"> 745</span></a>    <span class="k">def</span> <span class="nf">_update_features_parameter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-746"><a href="#TaskDispatcher-746"><span class="linenos"> 746</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-746"><a href="#TaskDispatcher-746"><span class="linenos"> 746</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-747"><a href="#TaskDispatcher-747"><span class="linenos"> 747</span></a><span class="sd">        Fill the `&quot;model_features&quot;` blank</span>
 </span><span id="TaskDispatcher-748"><a href="#TaskDispatcher-748"><span class="linenos"> 748</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-749"><a href="#TaskDispatcher-749"><span class="linenos"> 749</span></a>
@@ -2330,7 +2330,7 @@
 </span><span id="TaskDispatcher-753"><a href="#TaskDispatcher-753"><span class="linenos"> 753</span></a>    <span class="k">def</span> <span class="nf">_update_bodyparts_parameter</span><span class="p">(</span>
 </span><span id="TaskDispatcher-754"><a href="#TaskDispatcher-754"><span class="linenos"> 754</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-755"><a href="#TaskDispatcher-755"><span class="linenos"> 755</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-756"><a href="#TaskDispatcher-756"><span class="linenos"> 756</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-756"><a href="#TaskDispatcher-756"><span class="linenos"> 756</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-757"><a href="#TaskDispatcher-757"><span class="linenos"> 757</span></a><span class="sd">        Fill the `&quot;dataset_bodyparts&quot;` blank</span>
 </span><span id="TaskDispatcher-758"><a href="#TaskDispatcher-758"><span class="linenos"> 758</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-759"><a href="#TaskDispatcher-759"><span class="linenos"> 759</span></a>
@@ -2340,7 +2340,7 @@
 </span><span id="TaskDispatcher-763"><a href="#TaskDispatcher-763"><span class="linenos"> 763</span></a>    <span class="k">def</span> <span class="nf">_update_dim_parameter</span><span class="p">(</span>
 </span><span id="TaskDispatcher-764"><a href="#TaskDispatcher-764"><span class="linenos"> 764</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-765"><a href="#TaskDispatcher-765"><span class="linenos"> 765</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-766"><a href="#TaskDispatcher-766"><span class="linenos"> 766</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-766"><a href="#TaskDispatcher-766"><span class="linenos"> 766</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-767"><a href="#TaskDispatcher-767"><span class="linenos"> 767</span></a><span class="sd">        Fill the `&quot;dataset_features&quot;` blank</span>
 </span><span id="TaskDispatcher-768"><a href="#TaskDispatcher-768"><span class="linenos"> 768</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-769"><a href="#TaskDispatcher-769"><span class="linenos"> 769</span></a>
@@ -2350,7 +2350,7 @@
 </span><span id="TaskDispatcher-773"><a href="#TaskDispatcher-773"><span class="linenos"> 773</span></a>    <span class="k">def</span> <span class="nf">_update_boundary_parameter</span><span class="p">(</span>
 </span><span id="TaskDispatcher-774"><a href="#TaskDispatcher-774"><span class="linenos"> 774</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-775"><a href="#TaskDispatcher-775"><span class="linenos"> 775</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-776"><a href="#TaskDispatcher-776"><span class="linenos"> 776</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-776"><a href="#TaskDispatcher-776"><span class="linenos"> 776</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-777"><a href="#TaskDispatcher-777"><span class="linenos"> 777</span></a><span class="sd">        Fill the `&quot;dataset_features&quot;` blank</span>
 </span><span id="TaskDispatcher-778"><a href="#TaskDispatcher-778"><span class="linenos"> 778</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-779"><a href="#TaskDispatcher-779"><span class="linenos"> 779</span></a>
@@ -2360,7 +2360,7 @@
 </span><span id="TaskDispatcher-783"><a href="#TaskDispatcher-783"><span class="linenos"> 783</span></a>    <span class="k">def</span> <span class="nf">_update_num_classes_parameter</span><span class="p">(</span>
 </span><span id="TaskDispatcher-784"><a href="#TaskDispatcher-784"><span class="linenos"> 784</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-785"><a href="#TaskDispatcher-785"><span class="linenos"> 785</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-786"><a href="#TaskDispatcher-786"><span class="linenos"> 786</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-786"><a href="#TaskDispatcher-786"><span class="linenos"> 786</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-787"><a href="#TaskDispatcher-787"><span class="linenos"> 787</span></a><span class="sd">        Fill in the `&quot;dataset_classes&quot;` blank</span>
 </span><span id="TaskDispatcher-788"><a href="#TaskDispatcher-788"><span class="linenos"> 788</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-789"><a href="#TaskDispatcher-789"><span class="linenos"> 789</span></a>
@@ -2370,7 +2370,7 @@
 </span><span id="TaskDispatcher-793"><a href="#TaskDispatcher-793"><span class="linenos"> 793</span></a>    <span class="k">def</span> <span class="nf">_update_len_segment_parameter</span><span class="p">(</span>
 </span><span id="TaskDispatcher-794"><a href="#TaskDispatcher-794"><span class="linenos"> 794</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">remember</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher-795"><a href="#TaskDispatcher-795"><span class="linenos"> 795</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-796"><a href="#TaskDispatcher-796"><span class="linenos"> 796</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-796"><a href="#TaskDispatcher-796"><span class="linenos"> 796</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-797"><a href="#TaskDispatcher-797"><span class="linenos"> 797</span></a><span class="sd">        Fill in the `&quot;dataset_len_segment&quot;` blank</span>
 </span><span id="TaskDispatcher-798"><a href="#TaskDispatcher-798"><span class="linenos"> 798</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-799"><a href="#TaskDispatcher-799"><span class="linenos"> 799</span></a>
@@ -2384,7 +2384,7 @@
 </span><span id="TaskDispatcher-807"><a href="#TaskDispatcher-807"><span class="linenos"> 807</span></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span><span id="TaskDispatcher-808"><a href="#TaskDispatcher-808"><span class="linenos"> 808</span></a>
 </span><span id="TaskDispatcher-809"><a href="#TaskDispatcher-809"><span class="linenos"> 809</span></a>    <span class="k">def</span> <span class="nf">update_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-810"><a href="#TaskDispatcher-810"><span class="linenos"> 810</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-810"><a href="#TaskDispatcher-810"><span class="linenos"> 810</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-811"><a href="#TaskDispatcher-811"><span class="linenos"> 811</span></a><span class="sd">        Update the `dlc2action.task.universal_task.Task` instance given the parameter updates</span>
 </span><span id="TaskDispatcher-812"><a href="#TaskDispatcher-812"><span class="linenos"> 812</span></a>
 </span><span id="TaskDispatcher-813"><a href="#TaskDispatcher-813"><span class="linenos"> 813</span></a><span class="sd">        Parameters</span>
@@ -2571,7 +2571,7 @@
 </span><span id="TaskDispatcher-994"><a href="#TaskDispatcher-994"><span class="linenos"> 994</span></a>        <span class="n">autostop_threshold</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span>
 </span><span id="TaskDispatcher-995"><a href="#TaskDispatcher-995"><span class="linenos"> 995</span></a>        <span class="n">loading_bar</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 </span><span id="TaskDispatcher-996"><a href="#TaskDispatcher-996"><span class="linenos"> 996</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="TaskDispatcher-997"><a href="#TaskDispatcher-997"><span class="linenos"> 997</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-997"><a href="#TaskDispatcher-997"><span class="linenos"> 997</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-998"><a href="#TaskDispatcher-998"><span class="linenos"> 998</span></a><span class="sd">        Train the task and return a log of epoch-average loss and metric</span>
 </span><span id="TaskDispatcher-999"><a href="#TaskDispatcher-999"><span class="linenos"> 999</span></a>
 </span><span id="TaskDispatcher-1000"><a href="#TaskDispatcher-1000"><span class="linenos">1000</span></a><span class="sd">        You can use the autostop parameters to finish training when the parameters are not improving. It will be</span>
@@ -2626,7 +2626,7 @@
 </span><span id="TaskDispatcher-1049"><a href="#TaskDispatcher-1049"><span class="linenos">1049</span></a>        <span class="k">return</span> <span class="n">logs</span>
 </span><span id="TaskDispatcher-1050"><a href="#TaskDispatcher-1050"><span class="linenos">1050</span></a>
 </span><span id="TaskDispatcher-1051"><a href="#TaskDispatcher-1051"><span class="linenos">1051</span></a>    <span class="k">def</span> <span class="nf">save_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1052"><a href="#TaskDispatcher-1052"><span class="linenos">1052</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1052"><a href="#TaskDispatcher-1052"><span class="linenos">1052</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1053"><a href="#TaskDispatcher-1053"><span class="linenos">1053</span></a><span class="sd">        Save the model of the `dlc2action.task.universal_task.Task` instance</span>
 </span><span id="TaskDispatcher-1054"><a href="#TaskDispatcher-1054"><span class="linenos">1054</span></a>
 </span><span id="TaskDispatcher-1055"><a href="#TaskDispatcher-1055"><span class="linenos">1055</span></a><span class="sd">        Parameters</span>
@@ -2643,7 +2643,7 @@
 </span><span id="TaskDispatcher-1066"><a href="#TaskDispatcher-1066"><span class="linenos">1066</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1067"><a href="#TaskDispatcher-1067"><span class="linenos">1067</span></a>        <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1068"><a href="#TaskDispatcher-1068"><span class="linenos">1068</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1069"><a href="#TaskDispatcher-1069"><span class="linenos">1069</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1069"><a href="#TaskDispatcher-1069"><span class="linenos">1069</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1070"><a href="#TaskDispatcher-1070"><span class="linenos">1070</span></a><span class="sd">        Evaluate the Task model</span>
 </span><span id="TaskDispatcher-1071"><a href="#TaskDispatcher-1071"><span class="linenos">1071</span></a>
 </span><span id="TaskDispatcher-1072"><a href="#TaskDispatcher-1072"><span class="linenos">1072</span></a><span class="sd">        Parameters</span>
@@ -2678,7 +2678,7 @@
 </span><span id="TaskDispatcher-1101"><a href="#TaskDispatcher-1101"><span class="linenos">1101</span></a>        <span class="n">prediction</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1102"><a href="#TaskDispatcher-1102"><span class="linenos">1102</span></a>        <span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">DataLoader</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1103"><a href="#TaskDispatcher-1103"><span class="linenos">1103</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1104"><a href="#TaskDispatcher-1104"><span class="linenos">1104</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1104"><a href="#TaskDispatcher-1104"><span class="linenos">1104</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1105"><a href="#TaskDispatcher-1105"><span class="linenos">1105</span></a><span class="sd">        Compute metrics for a prediction</span>
 </span><span id="TaskDispatcher-1106"><a href="#TaskDispatcher-1106"><span class="linenos">1106</span></a>
 </span><span id="TaskDispatcher-1107"><a href="#TaskDispatcher-1107"><span class="linenos">1107</span></a><span class="sd">        Parameters</span>
@@ -2708,7 +2708,7 @@
 </span><span id="TaskDispatcher-1131"><a href="#TaskDispatcher-1131"><span class="linenos">1131</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1132"><a href="#TaskDispatcher-1132"><span class="linenos">1132</span></a>        <span class="n">embedding</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1133"><a href="#TaskDispatcher-1133"><span class="linenos">1133</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1134"><a href="#TaskDispatcher-1134"><span class="linenos">1134</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1134"><a href="#TaskDispatcher-1134"><span class="linenos">1134</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1135"><a href="#TaskDispatcher-1135"><span class="linenos">1135</span></a><span class="sd">        Make a prediction with the Task model</span>
 </span><span id="TaskDispatcher-1136"><a href="#TaskDispatcher-1136"><span class="linenos">1136</span></a>
 </span><span id="TaskDispatcher-1137"><a href="#TaskDispatcher-1137"><span class="linenos">1137</span></a><span class="sd">        Parameters</span>
@@ -2741,7 +2741,7 @@
 </span><span id="TaskDispatcher-1164"><a href="#TaskDispatcher-1164"><span class="linenos">1164</span></a>        <span class="p">)</span>
 </span><span id="TaskDispatcher-1165"><a href="#TaskDispatcher-1165"><span class="linenos">1165</span></a>
 </span><span id="TaskDispatcher-1166"><a href="#TaskDispatcher-1166"><span class="linenos">1166</span></a>    <span class="k">def</span> <span class="nf">dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;train&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BehaviorDataset</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1167"><a href="#TaskDispatcher-1167"><span class="linenos">1167</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1167"><a href="#TaskDispatcher-1167"><span class="linenos">1167</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1168"><a href="#TaskDispatcher-1168"><span class="linenos">1168</span></a><span class="sd">        Get a dataset</span>
 </span><span id="TaskDispatcher-1169"><a href="#TaskDispatcher-1169"><span class="linenos">1169</span></a>
 </span><span id="TaskDispatcher-1170"><a href="#TaskDispatcher-1170"><span class="linenos">1170</span></a><span class="sd">        Parameters</span>
@@ -2762,7 +2762,7 @@
 </span><span id="TaskDispatcher-1185"><a href="#TaskDispatcher-1185"><span class="linenos">1185</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1186"><a href="#TaskDispatcher-1186"><span class="linenos">1186</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1187"><a href="#TaskDispatcher-1187"><span class="linenos">1187</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1188"><a href="#TaskDispatcher-1188"><span class="linenos">1188</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1188"><a href="#TaskDispatcher-1188"><span class="linenos">1188</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1189"><a href="#TaskDispatcher-1189"><span class="linenos">1189</span></a><span class="sd">        Compile a prediction for the original input sequences</span>
 </span><span id="TaskDispatcher-1190"><a href="#TaskDispatcher-1190"><span class="linenos">1190</span></a>
 </span><span id="TaskDispatcher-1191"><a href="#TaskDispatcher-1191"><span class="linenos">1191</span></a><span class="sd">        Parameters</span>
@@ -2790,7 +2790,7 @@
 </span><span id="TaskDispatcher-1213"><a href="#TaskDispatcher-1213"><span class="linenos">1213</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1214"><a href="#TaskDispatcher-1214"><span class="linenos">1214</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1215"><a href="#TaskDispatcher-1215"><span class="linenos">1215</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1216"><a href="#TaskDispatcher-1216"><span class="linenos">1216</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1216"><a href="#TaskDispatcher-1216"><span class="linenos">1216</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1217"><a href="#TaskDispatcher-1217"><span class="linenos">1217</span></a><span class="sd">        Generate a MABe-22 style submission dictionary</span>
 </span><span id="TaskDispatcher-1218"><a href="#TaskDispatcher-1218"><span class="linenos">1218</span></a>
 </span><span id="TaskDispatcher-1219"><a href="#TaskDispatcher-1219"><span class="linenos">1219</span></a><span class="sd">        Parameters</span>
@@ -2816,7 +2816,7 @@
 </span><span id="TaskDispatcher-1239"><a href="#TaskDispatcher-1239"><span class="linenos">1239</span></a>        <span class="p">)</span>
 </span><span id="TaskDispatcher-1240"><a href="#TaskDispatcher-1240"><span class="linenos">1240</span></a>
 </span><span id="TaskDispatcher-1241"><a href="#TaskDispatcher-1241"><span class="linenos">1241</span></a>    <span class="k">def</span> <span class="nf">behaviors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="TaskDispatcher-1242"><a href="#TaskDispatcher-1242"><span class="linenos">1242</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1242"><a href="#TaskDispatcher-1242"><span class="linenos">1242</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1243"><a href="#TaskDispatcher-1243"><span class="linenos">1243</span></a><span class="sd">        Get a behavior dictionary</span>
 </span><span id="TaskDispatcher-1244"><a href="#TaskDispatcher-1244"><span class="linenos">1244</span></a>
 </span><span id="TaskDispatcher-1245"><a href="#TaskDispatcher-1245"><span class="linenos">1245</span></a><span class="sd">        Keys are label indices and values are label names.</span>
@@ -2830,7 +2830,7 @@
 </span><span id="TaskDispatcher-1253"><a href="#TaskDispatcher-1253"><span class="linenos">1253</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">behaviors_dict</span><span class="p">()</span>
 </span><span id="TaskDispatcher-1254"><a href="#TaskDispatcher-1254"><span class="linenos">1254</span></a>
 </span><span id="TaskDispatcher-1255"><a href="#TaskDispatcher-1255"><span class="linenos">1255</span></a>    <span class="k">def</span> <span class="nf">count_classes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bouts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1256"><a href="#TaskDispatcher-1256"><span class="linenos">1256</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1256"><a href="#TaskDispatcher-1256"><span class="linenos">1256</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1257"><a href="#TaskDispatcher-1257"><span class="linenos">1257</span></a><span class="sd">        Get a dictionary of class counts in different modes</span>
 </span><span id="TaskDispatcher-1258"><a href="#TaskDispatcher-1258"><span class="linenos">1258</span></a>
 </span><span id="TaskDispatcher-1259"><a href="#TaskDispatcher-1259"><span class="linenos">1259</span></a><span class="sd">        Parameters</span>
@@ -2891,7 +2891,7 @@
 </span><span id="TaskDispatcher-1314"><a href="#TaskDispatcher-1314"><span class="linenos">1314</span></a>        <span class="n">search_classes</span><span class="p">:</span> <span class="n">Set</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1315"><a href="#TaskDispatcher-1315"><span class="linenos">1315</span></a>        <span class="n">smooth_interval_prediction</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1316"><a href="#TaskDispatcher-1316"><span class="linenos">1316</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1317"><a href="#TaskDispatcher-1317"><span class="linenos">1317</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1317"><a href="#TaskDispatcher-1317"><span class="linenos">1317</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1318"><a href="#TaskDispatcher-1318"><span class="linenos">1318</span></a><span class="sd">        Visualize random predictions</span>
 </span><span id="TaskDispatcher-1319"><a href="#TaskDispatcher-1319"><span class="linenos">1319</span></a>
 </span><span id="TaskDispatcher-1320"><a href="#TaskDispatcher-1320"><span class="linenos">1320</span></a><span class="sd">        Parameters</span>
@@ -2946,7 +2946,7 @@
 </span><span id="TaskDispatcher-1369"><a href="#TaskDispatcher-1369"><span class="linenos">1369</span></a>        <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1370"><a href="#TaskDispatcher-1370"><span class="linenos">1370</span></a>        <span class="n">behaviors_dict</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1371"><a href="#TaskDispatcher-1371"><span class="linenos">1371</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1372"><a href="#TaskDispatcher-1372"><span class="linenos">1372</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1372"><a href="#TaskDispatcher-1372"><span class="linenos">1372</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1373"><a href="#TaskDispatcher-1373"><span class="linenos">1373</span></a><span class="sd">        Generate frame-wise scores for active learning</span>
 </span><span id="TaskDispatcher-1374"><a href="#TaskDispatcher-1374"><span class="linenos">1374</span></a>
 </span><span id="TaskDispatcher-1375"><a href="#TaskDispatcher-1375"><span class="linenos">1375</span></a><span class="sd">        Parameters</span>
@@ -2982,7 +2982,7 @@
 </span><span id="TaskDispatcher-1405"><a href="#TaskDispatcher-1405"><span class="linenos">1405</span></a>        <span class="n">num_models</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1406"><a href="#TaskDispatcher-1406"><span class="linenos">1406</span></a>        <span class="n">kernel_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
 </span><span id="TaskDispatcher-1407"><a href="#TaskDispatcher-1407"><span class="linenos">1407</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1408"><a href="#TaskDispatcher-1408"><span class="linenos">1408</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1408"><a href="#TaskDispatcher-1408"><span class="linenos">1408</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1409"><a href="#TaskDispatcher-1409"><span class="linenos">1409</span></a><span class="sd">        Generate frame-wise Bayesian Active Learning by Disagreement scores for active learning</span>
 </span><span id="TaskDispatcher-1410"><a href="#TaskDispatcher-1410"><span class="linenos">1410</span></a>
 </span><span id="TaskDispatcher-1411"><a href="#TaskDispatcher-1411"><span class="linenos">1411</span></a><span class="sd">        Parameters</span>
@@ -3012,7 +3012,7 @@
 </span><span id="TaskDispatcher-1435"><a href="#TaskDispatcher-1435"><span class="linenos">1435</span></a>        <span class="p">)</span>
 </span><span id="TaskDispatcher-1436"><a href="#TaskDispatcher-1436"><span class="linenos">1436</span></a>
 </span><span id="TaskDispatcher-1437"><a href="#TaskDispatcher-1437"><span class="linenos">1437</span></a>    <span class="k">def</span> <span class="nf">get_normalization_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1438"><a href="#TaskDispatcher-1438"><span class="linenos">1438</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1438"><a href="#TaskDispatcher-1438"><span class="linenos">1438</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1439"><a href="#TaskDispatcher-1439"><span class="linenos">1439</span></a><span class="sd">        Get the pre-computed normalization stats</span>
 </span><span id="TaskDispatcher-1440"><a href="#TaskDispatcher-1440"><span class="linenos">1440</span></a>
 </span><span id="TaskDispatcher-1441"><a href="#TaskDispatcher-1441"><span class="linenos">1441</span></a><span class="sd">        Returns</span>
@@ -3024,7 +3024,7 @@
 </span><span id="TaskDispatcher-1447"><a href="#TaskDispatcher-1447"><span class="linenos">1447</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span><span class="o">.</span><span class="n">get_normalization_stats</span><span class="p">()</span>
 </span><span id="TaskDispatcher-1448"><a href="#TaskDispatcher-1448"><span class="linenos">1448</span></a>
 </span><span id="TaskDispatcher-1449"><a href="#TaskDispatcher-1449"><span class="linenos">1449</span></a>    <span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="TaskDispatcher-1450"><a href="#TaskDispatcher-1450"><span class="linenos">1450</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher-1450"><a href="#TaskDispatcher-1450"><span class="linenos">1450</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher-1451"><a href="#TaskDispatcher-1451"><span class="linenos">1451</span></a><span class="sd">        Check whether the task has a train/test/validation subset</span>
 </span><span id="TaskDispatcher-1452"><a href="#TaskDispatcher-1452"><span class="linenos">1452</span></a>
 </span><span id="TaskDispatcher-1453"><a href="#TaskDispatcher-1453"><span class="linenos">1453</span></a><span class="sd">        Parameters</span>
@@ -3061,7 +3061,7 @@
     </div>
     <a class="headerlink" href="#TaskDispatcher.__init__"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.__init__-39"><a href="#TaskDispatcher.__init__-39"><span class="linenos">39</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher.__init__-40"><a href="#TaskDispatcher.__init__-40"><span class="linenos">40</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.__init__-40"><a href="#TaskDispatcher.__init__-40"><span class="linenos">40</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.__init__-41"><a href="#TaskDispatcher.__init__-41"><span class="linenos">41</span></a><span class="sd">        Parameters</span>
 </span><span id="TaskDispatcher.__init__-42"><a href="#TaskDispatcher.__init__-42"><span class="linenos">42</span></a><span class="sd">        ----------</span>
 </span><span id="TaskDispatcher.__init__-43"><a href="#TaskDispatcher.__init__-43"><span class="linenos">43</span></a><span class="sd">        parameters : dict</span>
@@ -3109,7 +3109,7 @@
     <a class="headerlink" href="#TaskDispatcher.complete_function_parameters"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.complete_function_parameters-64"><a href="#TaskDispatcher.complete_function_parameters-64"><span class="linenos">64</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="TaskDispatcher.complete_function_parameters-65"><a href="#TaskDispatcher.complete_function_parameters-65"><span class="linenos">65</span></a>    <span class="k">def</span> <span class="nf">complete_function_parameters</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span> <span class="n">function</span><span class="p">,</span> <span class="n">general_dicts</span><span class="p">:</span> <span class="n">List</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.complete_function_parameters-66"><a href="#TaskDispatcher.complete_function_parameters-66"><span class="linenos">66</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.complete_function_parameters-66"><a href="#TaskDispatcher.complete_function_parameters-66"><span class="linenos">66</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.complete_function_parameters-67"><a href="#TaskDispatcher.complete_function_parameters-67"><span class="linenos">67</span></a><span class="sd">        Complete a parameter dictionary with values from other dictionaries if required by a function</span>
 </span><span id="TaskDispatcher.complete_function_parameters-68"><a href="#TaskDispatcher.complete_function_parameters-68"><span class="linenos">68</span></a>
 </span><span id="TaskDispatcher.complete_function_parameters-69"><a href="#TaskDispatcher.complete_function_parameters-69"><span class="linenos">69</span></a><span class="sd">        Parameters</span>
@@ -3164,7 +3164,7 @@ general_dicts : list
 </span><span id="TaskDispatcher.complete_dataset_parameters-90"><a href="#TaskDispatcher.complete_dataset_parameters-90"><span class="linenos"> 90</span></a>        <span class="n">data_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="TaskDispatcher.complete_dataset_parameters-91"><a href="#TaskDispatcher.complete_dataset_parameters-91"><span class="linenos"> 91</span></a>        <span class="n">annotation_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="TaskDispatcher.complete_dataset_parameters-92"><a href="#TaskDispatcher.complete_dataset_parameters-92"><span class="linenos"> 92</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.complete_dataset_parameters-93"><a href="#TaskDispatcher.complete_dataset_parameters-93"><span class="linenos"> 93</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.complete_dataset_parameters-93"><a href="#TaskDispatcher.complete_dataset_parameters-93"><span class="linenos"> 93</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.complete_dataset_parameters-94"><a href="#TaskDispatcher.complete_dataset_parameters-94"><span class="linenos"> 94</span></a><span class="sd">        Complete a parameter dictionary with values from other dictionaries if required by a dataset</span>
 </span><span id="TaskDispatcher.complete_dataset_parameters-95"><a href="#TaskDispatcher.complete_dataset_parameters-95"><span class="linenos"> 95</span></a>
 </span><span id="TaskDispatcher.complete_dataset_parameters-96"><a href="#TaskDispatcher.complete_dataset_parameters-96"><span class="linenos"> 96</span></a><span class="sd">        Parameters</span>
@@ -3228,7 +3228,7 @@ annotation_type : str
     <a class="headerlink" href="#TaskDispatcher.check"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.check-120"><a href="#TaskDispatcher.check-120"><span class="linenos">120</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="TaskDispatcher.check-121"><a href="#TaskDispatcher.check-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="TaskDispatcher.check-122"><a href="#TaskDispatcher.check-122"><span class="linenos">122</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.check-122"><a href="#TaskDispatcher.check-122"><span class="linenos">122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.check-123"><a href="#TaskDispatcher.check-123"><span class="linenos">123</span></a><span class="sd">        Check whether there is a non-`None` value under the name key in the parameters dictionary</span>
 </span><span id="TaskDispatcher.check-124"><a href="#TaskDispatcher.check-124"><span class="linenos">124</span></a>
 </span><span id="TaskDispatcher.check-125"><a href="#TaskDispatcher.check-125"><span class="linenos">125</span></a><span class="sd">        Parameters</span>
@@ -3282,7 +3282,7 @@ name : str
     <a class="headerlink" href="#TaskDispatcher.get"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.get-143"><a href="#TaskDispatcher.get-143"><span class="linenos">143</span></a>    <span class="nd">@staticmethod</span>
 </span><span id="TaskDispatcher.get-144"><a href="#TaskDispatcher.get-144"><span class="linenos">144</span></a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="p">):</span>
-</span><span id="TaskDispatcher.get-145"><a href="#TaskDispatcher.get-145"><span class="linenos">145</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.get-145"><a href="#TaskDispatcher.get-145"><span class="linenos">145</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.get-146"><a href="#TaskDispatcher.get-146"><span class="linenos">146</span></a><span class="sd">        Get the value under the name key or the default if it is `None` or does not exist</span>
 </span><span id="TaskDispatcher.get-147"><a href="#TaskDispatcher.get-147"><span class="linenos">147</span></a>
 </span><span id="TaskDispatcher.get-148"><a href="#TaskDispatcher.get-148"><span class="linenos">148</span></a><span class="sd">        Parameters</span>
@@ -3342,7 +3342,7 @@ default
 </span><span id="TaskDispatcher.make_dataloader-169"><a href="#TaskDispatcher.make_dataloader-169"><span class="linenos">169</span></a>    <span class="k">def</span> <span class="nf">make_dataloader</span><span class="p">(</span>
 </span><span id="TaskDispatcher.make_dataloader-170"><a href="#TaskDispatcher.make_dataloader-170"><span class="linenos">170</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="TaskDispatcher.make_dataloader-171"><a href="#TaskDispatcher.make_dataloader-171"><span class="linenos">171</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataLoader</span><span class="p">:</span>
-</span><span id="TaskDispatcher.make_dataloader-172"><a href="#TaskDispatcher.make_dataloader-172"><span class="linenos">172</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.make_dataloader-172"><a href="#TaskDispatcher.make_dataloader-172"><span class="linenos">172</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.make_dataloader-173"><a href="#TaskDispatcher.make_dataloader-173"><span class="linenos">173</span></a><span class="sd">        Make a torch dataloader from a dataset</span>
 </span><span id="TaskDispatcher.make_dataloader-174"><a href="#TaskDispatcher.make_dataloader-174"><span class="linenos">174</span></a>
 </span><span id="TaskDispatcher.make_dataloader-175"><a href="#TaskDispatcher.make_dataloader-175"><span class="linenos">175</span></a><span class="sd">        Parameters</span>
@@ -3394,7 +3394,7 @@ batch_size : int
     </div>
     <a class="headerlink" href="#TaskDispatcher.update_task"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.update_task-809"><a href="#TaskDispatcher.update_task-809"><span class="linenos">809</span></a>    <span class="k">def</span> <span class="nf">update_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher.update_task-810"><a href="#TaskDispatcher.update_task-810"><span class="linenos">810</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.update_task-810"><a href="#TaskDispatcher.update_task-810"><span class="linenos">810</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.update_task-811"><a href="#TaskDispatcher.update_task-811"><span class="linenos">811</span></a><span class="sd">        Update the `dlc2action.task.universal_task.Task` instance given the parameter updates</span>
 </span><span id="TaskDispatcher.update_task-812"><a href="#TaskDispatcher.update_task-812"><span class="linenos">812</span></a>
 </span><span id="TaskDispatcher.update_task-813"><a href="#TaskDispatcher.update_task-813"><span class="linenos">813</span></a><span class="sd">        Parameters</span>
@@ -3604,7 +3604,7 @@ batch_size : int
 </span><span id="TaskDispatcher.train-994"><a href="#TaskDispatcher.train-994"><span class="linenos"> 994</span></a>        <span class="n">autostop_threshold</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span>
 </span><span id="TaskDispatcher.train-995"><a href="#TaskDispatcher.train-995"><span class="linenos"> 995</span></a>        <span class="n">loading_bar</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 </span><span id="TaskDispatcher.train-996"><a href="#TaskDispatcher.train-996"><span class="linenos"> 996</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="TaskDispatcher.train-997"><a href="#TaskDispatcher.train-997"><span class="linenos"> 997</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.train-997"><a href="#TaskDispatcher.train-997"><span class="linenos"> 997</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.train-998"><a href="#TaskDispatcher.train-998"><span class="linenos"> 998</span></a><span class="sd">        Train the task and return a log of epoch-average loss and metric</span>
 </span><span id="TaskDispatcher.train-999"><a href="#TaskDispatcher.train-999"><span class="linenos"> 999</span></a>
 </span><span id="TaskDispatcher.train-1000"><a href="#TaskDispatcher.train-1000"><span class="linenos">1000</span></a><span class="sd">        You can use the autostop parameters to finish training when the parameters are not improving. It will be</span>
@@ -3710,7 +3710,7 @@ metrics_log: dict
     </div>
     <a class="headerlink" href="#TaskDispatcher.save_model"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.save_model-1051"><a href="#TaskDispatcher.save_model-1051"><span class="linenos">1051</span></a>    <span class="k">def</span> <span class="nf">save_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher.save_model-1052"><a href="#TaskDispatcher.save_model-1052"><span class="linenos">1052</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.save_model-1052"><a href="#TaskDispatcher.save_model-1052"><span class="linenos">1052</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.save_model-1053"><a href="#TaskDispatcher.save_model-1053"><span class="linenos">1053</span></a><span class="sd">        Save the model of the `dlc2action.task.universal_task.Task` instance</span>
 </span><span id="TaskDispatcher.save_model-1054"><a href="#TaskDispatcher.save_model-1054"><span class="linenos">1054</span></a>
 </span><span id="TaskDispatcher.save_model-1055"><a href="#TaskDispatcher.save_model-1055"><span class="linenos">1055</span></a><span class="sd">        Parameters</span>
@@ -3750,7 +3750,7 @@ metrics_log: dict
 </span><span id="TaskDispatcher.evaluate-1066"><a href="#TaskDispatcher.evaluate-1066"><span class="linenos">1066</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
 </span><span id="TaskDispatcher.evaluate-1067"><a href="#TaskDispatcher.evaluate-1067"><span class="linenos">1067</span></a>        <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
 </span><span id="TaskDispatcher.evaluate-1068"><a href="#TaskDispatcher.evaluate-1068"><span class="linenos">1068</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="TaskDispatcher.evaluate-1069"><a href="#TaskDispatcher.evaluate-1069"><span class="linenos">1069</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.evaluate-1069"><a href="#TaskDispatcher.evaluate-1069"><span class="linenos">1069</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.evaluate-1070"><a href="#TaskDispatcher.evaluate-1070"><span class="linenos">1070</span></a><span class="sd">        Evaluate the Task model</span>
 </span><span id="TaskDispatcher.evaluate-1071"><a href="#TaskDispatcher.evaluate-1071"><span class="linenos">1071</span></a>
 </span><span id="TaskDispatcher.evaluate-1072"><a href="#TaskDispatcher.evaluate-1072"><span class="linenos">1072</span></a><span class="sd">        Parameters</span>
@@ -3821,7 +3821,7 @@ metric : dict
 </span><span id="TaskDispatcher.evaluate_prediction-1101"><a href="#TaskDispatcher.evaluate_prediction-1101"><span class="linenos">1101</span></a>        <span class="n">prediction</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
 </span><span id="TaskDispatcher.evaluate_prediction-1102"><a href="#TaskDispatcher.evaluate_prediction-1102"><span class="linenos">1102</span></a>        <span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">DataLoader</span><span class="p">,</span> <span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.evaluate_prediction-1103"><a href="#TaskDispatcher.evaluate_prediction-1103"><span class="linenos">1103</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="TaskDispatcher.evaluate_prediction-1104"><a href="#TaskDispatcher.evaluate_prediction-1104"><span class="linenos">1104</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.evaluate_prediction-1104"><a href="#TaskDispatcher.evaluate_prediction-1104"><span class="linenos">1104</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.evaluate_prediction-1105"><a href="#TaskDispatcher.evaluate_prediction-1105"><span class="linenos">1105</span></a><span class="sd">        Compute metrics for a prediction</span>
 </span><span id="TaskDispatcher.evaluate_prediction-1106"><a href="#TaskDispatcher.evaluate_prediction-1106"><span class="linenos">1106</span></a>
 </span><span id="TaskDispatcher.evaluate_prediction-1107"><a href="#TaskDispatcher.evaluate_prediction-1107"><span class="linenos">1107</span></a><span class="sd">        Parameters</span>
@@ -3883,7 +3883,7 @@ metric : dict
 </span><span id="TaskDispatcher.predict-1131"><a href="#TaskDispatcher.predict-1131"><span class="linenos">1131</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
 </span><span id="TaskDispatcher.predict-1132"><a href="#TaskDispatcher.predict-1132"><span class="linenos">1132</span></a>        <span class="n">embedding</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 </span><span id="TaskDispatcher.predict-1133"><a href="#TaskDispatcher.predict-1133"><span class="linenos">1133</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-</span><span id="TaskDispatcher.predict-1134"><a href="#TaskDispatcher.predict-1134"><span class="linenos">1134</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.predict-1134"><a href="#TaskDispatcher.predict-1134"><span class="linenos">1134</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.predict-1135"><a href="#TaskDispatcher.predict-1135"><span class="linenos">1135</span></a><span class="sd">        Make a prediction with the Task model</span>
 </span><span id="TaskDispatcher.predict-1136"><a href="#TaskDispatcher.predict-1136"><span class="linenos">1136</span></a>
 </span><span id="TaskDispatcher.predict-1137"><a href="#TaskDispatcher.predict-1137"><span class="linenos">1137</span></a><span class="sd">        Parameters</span>
@@ -3951,7 +3951,7 @@ augment_n : int, default 0
     </div>
     <a class="headerlink" href="#TaskDispatcher.dataset"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.dataset-1166"><a href="#TaskDispatcher.dataset-1166"><span class="linenos">1166</span></a>    <span class="k">def</span> <span class="nf">dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;train&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BehaviorDataset</span><span class="p">:</span>
-</span><span id="TaskDispatcher.dataset-1167"><a href="#TaskDispatcher.dataset-1167"><span class="linenos">1167</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.dataset-1167"><a href="#TaskDispatcher.dataset-1167"><span class="linenos">1167</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.dataset-1168"><a href="#TaskDispatcher.dataset-1168"><span class="linenos">1168</span></a><span class="sd">        Get a dataset</span>
 </span><span id="TaskDispatcher.dataset-1169"><a href="#TaskDispatcher.dataset-1169"><span class="linenos">1169</span></a>
 </span><span id="TaskDispatcher.dataset-1170"><a href="#TaskDispatcher.dataset-1170"><span class="linenos">1170</span></a><span class="sd">        Parameters</span>
@@ -4000,7 +4000,7 @@ augment_n : int, default 0
 </span><span id="TaskDispatcher.generate_full_length_prediction-1185"><a href="#TaskDispatcher.generate_full_length_prediction-1185"><span class="linenos">1185</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_full_length_prediction-1186"><a href="#TaskDispatcher.generate_full_length_prediction-1186"><span class="linenos">1186</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_full_length_prediction-1187"><a href="#TaskDispatcher.generate_full_length_prediction-1187"><span class="linenos">1187</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.generate_full_length_prediction-1188"><a href="#TaskDispatcher.generate_full_length_prediction-1188"><span class="linenos">1188</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.generate_full_length_prediction-1188"><a href="#TaskDispatcher.generate_full_length_prediction-1188"><span class="linenos">1188</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.generate_full_length_prediction-1189"><a href="#TaskDispatcher.generate_full_length_prediction-1189"><span class="linenos">1189</span></a><span class="sd">        Compile a prediction for the original input sequences</span>
 </span><span id="TaskDispatcher.generate_full_length_prediction-1190"><a href="#TaskDispatcher.generate_full_length_prediction-1190"><span class="linenos">1190</span></a>
 </span><span id="TaskDispatcher.generate_full_length_prediction-1191"><a href="#TaskDispatcher.generate_full_length_prediction-1191"><span class="linenos">1191</span></a><span class="sd">        Parameters</span>
@@ -4060,7 +4060,7 @@ augment_n : int, default 10
 </span><span id="TaskDispatcher.generate_submission-1213"><a href="#TaskDispatcher.generate_submission-1213"><span class="linenos">1213</span></a>        <span class="n">dataset</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">BehaviorDataset</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_submission-1214"><a href="#TaskDispatcher.generate_submission-1214"><span class="linenos">1214</span></a>        <span class="n">augment_n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_submission-1215"><a href="#TaskDispatcher.generate_submission-1215"><span class="linenos">1215</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.generate_submission-1216"><a href="#TaskDispatcher.generate_submission-1216"><span class="linenos">1216</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.generate_submission-1216"><a href="#TaskDispatcher.generate_submission-1216"><span class="linenos">1216</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.generate_submission-1217"><a href="#TaskDispatcher.generate_submission-1217"><span class="linenos">1217</span></a><span class="sd">        Generate a MABe-22 style submission dictionary</span>
 </span><span id="TaskDispatcher.generate_submission-1218"><a href="#TaskDispatcher.generate_submission-1218"><span class="linenos">1218</span></a>
 </span><span id="TaskDispatcher.generate_submission-1219"><a href="#TaskDispatcher.generate_submission-1219"><span class="linenos">1219</span></a><span class="sd">        Parameters</span>
@@ -4118,7 +4118,7 @@ augment_n : int, default 10
     </div>
     <a class="headerlink" href="#TaskDispatcher.behaviors_dict"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.behaviors_dict-1241"><a href="#TaskDispatcher.behaviors_dict-1241"><span class="linenos">1241</span></a>    <span class="k">def</span> <span class="nf">behaviors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="TaskDispatcher.behaviors_dict-1242"><a href="#TaskDispatcher.behaviors_dict-1242"><span class="linenos">1242</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.behaviors_dict-1242"><a href="#TaskDispatcher.behaviors_dict-1242"><span class="linenos">1242</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.behaviors_dict-1243"><a href="#TaskDispatcher.behaviors_dict-1243"><span class="linenos">1243</span></a><span class="sd">        Get a behavior dictionary</span>
 </span><span id="TaskDispatcher.behaviors_dict-1244"><a href="#TaskDispatcher.behaviors_dict-1244"><span class="linenos">1244</span></a>
 </span><span id="TaskDispatcher.behaviors_dict-1245"><a href="#TaskDispatcher.behaviors_dict-1245"><span class="linenos">1245</span></a><span class="sd">        Keys are label indices and values are label names.</span>
@@ -4157,7 +4157,7 @@ augment_n : int, default 10
     </div>
     <a class="headerlink" href="#TaskDispatcher.count_classes"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.count_classes-1255"><a href="#TaskDispatcher.count_classes-1255"><span class="linenos">1255</span></a>    <span class="k">def</span> <span class="nf">count_classes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bouts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.count_classes-1256"><a href="#TaskDispatcher.count_classes-1256"><span class="linenos">1256</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.count_classes-1256"><a href="#TaskDispatcher.count_classes-1256"><span class="linenos">1256</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.count_classes-1257"><a href="#TaskDispatcher.count_classes-1257"><span class="linenos">1257</span></a><span class="sd">        Get a dictionary of class counts in different modes</span>
 </span><span id="TaskDispatcher.count_classes-1258"><a href="#TaskDispatcher.count_classes-1258"><span class="linenos">1258</span></a>
 </span><span id="TaskDispatcher.count_classes-1259"><a href="#TaskDispatcher.count_classes-1259"><span class="linenos">1259</span></a><span class="sd">        Parameters</span>
@@ -4219,7 +4219,7 @@ augment_n : int, default 10
 </span><span id="TaskDispatcher.visualize_results-1314"><a href="#TaskDispatcher.visualize_results-1314"><span class="linenos">1314</span></a>        <span class="n">search_classes</span><span class="p">:</span> <span class="n">Set</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.visualize_results-1315"><a href="#TaskDispatcher.visualize_results-1315"><span class="linenos">1315</span></a>        <span class="n">smooth_interval_prediction</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.visualize_results-1316"><a href="#TaskDispatcher.visualize_results-1316"><span class="linenos">1316</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="TaskDispatcher.visualize_results-1317"><a href="#TaskDispatcher.visualize_results-1317"><span class="linenos">1317</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.visualize_results-1317"><a href="#TaskDispatcher.visualize_results-1317"><span class="linenos">1317</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.visualize_results-1318"><a href="#TaskDispatcher.visualize_results-1318"><span class="linenos">1318</span></a><span class="sd">        Visualize random predictions</span>
 </span><span id="TaskDispatcher.visualize_results-1319"><a href="#TaskDispatcher.visualize_results-1319"><span class="linenos">1319</span></a>
 </span><span id="TaskDispatcher.visualize_results-1320"><a href="#TaskDispatcher.visualize_results-1320"><span class="linenos">1320</span></a><span class="sd">        Parameters</span>
@@ -4319,7 +4319,7 @@ search_classes : set, optional
 </span><span id="TaskDispatcher.generate_uncertainty_score-1369"><a href="#TaskDispatcher.generate_uncertainty_score-1369"><span class="linenos">1369</span></a>        <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_uncertainty_score-1370"><a href="#TaskDispatcher.generate_uncertainty_score-1370"><span class="linenos">1370</span></a>        <span class="n">behaviors_dict</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_uncertainty_score-1371"><a href="#TaskDispatcher.generate_uncertainty_score-1371"><span class="linenos">1371</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.generate_uncertainty_score-1372"><a href="#TaskDispatcher.generate_uncertainty_score-1372"><span class="linenos">1372</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.generate_uncertainty_score-1372"><a href="#TaskDispatcher.generate_uncertainty_score-1372"><span class="linenos">1372</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.generate_uncertainty_score-1373"><a href="#TaskDispatcher.generate_uncertainty_score-1373"><span class="linenos">1373</span></a><span class="sd">        Generate frame-wise scores for active learning</span>
 </span><span id="TaskDispatcher.generate_uncertainty_score-1374"><a href="#TaskDispatcher.generate_uncertainty_score-1374"><span class="linenos">1374</span></a>
 </span><span id="TaskDispatcher.generate_uncertainty_score-1375"><a href="#TaskDispatcher.generate_uncertainty_score-1375"><span class="linenos">1375</span></a><span class="sd">        Parameters</span>
@@ -4389,7 +4389,7 @@ method : {"least_confidence", "entropy"}
 </span><span id="TaskDispatcher.generate_bald_score-1405"><a href="#TaskDispatcher.generate_bald_score-1405"><span class="linenos">1405</span></a>        <span class="n">num_models</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_bald_score-1406"><a href="#TaskDispatcher.generate_bald_score-1406"><span class="linenos">1406</span></a>        <span class="n">kernel_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
 </span><span id="TaskDispatcher.generate_bald_score-1407"><a href="#TaskDispatcher.generate_bald_score-1407"><span class="linenos">1407</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.generate_bald_score-1408"><a href="#TaskDispatcher.generate_bald_score-1408"><span class="linenos">1408</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.generate_bald_score-1408"><a href="#TaskDispatcher.generate_bald_score-1408"><span class="linenos">1408</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.generate_bald_score-1409"><a href="#TaskDispatcher.generate_bald_score-1409"><span class="linenos">1409</span></a><span class="sd">        Generate frame-wise Bayesian Active Learning by Disagreement scores for active learning</span>
 </span><span id="TaskDispatcher.generate_bald_score-1410"><a href="#TaskDispatcher.generate_bald_score-1410"><span class="linenos">1410</span></a>
 </span><span id="TaskDispatcher.generate_bald_score-1411"><a href="#TaskDispatcher.generate_bald_score-1411"><span class="linenos">1411</span></a><span class="sd">        Parameters</span>
@@ -4454,7 +4454,7 @@ kernel_size : int, default 11
     </div>
     <a class="headerlink" href="#TaskDispatcher.get_normalization_stats"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.get_normalization_stats-1437"><a href="#TaskDispatcher.get_normalization_stats-1437"><span class="linenos">1437</span></a>    <span class="k">def</span> <span class="nf">get_normalization_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="TaskDispatcher.get_normalization_stats-1438"><a href="#TaskDispatcher.get_normalization_stats-1438"><span class="linenos">1438</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.get_normalization_stats-1438"><a href="#TaskDispatcher.get_normalization_stats-1438"><span class="linenos">1438</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.get_normalization_stats-1439"><a href="#TaskDispatcher.get_normalization_stats-1439"><span class="linenos">1439</span></a><span class="sd">        Get the pre-computed normalization stats</span>
 </span><span id="TaskDispatcher.get_normalization_stats-1440"><a href="#TaskDispatcher.get_normalization_stats-1440"><span class="linenos">1440</span></a>
 </span><span id="TaskDispatcher.get_normalization_stats-1441"><a href="#TaskDispatcher.get_normalization_stats-1441"><span class="linenos">1441</span></a><span class="sd">        Returns</span>
@@ -4489,7 +4489,7 @@ kernel_size : int, default 11
     </div>
     <a class="headerlink" href="#TaskDispatcher.exists"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="TaskDispatcher.exists-1449"><a href="#TaskDispatcher.exists-1449"><span class="linenos">1449</span></a>    <span class="k">def</span> <span class="nf">exists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-</span><span id="TaskDispatcher.exists-1450"><a href="#TaskDispatcher.exists-1450"><span class="linenos">1450</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="TaskDispatcher.exists-1450"><a href="#TaskDispatcher.exists-1450"><span class="linenos">1450</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="TaskDispatcher.exists-1451"><a href="#TaskDispatcher.exists-1451"><span class="linenos">1451</span></a><span class="sd">        Check whether the task has a train/test/validation subset</span>
 </span><span id="TaskDispatcher.exists-1452"><a href="#TaskDispatcher.exists-1452"><span class="linenos">1452</span></a>
 </span><span id="TaskDispatcher.exists-1453"><a href="#TaskDispatcher.exists-1453"><span class="linenos">1453</span></a><span class="sd">        Parameters</span>

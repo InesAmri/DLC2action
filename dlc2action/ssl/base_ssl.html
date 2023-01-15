@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 12.3.0"/>
+    <meta name="generator" content="pdoc 12.3.1"/>
     <title>dlc2action.ssl.base_ssl API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -88,7 +88,7 @@
                         <label class="view-source-button" for="mod-base_ssl-view-source"><span>View Source</span></label>
 
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos">  1</span></a><span class="c1">#</span>
-</span><span id="L-2"><a href="#L-2"><span class="linenos">  2</span></a><span class="c1"># Copyright 2020-2022 by A. Mathis Group and contributors. All rights reserved.</span>
+</span><span id="L-2"><a href="#L-2"><span class="linenos">  2</span></a><span class="c1"># Copyright 2020-present by A. Mathis Group and contributors. All rights reserved.</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos">  3</span></a><span class="c1">#</span>
 </span><span id="L-4"><a href="#L-4"><span class="linenos">  4</span></a><span class="c1"># This project and all its files are licensed under GNU AGPLv3 or later version. A copy is included in dlc2action/LICENSE.AGPL.</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos">  5</span></a><span class="c1">#</span>
@@ -103,7 +103,7 @@
 </span><span id="L-14"><a href="#L-14"><span class="linenos"> 14</span></a>
 </span><span id="L-15"><a href="#L-15"><span class="linenos"> 15</span></a>
 </span><span id="L-16"><a href="#L-16"><span class="linenos"> 16</span></a><span class="k">class</span> <span class="nc">SSLConstructor</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
-</span><span id="L-17"><a href="#L-17"><span class="linenos"> 17</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-17"><a href="#L-17"><span class="linenos"> 17</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-18"><a href="#L-18"><span class="linenos"> 18</span></a><span class="sd">    A base class for all SSL constructors</span>
 </span><span id="L-19"><a href="#L-19"><span class="linenos"> 19</span></a>
 </span><span id="L-20"><a href="#L-20"><span class="linenos"> 20</span></a><span class="sd">    An SSL method is defined by three things: a *transformation* that maps a sample into SSL input and output,</span>
@@ -111,7 +111,7 @@
 </span><span id="L-22"><a href="#L-22"><span class="linenos"> 22</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-23"><a href="#L-23"><span class="linenos"> 23</span></a>
 </span><span id="L-24"><a href="#L-24"><span class="linenos"> 24</span></a>    <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;none&quot;</span>
-</span><span id="L-25"><a href="#L-25"><span class="linenos"> 25</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-25"><a href="#L-25"><span class="linenos"> 25</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-26"><a href="#L-26"><span class="linenos"> 26</span></a><span class="sd">    The `type` parameter defines interaction with the model:</span>
 </span><span id="L-27"><a href="#L-27"><span class="linenos"> 27</span></a><span class="sd">    </span>
 </span><span id="L-28"><a href="#L-28"><span class="linenos"> 28</span></a><span class="sd">    - `&#39;ssl_input&#39;`: a modification of the input data passes through the base network feature extraction module and the</span>
@@ -131,7 +131,7 @@
 </span><span id="L-42"><a href="#L-42"><span class="linenos"> 42</span></a>
 </span><span id="L-43"><a href="#L-43"><span class="linenos"> 43</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-44"><a href="#L-44"><span class="linenos"> 44</span></a>    <span class="k">def</span> <span class="nf">transformation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Dict</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]:</span>
-</span><span id="L-45"><a href="#L-45"><span class="linenos"> 45</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-45"><a href="#L-45"><span class="linenos"> 45</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-46"><a href="#L-46"><span class="linenos"> 46</span></a><span class="sd">        Transform a sample feature dictionary into SSL input and target</span>
 </span><span id="L-47"><a href="#L-47"><span class="linenos"> 47</span></a>
 </span><span id="L-48"><a href="#L-48"><span class="linenos"> 48</span></a><span class="sd">        Either input, target or both can be left as `None`. Transformers can be configured to replace `None` SSL targets</span>
@@ -154,7 +154,7 @@
 </span><span id="L-65"><a href="#L-65"><span class="linenos"> 65</span></a>
 </span><span id="L-66"><a href="#L-66"><span class="linenos"> 66</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-67"><a href="#L-67"><span class="linenos"> 67</span></a>    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="L-68"><a href="#L-68"><span class="linenos"> 68</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-68"><a href="#L-68"><span class="linenos"> 68</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-69"><a href="#L-69"><span class="linenos"> 69</span></a><span class="sd">        Calculate the SSL loss</span>
 </span><span id="L-70"><a href="#L-70"><span class="linenos"> 70</span></a>
 </span><span id="L-71"><a href="#L-71"><span class="linenos"> 71</span></a><span class="sd">        Parameters</span>
@@ -172,7 +172,7 @@
 </span><span id="L-83"><a href="#L-83"><span class="linenos"> 83</span></a>
 </span><span id="L-84"><a href="#L-84"><span class="linenos"> 84</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-85"><a href="#L-85"><span class="linenos"> 85</span></a>    <span class="k">def</span> <span class="nf">construct_module</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">:</span>
-</span><span id="L-86"><a href="#L-86"><span class="linenos"> 86</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-86"><a href="#L-86"><span class="linenos"> 86</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-87"><a href="#L-87"><span class="linenos"> 87</span></a><span class="sd">        Construct the SSL module</span>
 </span><span id="L-88"><a href="#L-88"><span class="linenos"> 88</span></a>
 </span><span id="L-89"><a href="#L-89"><span class="linenos"> 89</span></a><span class="sd">        Returns</span>
@@ -184,26 +184,26 @@
 </span><span id="L-95"><a href="#L-95"><span class="linenos"> 95</span></a>
 </span><span id="L-96"><a href="#L-96"><span class="linenos"> 96</span></a>
 </span><span id="L-97"><a href="#L-97"><span class="linenos"> 97</span></a><span class="k">class</span> <span class="nc">EmptySSL</span><span class="p">(</span><span class="n">SSLConstructor</span><span class="p">):</span>
-</span><span id="L-98"><a href="#L-98"><span class="linenos"> 98</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-98"><a href="#L-98"><span class="linenos"> 98</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-99"><a href="#L-99"><span class="linenos"> 99</span></a><span class="sd">    Empty SSL class</span>
 </span><span id="L-100"><a href="#L-100"><span class="linenos">100</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-101"><a href="#L-101"><span class="linenos">101</span></a>
 </span><span id="L-102"><a href="#L-102"><span class="linenos">102</span></a>    <span class="k">def</span> <span class="nf">transformation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="L-103"><a href="#L-103"><span class="linenos">103</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-103"><a href="#L-103"><span class="linenos">103</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-104"><a href="#L-104"><span class="linenos">104</span></a><span class="sd">        Empty transformation</span>
 </span><span id="L-105"><a href="#L-105"><span class="linenos">105</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-106"><a href="#L-106"><span class="linenos">106</span></a>
 </span><span id="L-107"><a href="#L-107"><span class="linenos">107</span></a>        <span class="k">return</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">)),</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">)))</span>
 </span><span id="L-108"><a href="#L-108"><span class="linenos">108</span></a>
 </span><span id="L-109"><a href="#L-109"><span class="linenos">109</span></a>    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="L-110"><a href="#L-110"><span class="linenos">110</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-110"><a href="#L-110"><span class="linenos">110</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-111"><a href="#L-111"><span class="linenos">111</span></a><span class="sd">        Empty loss</span>
 </span><span id="L-112"><a href="#L-112"><span class="linenos">112</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-113"><a href="#L-113"><span class="linenos">113</span></a>
 </span><span id="L-114"><a href="#L-114"><span class="linenos">114</span></a>        <span class="k">return</span> <span class="mi">0</span>
 </span><span id="L-115"><a href="#L-115"><span class="linenos">115</span></a>
 </span><span id="L-116"><a href="#L-116"><span class="linenos">116</span></a>    <span class="k">def</span> <span class="nf">construct_module</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-117"><a href="#L-117"><span class="linenos">117</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-117"><a href="#L-117"><span class="linenos">117</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-118"><a href="#L-118"><span class="linenos">118</span></a><span class="sd">        Empty module</span>
 </span><span id="L-119"><a href="#L-119"><span class="linenos">119</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-120"><a href="#L-120"><span class="linenos">120</span></a>
@@ -224,7 +224,7 @@
     </div>
     <a class="headerlink" href="#SSLConstructor"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="SSLConstructor-17"><a href="#SSLConstructor-17"><span class="linenos">17</span></a><span class="k">class</span> <span class="nc">SSLConstructor</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
-</span><span id="SSLConstructor-18"><a href="#SSLConstructor-18"><span class="linenos">18</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor-18"><a href="#SSLConstructor-18"><span class="linenos">18</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor-19"><a href="#SSLConstructor-19"><span class="linenos">19</span></a><span class="sd">    A base class for all SSL constructors</span>
 </span><span id="SSLConstructor-20"><a href="#SSLConstructor-20"><span class="linenos">20</span></a>
 </span><span id="SSLConstructor-21"><a href="#SSLConstructor-21"><span class="linenos">21</span></a><span class="sd">    An SSL method is defined by three things: a *transformation* that maps a sample into SSL input and output,</span>
@@ -232,7 +232,7 @@
 </span><span id="SSLConstructor-23"><a href="#SSLConstructor-23"><span class="linenos">23</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="SSLConstructor-24"><a href="#SSLConstructor-24"><span class="linenos">24</span></a>
 </span><span id="SSLConstructor-25"><a href="#SSLConstructor-25"><span class="linenos">25</span></a>    <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;none&quot;</span>
-</span><span id="SSLConstructor-26"><a href="#SSLConstructor-26"><span class="linenos">26</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor-26"><a href="#SSLConstructor-26"><span class="linenos">26</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor-27"><a href="#SSLConstructor-27"><span class="linenos">27</span></a><span class="sd">    The `type` parameter defines interaction with the model:</span>
 </span><span id="SSLConstructor-28"><a href="#SSLConstructor-28"><span class="linenos">28</span></a><span class="sd">    </span>
 </span><span id="SSLConstructor-29"><a href="#SSLConstructor-29"><span class="linenos">29</span></a><span class="sd">    - `&#39;ssl_input&#39;`: a modification of the input data passes through the base network feature extraction module and the</span>
@@ -252,7 +252,7 @@
 </span><span id="SSLConstructor-43"><a href="#SSLConstructor-43"><span class="linenos">43</span></a>
 </span><span id="SSLConstructor-44"><a href="#SSLConstructor-44"><span class="linenos">44</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="SSLConstructor-45"><a href="#SSLConstructor-45"><span class="linenos">45</span></a>    <span class="k">def</span> <span class="nf">transformation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Dict</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]:</span>
-</span><span id="SSLConstructor-46"><a href="#SSLConstructor-46"><span class="linenos">46</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor-46"><a href="#SSLConstructor-46"><span class="linenos">46</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor-47"><a href="#SSLConstructor-47"><span class="linenos">47</span></a><span class="sd">        Transform a sample feature dictionary into SSL input and target</span>
 </span><span id="SSLConstructor-48"><a href="#SSLConstructor-48"><span class="linenos">48</span></a>
 </span><span id="SSLConstructor-49"><a href="#SSLConstructor-49"><span class="linenos">49</span></a><span class="sd">        Either input, target or both can be left as `None`. Transformers can be configured to replace `None` SSL targets</span>
@@ -275,7 +275,7 @@
 </span><span id="SSLConstructor-66"><a href="#SSLConstructor-66"><span class="linenos">66</span></a>
 </span><span id="SSLConstructor-67"><a href="#SSLConstructor-67"><span class="linenos">67</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="SSLConstructor-68"><a href="#SSLConstructor-68"><span class="linenos">68</span></a>    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="SSLConstructor-69"><a href="#SSLConstructor-69"><span class="linenos">69</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor-69"><a href="#SSLConstructor-69"><span class="linenos">69</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor-70"><a href="#SSLConstructor-70"><span class="linenos">70</span></a><span class="sd">        Calculate the SSL loss</span>
 </span><span id="SSLConstructor-71"><a href="#SSLConstructor-71"><span class="linenos">71</span></a>
 </span><span id="SSLConstructor-72"><a href="#SSLConstructor-72"><span class="linenos">72</span></a><span class="sd">        Parameters</span>
@@ -293,7 +293,7 @@
 </span><span id="SSLConstructor-84"><a href="#SSLConstructor-84"><span class="linenos">84</span></a>
 </span><span id="SSLConstructor-85"><a href="#SSLConstructor-85"><span class="linenos">85</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="SSLConstructor-86"><a href="#SSLConstructor-86"><span class="linenos">86</span></a>    <span class="k">def</span> <span class="nf">construct_module</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">:</span>
-</span><span id="SSLConstructor-87"><a href="#SSLConstructor-87"><span class="linenos">87</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor-87"><a href="#SSLConstructor-87"><span class="linenos">87</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor-88"><a href="#SSLConstructor-88"><span class="linenos">88</span></a><span class="sd">        Construct the SSL module</span>
 </span><span id="SSLConstructor-89"><a href="#SSLConstructor-89"><span class="linenos">89</span></a>
 </span><span id="SSLConstructor-90"><a href="#SSLConstructor-90"><span class="linenos">90</span></a><span class="sd">        Returns</span>
@@ -352,7 +352,7 @@ an (input results, modified results) tuple is returned as SSL output,</li>
     <a class="headerlink" href="#SSLConstructor.transformation"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="SSLConstructor.transformation-44"><a href="#SSLConstructor.transformation-44"><span class="linenos">44</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="SSLConstructor.transformation-45"><a href="#SSLConstructor.transformation-45"><span class="linenos">45</span></a>    <span class="k">def</span> <span class="nf">transformation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Dict</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]:</span>
-</span><span id="SSLConstructor.transformation-46"><a href="#SSLConstructor.transformation-46"><span class="linenos">46</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor.transformation-46"><a href="#SSLConstructor.transformation-46"><span class="linenos">46</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor.transformation-47"><a href="#SSLConstructor.transformation-47"><span class="linenos">47</span></a><span class="sd">        Transform a sample feature dictionary into SSL input and target</span>
 </span><span id="SSLConstructor.transformation-48"><a href="#SSLConstructor.transformation-48"><span class="linenos">48</span></a>
 </span><span id="SSLConstructor.transformation-49"><a href="#SSLConstructor.transformation-49"><span class="linenos">49</span></a><span class="sd">        Either input, target or both can be left as `None`. Transformers can be configured to replace `None` SSL targets</span>
@@ -411,7 +411,7 @@ ssl_target : dict | torch.float('nan')
     <a class="headerlink" href="#SSLConstructor.loss"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="SSLConstructor.loss-67"><a href="#SSLConstructor.loss-67"><span class="linenos">67</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="SSLConstructor.loss-68"><a href="#SSLConstructor.loss-68"><span class="linenos">68</span></a>    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="SSLConstructor.loss-69"><a href="#SSLConstructor.loss-69"><span class="linenos">69</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor.loss-69"><a href="#SSLConstructor.loss-69"><span class="linenos">69</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor.loss-70"><a href="#SSLConstructor.loss-70"><span class="linenos">70</span></a><span class="sd">        Calculate the SSL loss</span>
 </span><span id="SSLConstructor.loss-71"><a href="#SSLConstructor.loss-71"><span class="linenos">71</span></a>
 </span><span id="SSLConstructor.loss-72"><a href="#SSLConstructor.loss-72"><span class="linenos">72</span></a><span class="sd">        Parameters</span>
@@ -460,7 +460,7 @@ target : torch.Tensor
     <a class="headerlink" href="#SSLConstructor.construct_module"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="SSLConstructor.construct_module-85"><a href="#SSLConstructor.construct_module-85"><span class="linenos">85</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="SSLConstructor.construct_module-86"><a href="#SSLConstructor.construct_module-86"><span class="linenos">86</span></a>    <span class="k">def</span> <span class="nf">construct_module</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">:</span>
-</span><span id="SSLConstructor.construct_module-87"><a href="#SSLConstructor.construct_module-87"><span class="linenos">87</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="SSLConstructor.construct_module-87"><a href="#SSLConstructor.construct_module-87"><span class="linenos">87</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="SSLConstructor.construct_module-88"><a href="#SSLConstructor.construct_module-88"><span class="linenos">88</span></a><span class="sd">        Construct the SSL module</span>
 </span><span id="SSLConstructor.construct_module-89"><a href="#SSLConstructor.construct_module-89"><span class="linenos">89</span></a>
 </span><span id="SSLConstructor.construct_module-90"><a href="#SSLConstructor.construct_module-90"><span class="linenos">90</span></a><span class="sd">        Returns</span>
@@ -496,26 +496,26 @@ target : torch.Tensor
     </div>
     <a class="headerlink" href="#EmptySSL"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="EmptySSL-98"><a href="#EmptySSL-98"><span class="linenos"> 98</span></a><span class="k">class</span> <span class="nc">EmptySSL</span><span class="p">(</span><span class="n">SSLConstructor</span><span class="p">):</span>
-</span><span id="EmptySSL-99"><a href="#EmptySSL-99"><span class="linenos"> 99</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL-99"><a href="#EmptySSL-99"><span class="linenos"> 99</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL-100"><a href="#EmptySSL-100"><span class="linenos">100</span></a><span class="sd">    Empty SSL class</span>
 </span><span id="EmptySSL-101"><a href="#EmptySSL-101"><span class="linenos">101</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="EmptySSL-102"><a href="#EmptySSL-102"><span class="linenos">102</span></a>
 </span><span id="EmptySSL-103"><a href="#EmptySSL-103"><span class="linenos">103</span></a>    <span class="k">def</span> <span class="nf">transformation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="EmptySSL-104"><a href="#EmptySSL-104"><span class="linenos">104</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL-104"><a href="#EmptySSL-104"><span class="linenos">104</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL-105"><a href="#EmptySSL-105"><span class="linenos">105</span></a><span class="sd">        Empty transformation</span>
 </span><span id="EmptySSL-106"><a href="#EmptySSL-106"><span class="linenos">106</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="EmptySSL-107"><a href="#EmptySSL-107"><span class="linenos">107</span></a>
 </span><span id="EmptySSL-108"><a href="#EmptySSL-108"><span class="linenos">108</span></a>        <span class="k">return</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">)),</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;nan&quot;</span><span class="p">)))</span>
 </span><span id="EmptySSL-109"><a href="#EmptySSL-109"><span class="linenos">109</span></a>
 </span><span id="EmptySSL-110"><a href="#EmptySSL-110"><span class="linenos">110</span></a>    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="EmptySSL-111"><a href="#EmptySSL-111"><span class="linenos">111</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL-111"><a href="#EmptySSL-111"><span class="linenos">111</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL-112"><a href="#EmptySSL-112"><span class="linenos">112</span></a><span class="sd">        Empty loss</span>
 </span><span id="EmptySSL-113"><a href="#EmptySSL-113"><span class="linenos">113</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="EmptySSL-114"><a href="#EmptySSL-114"><span class="linenos">114</span></a>
 </span><span id="EmptySSL-115"><a href="#EmptySSL-115"><span class="linenos">115</span></a>        <span class="k">return</span> <span class="mi">0</span>
 </span><span id="EmptySSL-116"><a href="#EmptySSL-116"><span class="linenos">116</span></a>
 </span><span id="EmptySSL-117"><a href="#EmptySSL-117"><span class="linenos">117</span></a>    <span class="k">def</span> <span class="nf">construct_module</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="EmptySSL-118"><a href="#EmptySSL-118"><span class="linenos">118</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL-118"><a href="#EmptySSL-118"><span class="linenos">118</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL-119"><a href="#EmptySSL-119"><span class="linenos">119</span></a><span class="sd">        Empty module</span>
 </span><span id="EmptySSL-120"><a href="#EmptySSL-120"><span class="linenos">120</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="EmptySSL-121"><a href="#EmptySSL-121"><span class="linenos">121</span></a>
@@ -539,7 +539,7 @@ target : torch.Tensor
     </div>
     <a class="headerlink" href="#EmptySSL.transformation"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="EmptySSL.transformation-103"><a href="#EmptySSL.transformation-103"><span class="linenos">103</span></a>    <span class="k">def</span> <span class="nf">transformation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="EmptySSL.transformation-104"><a href="#EmptySSL.transformation-104"><span class="linenos">104</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL.transformation-104"><a href="#EmptySSL.transformation-104"><span class="linenos">104</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL.transformation-105"><a href="#EmptySSL.transformation-105"><span class="linenos">105</span></a><span class="sd">        Empty transformation</span>
 </span><span id="EmptySSL.transformation-106"><a href="#EmptySSL.transformation-106"><span class="linenos">106</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="EmptySSL.transformation-107"><a href="#EmptySSL.transformation-107"><span class="linenos">107</span></a>
@@ -564,7 +564,7 @@ target : torch.Tensor
     </div>
     <a class="headerlink" href="#EmptySSL.loss"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="EmptySSL.loss-110"><a href="#EmptySSL.loss-110"><span class="linenos">110</span></a>    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">predicted</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="EmptySSL.loss-111"><a href="#EmptySSL.loss-111"><span class="linenos">111</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL.loss-111"><a href="#EmptySSL.loss-111"><span class="linenos">111</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL.loss-112"><a href="#EmptySSL.loss-112"><span class="linenos">112</span></a><span class="sd">        Empty loss</span>
 </span><span id="EmptySSL.loss-113"><a href="#EmptySSL.loss-113"><span class="linenos">113</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="EmptySSL.loss-114"><a href="#EmptySSL.loss-114"><span class="linenos">114</span></a>
@@ -589,7 +589,7 @@ target : torch.Tensor
     </div>
     <a class="headerlink" href="#EmptySSL.construct_module"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="EmptySSL.construct_module-117"><a href="#EmptySSL.construct_module-117"><span class="linenos">117</span></a>    <span class="k">def</span> <span class="nf">construct_module</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="EmptySSL.construct_module-118"><a href="#EmptySSL.construct_module-118"><span class="linenos">118</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="EmptySSL.construct_module-118"><a href="#EmptySSL.construct_module-118"><span class="linenos">118</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="EmptySSL.construct_module-119"><a href="#EmptySSL.construct_module-119"><span class="linenos">119</span></a><span class="sd">        Empty module</span>
 </span><span id="EmptySSL.construct_module-120"><a href="#EmptySSL.construct_module-120"><span class="linenos">120</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="EmptySSL.construct_module-121"><a href="#EmptySSL.construct_module-121"><span class="linenos">121</span></a>

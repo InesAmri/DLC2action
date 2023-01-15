@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 12.3.0"/>
+    <meta name="generator" content="pdoc 12.3.1"/>
     <title>dlc2action.data.base_store API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -190,7 +190,7 @@
                         <label class="view-source-button" for="mod-base_store-view-source"><span>View Source</span></label>
 
                         <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos">  1</span></a><span class="c1">#</span>
-</span><span id="L-2"><a href="#L-2"><span class="linenos">  2</span></a><span class="c1"># Copyright 2020-2022 by A. Mathis Group and contributors. All rights reserved.</span>
+</span><span id="L-2"><a href="#L-2"><span class="linenos">  2</span></a><span class="c1"># Copyright 2020-present by A. Mathis Group and contributors. All rights reserved.</span>
 </span><span id="L-3"><a href="#L-3"><span class="linenos">  3</span></a><span class="c1">#</span>
 </span><span id="L-4"><a href="#L-4"><span class="linenos">  4</span></a><span class="c1"># This project and all its files are licensed under GNU AGPLv3 or later version. A copy is included in dlc2action/LICENSE.AGPL.</span>
 </span><span id="L-5"><a href="#L-5"><span class="linenos">  5</span></a><span class="c1">#</span>
@@ -207,7 +207,7 @@
 </span><span id="L-16"><a href="#L-16"><span class="linenos"> 16</span></a>
 </span><span id="L-17"><a href="#L-17"><span class="linenos"> 17</span></a>
 </span><span id="L-18"><a href="#L-18"><span class="linenos"> 18</span></a><span class="k">class</span> <span class="nc">Store</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>  <span class="c1"># +</span>
-</span><span id="L-19"><a href="#L-19"><span class="linenos"> 19</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-19"><a href="#L-19"><span class="linenos"> 19</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-20"><a href="#L-20"><span class="linenos"> 20</span></a><span class="sd">    A general parent class for `AnnotationStore` and `InputStore`</span>
 </span><span id="L-21"><a href="#L-21"><span class="linenos"> 21</span></a>
 </span><span id="L-22"><a href="#L-22"><span class="linenos"> 22</span></a><span class="sd">    Processes input video information and generates ordered arrays of data samples and corresponding unique</span>
@@ -223,7 +223,7 @@
 </span><span id="L-32"><a href="#L-32"><span class="linenos"> 32</span></a>
 </span><span id="L-33"><a href="#L-33"><span class="linenos"> 33</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-34"><a href="#L-34"><span class="linenos"> 34</span></a>    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-35"><a href="#L-35"><span class="linenos"> 35</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-35"><a href="#L-35"><span class="linenos"> 35</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-36"><a href="#L-36"><span class="linenos"> 36</span></a><span class="sd">        Get the number of available samples</span>
 </span><span id="L-37"><a href="#L-37"><span class="linenos"> 37</span></a>
 </span><span id="L-38"><a href="#L-38"><span class="linenos"> 38</span></a><span class="sd">        Returns</span>
@@ -234,7 +234,7 @@
 </span><span id="L-43"><a href="#L-43"><span class="linenos"> 43</span></a>
 </span><span id="L-44"><a href="#L-44"><span class="linenos"> 44</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-45"><a href="#L-45"><span class="linenos"> 45</span></a>    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">:</span> <span class="n">List</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-46"><a href="#L-46"><span class="linenos"> 46</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-46"><a href="#L-46"><span class="linenos"> 46</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-47"><a href="#L-47"><span class="linenos"> 47</span></a><span class="sd">        Remove the samples corresponding to indices</span>
 </span><span id="L-48"><a href="#L-48"><span class="linenos"> 48</span></a>
 </span><span id="L-49"><a href="#L-49"><span class="linenos"> 49</span></a><span class="sd">        Parameters</span>
@@ -245,7 +245,7 @@
 </span><span id="L-54"><a href="#L-54"><span class="linenos"> 54</span></a>
 </span><span id="L-55"><a href="#L-55"><span class="linenos"> 55</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-56"><a href="#L-56"><span class="linenos"> 56</span></a>    <span class="k">def</span> <span class="nf">key_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="L-57"><a href="#L-57"><span class="linenos"> 57</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-57"><a href="#L-57"><span class="linenos"> 57</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-58"><a href="#L-58"><span class="linenos"> 58</span></a><span class="sd">        Return a tuple of the key objects necessary to re-create the Store</span>
 </span><span id="L-59"><a href="#L-59"><span class="linenos"> 59</span></a>
 </span><span id="L-60"><a href="#L-60"><span class="linenos"> 60</span></a><span class="sd">        Returns</span>
@@ -256,7 +256,7 @@
 </span><span id="L-65"><a href="#L-65"><span class="linenos"> 65</span></a>
 </span><span id="L-66"><a href="#L-66"><span class="linenos"> 66</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-67"><a href="#L-67"><span class="linenos"> 67</span></a>    <span class="k">def</span> <span class="nf">load_from_key_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_objects</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-68"><a href="#L-68"><span class="linenos"> 68</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-68"><a href="#L-68"><span class="linenos"> 68</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-69"><a href="#L-69"><span class="linenos"> 69</span></a><span class="sd">        Load the information from a tuple of key objects</span>
 </span><span id="L-70"><a href="#L-70"><span class="linenos"> 70</span></a>
 </span><span id="L-71"><a href="#L-71"><span class="linenos"> 71</span></a><span class="sd">        Parameters</span>
@@ -267,13 +267,13 @@
 </span><span id="L-76"><a href="#L-76"><span class="linenos"> 76</span></a>
 </span><span id="L-77"><a href="#L-77"><span class="linenos"> 77</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-78"><a href="#L-78"><span class="linenos"> 78</span></a>    <span class="k">def</span> <span class="nf">to_ram</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-79"><a href="#L-79"><span class="linenos"> 79</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-79"><a href="#L-79"><span class="linenos"> 79</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-80"><a href="#L-80"><span class="linenos"> 80</span></a><span class="sd">        Transfer the data samples to RAM if they were previously stored as file paths</span>
 </span><span id="L-81"><a href="#L-81"><span class="linenos"> 81</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-82"><a href="#L-82"><span class="linenos"> 82</span></a>
 </span><span id="L-83"><a href="#L-83"><span class="linenos"> 83</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-84"><a href="#L-84"><span class="linenos"> 84</span></a>    <span class="k">def</span> <span class="nf">get_original_coordinates</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-</span><span id="L-85"><a href="#L-85"><span class="linenos"> 85</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-85"><a href="#L-85"><span class="linenos"> 85</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-86"><a href="#L-86"><span class="linenos"> 86</span></a><span class="sd">        Return the original coordinates array</span>
 </span><span id="L-87"><a href="#L-87"><span class="linenos"> 87</span></a>
 </span><span id="L-88"><a href="#L-88"><span class="linenos"> 88</span></a><span class="sd">        Returns</span>
@@ -285,7 +285,7 @@
 </span><span id="L-94"><a href="#L-94"><span class="linenos"> 94</span></a>
 </span><span id="L-95"><a href="#L-95"><span class="linenos"> 95</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-96"><a href="#L-96"><span class="linenos"> 96</span></a>    <span class="k">def</span> <span class="nf">create_subsample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">:</span> <span class="n">List</span><span class="p">,</span> <span class="n">ssl_indices</span><span class="p">:</span> <span class="n">List</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span><span id="L-97"><a href="#L-97"><span class="linenos"> 97</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-97"><a href="#L-97"><span class="linenos"> 97</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-98"><a href="#L-98"><span class="linenos"> 98</span></a><span class="sd">        Create a new store that contains a subsample of the data</span>
 </span><span id="L-99"><a href="#L-99"><span class="linenos"> 99</span></a>
 </span><span id="L-100"><a href="#L-100"><span class="linenos">100</span></a><span class="sd">        Parameters</span>
@@ -299,7 +299,7 @@
 </span><span id="L-108"><a href="#L-108"><span class="linenos">108</span></a>    <span class="nd">@classmethod</span>
 </span><span id="L-109"><a href="#L-109"><span class="linenos">109</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-110"><a href="#L-110"><span class="linenos">110</span></a>    <span class="k">def</span> <span class="nf">get_file_ids</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-111"><a href="#L-111"><span class="linenos">111</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-111"><a href="#L-111"><span class="linenos">111</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-112"><a href="#L-112"><span class="linenos">112</span></a><span class="sd">        Process data parameters and return a list of ids  of the videos that should</span>
 </span><span id="L-113"><a href="#L-113"><span class="linenos">113</span></a><span class="sd">        be processed by the __init__ function</span>
 </span><span id="L-114"><a href="#L-114"><span class="linenos">114</span></a>
@@ -311,7 +311,7 @@
 </span><span id="L-120"><a href="#L-120"><span class="linenos">120</span></a>
 </span><span id="L-121"><a href="#L-121"><span class="linenos">121</span></a>    <span class="nd">@classmethod</span>
 </span><span id="L-122"><a href="#L-122"><span class="linenos">122</span></a>    <span class="k">def</span> <span class="nf">get_parameters</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-123"><a href="#L-123"><span class="linenos">123</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-123"><a href="#L-123"><span class="linenos">123</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-124"><a href="#L-124"><span class="linenos">124</span></a><span class="sd">        Generate a list of parameter names for the __init__ function</span>
 </span><span id="L-125"><a href="#L-125"><span class="linenos">125</span></a>
 </span><span id="L-126"><a href="#L-126"><span class="linenos">126</span></a><span class="sd">        Returns</span>
@@ -324,7 +324,7 @@
 </span><span id="L-133"><a href="#L-133"><span class="linenos">133</span></a>
 </span><span id="L-134"><a href="#L-134"><span class="linenos">134</span></a>    <span class="nd">@classmethod</span>
 </span><span id="L-135"><a href="#L-135"><span class="linenos">135</span></a>    <span class="k">def</span> <span class="nf">new</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-</span><span id="L-136"><a href="#L-136"><span class="linenos">136</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-136"><a href="#L-136"><span class="linenos">136</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-137"><a href="#L-137"><span class="linenos">137</span></a><span class="sd">        Create a new instance of the same class</span>
 </span><span id="L-138"><a href="#L-138"><span class="linenos">138</span></a>
 </span><span id="L-139"><a href="#L-139"><span class="linenos">139</span></a><span class="sd">        Returns</span>
@@ -337,7 +337,7 @@
 </span><span id="L-146"><a href="#L-146"><span class="linenos">146</span></a>
 </span><span id="L-147"><a href="#L-147"><span class="linenos">147</span></a>
 </span><span id="L-148"><a href="#L-148"><span class="linenos">148</span></a><span class="k">class</span> <span class="nc">InputStore</span><span class="p">(</span><span class="n">Store</span><span class="p">):</span>  <span class="c1"># +</span>
-</span><span id="L-149"><a href="#L-149"><span class="linenos">149</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-149"><a href="#L-149"><span class="linenos">149</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-150"><a href="#L-150"><span class="linenos">150</span></a><span class="sd">    A class that generates model input data from video information and stores it</span>
 </span><span id="L-151"><a href="#L-151"><span class="linenos">151</span></a>
 </span><span id="L-152"><a href="#L-152"><span class="linenos">152</span></a><span class="sd">    Processes input video information and generates ordered arrays of data samples and corresponding unique</span>
@@ -365,7 +365,7 @@
 </span><span id="L-174"><a href="#L-174"><span class="linenos">174</span></a>        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
 </span><span id="L-175"><a href="#L-175"><span class="linenos">175</span></a>        <span class="o">**</span><span class="n">kwargs</span>
 </span><span id="L-176"><a href="#L-176"><span class="linenos">176</span></a>    <span class="p">):</span>
-</span><span id="L-177"><a href="#L-177"><span class="linenos">177</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-177"><a href="#L-177"><span class="linenos">177</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-178"><a href="#L-178"><span class="linenos">178</span></a><span class="sd">        Parameters</span>
 </span><span id="L-179"><a href="#L-179"><span class="linenos">179</span></a><span class="sd">        ----------</span>
 </span><span id="L-180"><a href="#L-180"><span class="linenos">180</span></a><span class="sd">        video_order : list, optional</span>
@@ -389,7 +389,7 @@
 </span><span id="L-198"><a href="#L-198"><span class="linenos">198</span></a>
 </span><span id="L-199"><a href="#L-199"><span class="linenos">199</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-200"><a href="#L-200"><span class="linenos">200</span></a>    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ind</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-201"><a href="#L-201"><span class="linenos">201</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-201"><a href="#L-201"><span class="linenos">201</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-202"><a href="#L-202"><span class="linenos">202</span></a><span class="sd">        Return the sample corresponding to an index</span>
 </span><span id="L-203"><a href="#L-203"><span class="linenos">203</span></a>
 </span><span id="L-204"><a href="#L-204"><span class="linenos">204</span></a><span class="sd">        Parameters</span>
@@ -405,7 +405,7 @@
 </span><span id="L-214"><a href="#L-214"><span class="linenos">214</span></a>
 </span><span id="L-215"><a href="#L-215"><span class="linenos">215</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-216"><a href="#L-216"><span class="linenos">216</span></a>    <span class="k">def</span> <span class="nf">get_video_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="L-217"><a href="#L-217"><span class="linenos">217</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-217"><a href="#L-217"><span class="linenos">217</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-218"><a href="#L-218"><span class="linenos">218</span></a><span class="sd">        Get the video id from an element of original coordinates</span>
 </span><span id="L-219"><a href="#L-219"><span class="linenos">219</span></a>
 </span><span id="L-220"><a href="#L-220"><span class="linenos">220</span></a><span class="sd">        Parameters</span>
@@ -421,7 +421,7 @@
 </span><span id="L-230"><a href="#L-230"><span class="linenos">230</span></a>
 </span><span id="L-231"><a href="#L-231"><span class="linenos">231</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-232"><a href="#L-232"><span class="linenos">232</span></a>    <span class="k">def</span> <span class="nf">get_clip_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="L-233"><a href="#L-233"><span class="linenos">233</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-233"><a href="#L-233"><span class="linenos">233</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-234"><a href="#L-234"><span class="linenos">234</span></a><span class="sd">        Get the clip id from an element of original coordinates</span>
 </span><span id="L-235"><a href="#L-235"><span class="linenos">235</span></a>
 </span><span id="L-236"><a href="#L-236"><span class="linenos">236</span></a><span class="sd">        Parameters</span>
@@ -437,7 +437,7 @@
 </span><span id="L-246"><a href="#L-246"><span class="linenos">246</span></a>
 </span><span id="L-247"><a href="#L-247"><span class="linenos">247</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-248"><a href="#L-248"><span class="linenos">248</span></a>    <span class="k">def</span> <span class="nf">get_clip_length</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-249"><a href="#L-249"><span class="linenos">249</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-249"><a href="#L-249"><span class="linenos">249</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-250"><a href="#L-250"><span class="linenos">250</span></a><span class="sd">        Get the clip length from the id</span>
 </span><span id="L-251"><a href="#L-251"><span class="linenos">251</span></a>
 </span><span id="L-252"><a href="#L-252"><span class="linenos">252</span></a><span class="sd">        Parameters</span>
@@ -455,7 +455,7 @@
 </span><span id="L-264"><a href="#L-264"><span class="linenos">264</span></a>
 </span><span id="L-265"><a href="#L-265"><span class="linenos">265</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-266"><a href="#L-266"><span class="linenos">266</span></a>    <span class="k">def</span> <span class="nf">get_clip_start_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
-</span><span id="L-267"><a href="#L-267"><span class="linenos">267</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-267"><a href="#L-267"><span class="linenos">267</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-268"><a href="#L-268"><span class="linenos">268</span></a><span class="sd">        Get the clip start and end frames from an element of original coordinates</span>
 </span><span id="L-269"><a href="#L-269"><span class="linenos">269</span></a>
 </span><span id="L-270"><a href="#L-270"><span class="linenos">270</span></a><span class="sd">        Parameters</span>
@@ -473,7 +473,7 @@
 </span><span id="L-282"><a href="#L-282"><span class="linenos">282</span></a>
 </span><span id="L-283"><a href="#L-283"><span class="linenos">283</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-284"><a href="#L-284"><span class="linenos">284</span></a>    <span class="k">def</span> <span class="nf">get_clip_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-285"><a href="#L-285"><span class="linenos">285</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-285"><a href="#L-285"><span class="linenos">285</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-286"><a href="#L-286"><span class="linenos">286</span></a><span class="sd">        Get the clip start frame from the video id and the clip id</span>
 </span><span id="L-287"><a href="#L-287"><span class="linenos">287</span></a>
 </span><span id="L-288"><a href="#L-288"><span class="linenos">288</span></a><span class="sd">        Parameters</span>
@@ -493,7 +493,7 @@
 </span><span id="L-302"><a href="#L-302"><span class="linenos">302</span></a>    <span class="k">def</span> <span class="nf">get_visibility</span><span class="p">(</span>
 </span><span id="L-303"><a href="#L-303"><span class="linenos">303</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">score</span><span class="p">:</span> <span class="nb">float</span>
 </span><span id="L-304"><a href="#L-304"><span class="linenos">304</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="L-305"><a href="#L-305"><span class="linenos">305</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-305"><a href="#L-305"><span class="linenos">305</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-306"><a href="#L-306"><span class="linenos">306</span></a><span class="sd">        Get the fraction of the frames in that have a visibility score better than a hard_threshold</span>
 </span><span id="L-307"><a href="#L-307"><span class="linenos">307</span></a>
 </span><span id="L-308"><a href="#L-308"><span class="linenos">308</span></a><span class="sd">        For example, in the case of keypoint data the visibility score can be the number of identified keypoints.</span>
@@ -519,7 +519,7 @@
 </span><span id="L-328"><a href="#L-328"><span class="linenos">328</span></a>
 </span><span id="L-329"><a href="#L-329"><span class="linenos">329</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-330"><a href="#L-330"><span class="linenos">330</span></a>    <span class="k">def</span> <span class="nf">get_annotation_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-331"><a href="#L-331"><span class="linenos">331</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-331"><a href="#L-331"><span class="linenos">331</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-332"><a href="#L-332"><span class="linenos">332</span></a><span class="sd">        Get a dictionary of objects necessary to create an AnnotationStore</span>
 </span><span id="L-333"><a href="#L-333"><span class="linenos">333</span></a>
 </span><span id="L-334"><a href="#L-334"><span class="linenos">334</span></a><span class="sd">        Returns</span>
@@ -531,7 +531,7 @@
 </span><span id="L-340"><a href="#L-340"><span class="linenos">340</span></a>
 </span><span id="L-341"><a href="#L-341"><span class="linenos">341</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-342"><a href="#L-342"><span class="linenos">342</span></a>    <span class="k">def</span> <span class="nf">get_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="L-343"><a href="#L-343"><span class="linenos">343</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-343"><a href="#L-343"><span class="linenos">343</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-344"><a href="#L-344"><span class="linenos">344</span></a><span class="sd">        Get the input folder that the file with this video id was read from</span>
 </span><span id="L-345"><a href="#L-345"><span class="linenos">345</span></a>
 </span><span id="L-346"><a href="#L-346"><span class="linenos">346</span></a><span class="sd">        Parameters</span>
@@ -546,7 +546,7 @@
 </span><span id="L-355"><a href="#L-355"><span class="linenos">355</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-356"><a href="#L-356"><span class="linenos">356</span></a>
 </span><span id="L-357"><a href="#L-357"><span class="linenos">357</span></a>    <span class="k">def</span> <span class="nf">get_clip_length_from_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-358"><a href="#L-358"><span class="linenos">358</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-358"><a href="#L-358"><span class="linenos">358</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-359"><a href="#L-359"><span class="linenos">359</span></a><span class="sd">        Get the length of a clip from an element of the original coordinates array</span>
 </span><span id="L-360"><a href="#L-360"><span class="linenos">360</span></a>
 </span><span id="L-361"><a href="#L-361"><span class="linenos">361</span></a><span class="sd">        Parameters</span>
@@ -566,7 +566,7 @@
 </span><span id="L-375"><a href="#L-375"><span class="linenos">375</span></a>        <span class="k">return</span> <span class="n">l</span>
 </span><span id="L-376"><a href="#L-376"><span class="linenos">376</span></a>
 </span><span id="L-377"><a href="#L-377"><span class="linenos">377</span></a>    <span class="k">def</span> <span class="nf">get_folder_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-378"><a href="#L-378"><span class="linenos">378</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-378"><a href="#L-378"><span class="linenos">378</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-379"><a href="#L-379"><span class="linenos">379</span></a><span class="sd">        Get a list of folders corresponding to the data samples</span>
 </span><span id="L-380"><a href="#L-380"><span class="linenos">380</span></a>
 </span><span id="L-381"><a href="#L-381"><span class="linenos">381</span></a><span class="sd">        Returns</span>
@@ -579,7 +579,7 @@
 </span><span id="L-388"><a href="#L-388"><span class="linenos">388</span></a>        <span class="k">return</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_folder</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_video_id_order</span><span class="p">()]</span>
 </span><span id="L-389"><a href="#L-389"><span class="linenos">389</span></a>
 </span><span id="L-390"><a href="#L-390"><span class="linenos">390</span></a>    <span class="k">def</span> <span class="nf">get_video_id_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-391"><a href="#L-391"><span class="linenos">391</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-391"><a href="#L-391"><span class="linenos">391</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-392"><a href="#L-392"><span class="linenos">392</span></a><span class="sd">        Get a list of video ids corresponding to the data samples</span>
 </span><span id="L-393"><a href="#L-393"><span class="linenos">393</span></a>
 </span><span id="L-394"><a href="#L-394"><span class="linenos">394</span></a><span class="sd">        Returns</span>
@@ -591,7 +591,7 @@
 </span><span id="L-400"><a href="#L-400"><span class="linenos">400</span></a>        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">get_video_id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_original_coordinates</span><span class="p">()]</span>
 </span><span id="L-401"><a href="#L-401"><span class="linenos">401</span></a>
 </span><span id="L-402"><a href="#L-402"><span class="linenos">402</span></a>    <span class="k">def</span> <span class="nf">get_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
-</span><span id="L-403"><a href="#L-403"><span class="linenos">403</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-403"><a href="#L-403"><span class="linenos">403</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-404"><a href="#L-404"><span class="linenos">404</span></a><span class="sd">        Return a tag object corresponding to an index</span>
 </span><span id="L-405"><a href="#L-405"><span class="linenos">405</span></a>
 </span><span id="L-406"><a href="#L-406"><span class="linenos">406</span></a><span class="sd">        Tags can carry meta information (like annotator id) and are accepted by models that require</span>
@@ -612,7 +612,7 @@
 </span><span id="L-421"><a href="#L-421"><span class="linenos">421</span></a>        <span class="k">return</span> <span class="kc">None</span>
 </span><span id="L-422"><a href="#L-422"><span class="linenos">422</span></a>
 </span><span id="L-423"><a href="#L-423"><span class="linenos">423</span></a>    <span class="k">def</span> <span class="nf">get_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-424"><a href="#L-424"><span class="linenos">424</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-424"><a href="#L-424"><span class="linenos">424</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-425"><a href="#L-425"><span class="linenos">425</span></a><span class="sd">        Get a list of indices of samples that have a specific meta tag</span>
 </span><span id="L-426"><a href="#L-426"><span class="linenos">426</span></a>
 </span><span id="L-427"><a href="#L-427"><span class="linenos">427</span></a><span class="sd">        Parameters</span>
@@ -629,7 +629,7 @@
 </span><span id="L-438"><a href="#L-438"><span class="linenos">438</span></a>        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)))</span>
 </span><span id="L-439"><a href="#L-439"><span class="linenos">439</span></a>
 </span><span id="L-440"><a href="#L-440"><span class="linenos">440</span></a>    <span class="k">def</span> <span class="nf">get_tags</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-441"><a href="#L-441"><span class="linenos">441</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-441"><a href="#L-441"><span class="linenos">441</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-442"><a href="#L-442"><span class="linenos">442</span></a><span class="sd">        Get a list of all meta tags</span>
 </span><span id="L-443"><a href="#L-443"><span class="linenos">443</span></a>
 </span><span id="L-444"><a href="#L-444"><span class="linenos">444</span></a><span class="sd">        Returns</span>
@@ -642,7 +642,7 @@
 </span><span id="L-451"><a href="#L-451"><span class="linenos">451</span></a>
 </span><span id="L-452"><a href="#L-452"><span class="linenos">452</span></a>
 </span><span id="L-453"><a href="#L-453"><span class="linenos">453</span></a><span class="k">class</span> <span class="nc">AnnotationStore</span><span class="p">(</span><span class="n">Store</span><span class="p">):</span>
-</span><span id="L-454"><a href="#L-454"><span class="linenos">454</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-454"><a href="#L-454"><span class="linenos">454</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-455"><a href="#L-455"><span class="linenos">455</span></a><span class="sd">    A class that generates annotation from video information and stores it</span>
 </span><span id="L-456"><a href="#L-456"><span class="linenos">456</span></a>
 </span><span id="L-457"><a href="#L-457"><span class="linenos">457</span></a><span class="sd">    Processes input video information and generates ordered arrays of annotation samples and corresponding unique</span>
@@ -659,7 +659,7 @@
 </span><span id="L-468"><a href="#L-468"><span class="linenos">468</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-469"><a href="#L-469"><span class="linenos">469</span></a>
 </span><span id="L-470"><a href="#L-470"><span class="linenos">470</span></a>    <span class="n">required_objects</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="L-471"><a href="#L-471"><span class="linenos">471</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-471"><a href="#L-471"><span class="linenos">471</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-472"><a href="#L-472"><span class="linenos">472</span></a><span class="sd">    A list of string names of the objects required from the input store</span>
 </span><span id="L-473"><a href="#L-473"><span class="linenos">473</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-474"><a href="#L-474"><span class="linenos">474</span></a>
@@ -672,7 +672,7 @@
 </span><span id="L-481"><a href="#L-481"><span class="linenos">481</span></a>        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
 </span><span id="L-482"><a href="#L-482"><span class="linenos">482</span></a>        <span class="o">**</span><span class="n">kwargs</span>
 </span><span id="L-483"><a href="#L-483"><span class="linenos">483</span></a>    <span class="p">):</span>
-</span><span id="L-484"><a href="#L-484"><span class="linenos">484</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-484"><a href="#L-484"><span class="linenos">484</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-485"><a href="#L-485"><span class="linenos">485</span></a><span class="sd">        Parameters</span>
 </span><span id="L-486"><a href="#L-486"><span class="linenos">486</span></a><span class="sd">        ----------</span>
 </span><span id="L-487"><a href="#L-487"><span class="linenos">487</span></a><span class="sd">        video_order : list, optional</span>
@@ -689,7 +689,7 @@
 </span><span id="L-498"><a href="#L-498"><span class="linenos">498</span></a>
 </span><span id="L-499"><a href="#L-499"><span class="linenos">499</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-500"><a href="#L-500"><span class="linenos">500</span></a>    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ind</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-</span><span id="L-501"><a href="#L-501"><span class="linenos">501</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-501"><a href="#L-501"><span class="linenos">501</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-502"><a href="#L-502"><span class="linenos">502</span></a><span class="sd">        Return the annotation of the sample corresponding to an index</span>
 </span><span id="L-503"><a href="#L-503"><span class="linenos">503</span></a>
 </span><span id="L-504"><a href="#L-504"><span class="linenos">504</span></a><span class="sd">        Parameters</span>
@@ -705,7 +705,7 @@
 </span><span id="L-514"><a href="#L-514"><span class="linenos">514</span></a>
 </span><span id="L-515"><a href="#L-515"><span class="linenos">515</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-516"><a href="#L-516"><span class="linenos">516</span></a>    <span class="k">def</span> <span class="nf">get_len</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">return_unlabeled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-517"><a href="#L-517"><span class="linenos">517</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-517"><a href="#L-517"><span class="linenos">517</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-518"><a href="#L-518"><span class="linenos">518</span></a><span class="sd">        Get the length of the subsample of labeled/unlabeled data</span>
 </span><span id="L-519"><a href="#L-519"><span class="linenos">519</span></a>
 </span><span id="L-520"><a href="#L-520"><span class="linenos">520</span></a><span class="sd">        If return_unlabeled is True, the index is in the subsample of unlabeled data, if False in labeled</span>
@@ -726,7 +726,7 @@
 </span><span id="L-535"><a href="#L-535"><span class="linenos">535</span></a>    <span class="k">def</span> <span class="nf">count_classes</span><span class="p">(</span>
 </span><span id="L-536"><a href="#L-536"><span class="linenos">536</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">frac</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">zeros</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">bouts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="L-537"><a href="#L-537"><span class="linenos">537</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-538"><a href="#L-538"><span class="linenos">538</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-538"><a href="#L-538"><span class="linenos">538</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-539"><a href="#L-539"><span class="linenos">539</span></a><span class="sd">        Get a dictionary with class-wise frame counts</span>
 </span><span id="L-540"><a href="#L-540"><span class="linenos">540</span></a>
 </span><span id="L-541"><a href="#L-541"><span class="linenos">541</span></a><span class="sd">        Parameters</span>
@@ -747,7 +747,7 @@
 </span><span id="L-556"><a href="#L-556"><span class="linenos">556</span></a>
 </span><span id="L-557"><a href="#L-557"><span class="linenos">557</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-558"><a href="#L-558"><span class="linenos">558</span></a>    <span class="k">def</span> <span class="nf">behaviors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="L-559"><a href="#L-559"><span class="linenos">559</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-559"><a href="#L-559"><span class="linenos">559</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-560"><a href="#L-560"><span class="linenos">560</span></a><span class="sd">        Get a dictionary of class names</span>
 </span><span id="L-561"><a href="#L-561"><span class="linenos">561</span></a>
 </span><span id="L-562"><a href="#L-562"><span class="linenos">562</span></a><span class="sd">        Returns</span>
@@ -758,7 +758,7 @@
 </span><span id="L-567"><a href="#L-567"><span class="linenos">567</span></a>
 </span><span id="L-568"><a href="#L-568"><span class="linenos">568</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-569"><a href="#L-569"><span class="linenos">569</span></a>    <span class="k">def</span> <span class="nf">annotation_class</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="L-570"><a href="#L-570"><span class="linenos">570</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-570"><a href="#L-570"><span class="linenos">570</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-571"><a href="#L-571"><span class="linenos">571</span></a><span class="sd">        Get the type of annotation (&#39;exclusive_classification&#39;, &#39;nonexclusive_classification&#39;, more coming soon)</span>
 </span><span id="L-572"><a href="#L-572"><span class="linenos">572</span></a>
 </span><span id="L-573"><a href="#L-573"><span class="linenos">573</span></a><span class="sd">        Returns</span>
@@ -769,7 +769,7 @@
 </span><span id="L-578"><a href="#L-578"><span class="linenos">578</span></a>
 </span><span id="L-579"><a href="#L-579"><span class="linenos">579</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-580"><a href="#L-580"><span class="linenos">580</span></a>    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-581"><a href="#L-581"><span class="linenos">581</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-581"><a href="#L-581"><span class="linenos">581</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-582"><a href="#L-582"><span class="linenos">582</span></a><span class="sd">        Get the total number of frames in the data</span>
 </span><span id="L-583"><a href="#L-583"><span class="linenos">583</span></a>
 </span><span id="L-584"><a href="#L-584"><span class="linenos">584</span></a><span class="sd">        Returns</span>
@@ -780,7 +780,7 @@
 </span><span id="L-589"><a href="#L-589"><span class="linenos">589</span></a>
 </span><span id="L-590"><a href="#L-590"><span class="linenos">590</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-591"><a href="#L-591"><span class="linenos">591</span></a>    <span class="k">def</span> <span class="nf">filtered_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-592"><a href="#L-592"><span class="linenos">592</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-592"><a href="#L-592"><span class="linenos">592</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-593"><a href="#L-593"><span class="linenos">593</span></a><span class="sd">        Return the indices of the samples that should be removed</span>
 </span><span id="L-594"><a href="#L-594"><span class="linenos">594</span></a>
 </span><span id="L-595"><a href="#L-595"><span class="linenos">595</span></a><span class="sd">        Choosing the indices can be based on any kind of filering defined in the __init__ function by the data</span>
@@ -794,7 +794,7 @@
 </span><span id="L-603"><a href="#L-603"><span class="linenos">603</span></a>
 </span><span id="L-604"><a href="#L-604"><span class="linenos">604</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-605"><a href="#L-605"><span class="linenos">605</span></a>    <span class="k">def</span> <span class="nf">set_pseudo_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-606"><a href="#L-606"><span class="linenos">606</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-606"><a href="#L-606"><span class="linenos">606</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-607"><a href="#L-607"><span class="linenos">607</span></a><span class="sd">        Set pseudo labels to the unlabeled data</span>
 </span><span id="L-608"><a href="#L-608"><span class="linenos">608</span></a>
 </span><span id="L-609"><a href="#L-609"><span class="linenos">609</span></a><span class="sd">        Parameters</span>
@@ -805,7 +805,7 @@
 </span><span id="L-614"><a href="#L-614"><span class="linenos">614</span></a>
 </span><span id="L-615"><a href="#L-615"><span class="linenos">615</span></a>
 </span><span id="L-616"><a href="#L-616"><span class="linenos">616</span></a><span class="k">class</span> <span class="nc">PoseInputStore</span><span class="p">(</span><span class="n">InputStore</span><span class="p">):</span>
-</span><span id="L-617"><a href="#L-617"><span class="linenos">617</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-617"><a href="#L-617"><span class="linenos">617</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-618"><a href="#L-618"><span class="linenos">618</span></a><span class="sd">    A subclass of InputStore for pose estimation data</span>
 </span><span id="L-619"><a href="#L-619"><span class="linenos">619</span></a>
 </span><span id="L-620"><a href="#L-620"><span class="linenos">620</span></a><span class="sd">    Contains methods used by pose estimation feature extractors.</span>
@@ -818,7 +818,7 @@
 </span><span id="L-627"><a href="#L-627"><span class="linenos">627</span></a>    <span class="k">def</span> <span class="nf">get_likelihood</span><span class="p">(</span>
 </span><span id="L-628"><a href="#L-628"><span class="linenos">628</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bodypart</span><span class="p">:</span> <span class="nb">str</span>
 </span><span id="L-629"><a href="#L-629"><span class="linenos">629</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
-</span><span id="L-630"><a href="#L-630"><span class="linenos">630</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-630"><a href="#L-630"><span class="linenos">630</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-631"><a href="#L-631"><span class="linenos">631</span></a><span class="sd">        Get the likelihood values</span>
 </span><span id="L-632"><a href="#L-632"><span class="linenos">632</span></a>
 </span><span id="L-633"><a href="#L-633"><span class="linenos">633</span></a><span class="sd">        Parameters</span>
@@ -840,7 +840,7 @@
 </span><span id="L-649"><a href="#L-649"><span class="linenos">649</span></a>
 </span><span id="L-650"><a href="#L-650"><span class="linenos">650</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-651"><a href="#L-651"><span class="linenos">651</span></a>    <span class="k">def</span> <span class="nf">get_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bodypart</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-</span><span id="L-652"><a href="#L-652"><span class="linenos">652</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-652"><a href="#L-652"><span class="linenos">652</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-653"><a href="#L-653"><span class="linenos">653</span></a><span class="sd">        Get the coordinates array of a specific body part in a specific clip</span>
 </span><span id="L-654"><a href="#L-654"><span class="linenos">654</span></a>
 </span><span id="L-655"><a href="#L-655"><span class="linenos">655</span></a><span class="sd">        Parameters</span>
@@ -860,7 +860,7 @@
 </span><span id="L-669"><a href="#L-669"><span class="linenos">669</span></a>
 </span><span id="L-670"><a href="#L-670"><span class="linenos">670</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-671"><a href="#L-671"><span class="linenos">671</span></a>    <span class="k">def</span> <span class="nf">get_bodyparts</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="L-672"><a href="#L-672"><span class="linenos">672</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-672"><a href="#L-672"><span class="linenos">672</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-673"><a href="#L-673"><span class="linenos">673</span></a><span class="sd">        Get a list of bodypart names</span>
 </span><span id="L-674"><a href="#L-674"><span class="linenos">674</span></a>
 </span><span id="L-675"><a href="#L-675"><span class="linenos">675</span></a><span class="sd">        Returns</span>
@@ -871,7 +871,7 @@
 </span><span id="L-680"><a href="#L-680"><span class="linenos">680</span></a>
 </span><span id="L-681"><a href="#L-681"><span class="linenos">681</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="L-682"><a href="#L-682"><span class="linenos">682</span></a>    <span class="k">def</span> <span class="nf">get_n_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="L-683"><a href="#L-683"><span class="linenos">683</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-683"><a href="#L-683"><span class="linenos">683</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-684"><a href="#L-684"><span class="linenos">684</span></a><span class="sd">        Get the length of the clip</span>
 </span><span id="L-685"><a href="#L-685"><span class="linenos">685</span></a>
 </span><span id="L-686"><a href="#L-686"><span class="linenos">686</span></a><span class="sd">        Parameters</span>
@@ -902,7 +902,7 @@
     </div>
     <a class="headerlink" href="#Store"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store-19"><a href="#Store-19"><span class="linenos"> 19</span></a><span class="k">class</span> <span class="nc">Store</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>  <span class="c1"># +</span>
-</span><span id="Store-20"><a href="#Store-20"><span class="linenos"> 20</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-20"><a href="#Store-20"><span class="linenos"> 20</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-21"><a href="#Store-21"><span class="linenos"> 21</span></a><span class="sd">    A general parent class for `AnnotationStore` and `InputStore`</span>
 </span><span id="Store-22"><a href="#Store-22"><span class="linenos"> 22</span></a>
 </span><span id="Store-23"><a href="#Store-23"><span class="linenos"> 23</span></a><span class="sd">    Processes input video information and generates ordered arrays of data samples and corresponding unique</span>
@@ -918,7 +918,7 @@
 </span><span id="Store-33"><a href="#Store-33"><span class="linenos"> 33</span></a>
 </span><span id="Store-34"><a href="#Store-34"><span class="linenos"> 34</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-35"><a href="#Store-35"><span class="linenos"> 35</span></a>    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="Store-36"><a href="#Store-36"><span class="linenos"> 36</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-36"><a href="#Store-36"><span class="linenos"> 36</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-37"><a href="#Store-37"><span class="linenos"> 37</span></a><span class="sd">        Get the number of available samples</span>
 </span><span id="Store-38"><a href="#Store-38"><span class="linenos"> 38</span></a>
 </span><span id="Store-39"><a href="#Store-39"><span class="linenos"> 39</span></a><span class="sd">        Returns</span>
@@ -929,7 +929,7 @@
 </span><span id="Store-44"><a href="#Store-44"><span class="linenos"> 44</span></a>
 </span><span id="Store-45"><a href="#Store-45"><span class="linenos"> 45</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-46"><a href="#Store-46"><span class="linenos"> 46</span></a>    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">:</span> <span class="n">List</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Store-47"><a href="#Store-47"><span class="linenos"> 47</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-47"><a href="#Store-47"><span class="linenos"> 47</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-48"><a href="#Store-48"><span class="linenos"> 48</span></a><span class="sd">        Remove the samples corresponding to indices</span>
 </span><span id="Store-49"><a href="#Store-49"><span class="linenos"> 49</span></a>
 </span><span id="Store-50"><a href="#Store-50"><span class="linenos"> 50</span></a><span class="sd">        Parameters</span>
@@ -940,7 +940,7 @@
 </span><span id="Store-55"><a href="#Store-55"><span class="linenos"> 55</span></a>
 </span><span id="Store-56"><a href="#Store-56"><span class="linenos"> 56</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-57"><a href="#Store-57"><span class="linenos"> 57</span></a>    <span class="k">def</span> <span class="nf">key_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="Store-58"><a href="#Store-58"><span class="linenos"> 58</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-58"><a href="#Store-58"><span class="linenos"> 58</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-59"><a href="#Store-59"><span class="linenos"> 59</span></a><span class="sd">        Return a tuple of the key objects necessary to re-create the Store</span>
 </span><span id="Store-60"><a href="#Store-60"><span class="linenos"> 60</span></a>
 </span><span id="Store-61"><a href="#Store-61"><span class="linenos"> 61</span></a><span class="sd">        Returns</span>
@@ -951,7 +951,7 @@
 </span><span id="Store-66"><a href="#Store-66"><span class="linenos"> 66</span></a>
 </span><span id="Store-67"><a href="#Store-67"><span class="linenos"> 67</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-68"><a href="#Store-68"><span class="linenos"> 68</span></a>    <span class="k">def</span> <span class="nf">load_from_key_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_objects</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Store-69"><a href="#Store-69"><span class="linenos"> 69</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-69"><a href="#Store-69"><span class="linenos"> 69</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-70"><a href="#Store-70"><span class="linenos"> 70</span></a><span class="sd">        Load the information from a tuple of key objects</span>
 </span><span id="Store-71"><a href="#Store-71"><span class="linenos"> 71</span></a>
 </span><span id="Store-72"><a href="#Store-72"><span class="linenos"> 72</span></a><span class="sd">        Parameters</span>
@@ -962,13 +962,13 @@
 </span><span id="Store-77"><a href="#Store-77"><span class="linenos"> 77</span></a>
 </span><span id="Store-78"><a href="#Store-78"><span class="linenos"> 78</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-79"><a href="#Store-79"><span class="linenos"> 79</span></a>    <span class="k">def</span> <span class="nf">to_ram</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Store-80"><a href="#Store-80"><span class="linenos"> 80</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-80"><a href="#Store-80"><span class="linenos"> 80</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-81"><a href="#Store-81"><span class="linenos"> 81</span></a><span class="sd">        Transfer the data samples to RAM if they were previously stored as file paths</span>
 </span><span id="Store-82"><a href="#Store-82"><span class="linenos"> 82</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Store-83"><a href="#Store-83"><span class="linenos"> 83</span></a>
 </span><span id="Store-84"><a href="#Store-84"><span class="linenos"> 84</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-85"><a href="#Store-85"><span class="linenos"> 85</span></a>    <span class="k">def</span> <span class="nf">get_original_coordinates</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-</span><span id="Store-86"><a href="#Store-86"><span class="linenos"> 86</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-86"><a href="#Store-86"><span class="linenos"> 86</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-87"><a href="#Store-87"><span class="linenos"> 87</span></a><span class="sd">        Return the original coordinates array</span>
 </span><span id="Store-88"><a href="#Store-88"><span class="linenos"> 88</span></a>
 </span><span id="Store-89"><a href="#Store-89"><span class="linenos"> 89</span></a><span class="sd">        Returns</span>
@@ -980,7 +980,7 @@
 </span><span id="Store-95"><a href="#Store-95"><span class="linenos"> 95</span></a>
 </span><span id="Store-96"><a href="#Store-96"><span class="linenos"> 96</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-97"><a href="#Store-97"><span class="linenos"> 97</span></a>    <span class="k">def</span> <span class="nf">create_subsample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">:</span> <span class="n">List</span><span class="p">,</span> <span class="n">ssl_indices</span><span class="p">:</span> <span class="n">List</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span><span id="Store-98"><a href="#Store-98"><span class="linenos"> 98</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-98"><a href="#Store-98"><span class="linenos"> 98</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-99"><a href="#Store-99"><span class="linenos"> 99</span></a><span class="sd">        Create a new store that contains a subsample of the data</span>
 </span><span id="Store-100"><a href="#Store-100"><span class="linenos">100</span></a>
 </span><span id="Store-101"><a href="#Store-101"><span class="linenos">101</span></a><span class="sd">        Parameters</span>
@@ -994,7 +994,7 @@
 </span><span id="Store-109"><a href="#Store-109"><span class="linenos">109</span></a>    <span class="nd">@classmethod</span>
 </span><span id="Store-110"><a href="#Store-110"><span class="linenos">110</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store-111"><a href="#Store-111"><span class="linenos">111</span></a>    <span class="k">def</span> <span class="nf">get_file_ids</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="Store-112"><a href="#Store-112"><span class="linenos">112</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-112"><a href="#Store-112"><span class="linenos">112</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-113"><a href="#Store-113"><span class="linenos">113</span></a><span class="sd">        Process data parameters and return a list of ids  of the videos that should</span>
 </span><span id="Store-114"><a href="#Store-114"><span class="linenos">114</span></a><span class="sd">        be processed by the __init__ function</span>
 </span><span id="Store-115"><a href="#Store-115"><span class="linenos">115</span></a>
@@ -1006,7 +1006,7 @@
 </span><span id="Store-121"><a href="#Store-121"><span class="linenos">121</span></a>
 </span><span id="Store-122"><a href="#Store-122"><span class="linenos">122</span></a>    <span class="nd">@classmethod</span>
 </span><span id="Store-123"><a href="#Store-123"><span class="linenos">123</span></a>    <span class="k">def</span> <span class="nf">get_parameters</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="Store-124"><a href="#Store-124"><span class="linenos">124</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-124"><a href="#Store-124"><span class="linenos">124</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-125"><a href="#Store-125"><span class="linenos">125</span></a><span class="sd">        Generate a list of parameter names for the __init__ function</span>
 </span><span id="Store-126"><a href="#Store-126"><span class="linenos">126</span></a>
 </span><span id="Store-127"><a href="#Store-127"><span class="linenos">127</span></a><span class="sd">        Returns</span>
@@ -1019,7 +1019,7 @@
 </span><span id="Store-134"><a href="#Store-134"><span class="linenos">134</span></a>
 </span><span id="Store-135"><a href="#Store-135"><span class="linenos">135</span></a>    <span class="nd">@classmethod</span>
 </span><span id="Store-136"><a href="#Store-136"><span class="linenos">136</span></a>    <span class="k">def</span> <span class="nf">new</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-</span><span id="Store-137"><a href="#Store-137"><span class="linenos">137</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store-137"><a href="#Store-137"><span class="linenos">137</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store-138"><a href="#Store-138"><span class="linenos">138</span></a><span class="sd">        Create a new instance of the same class</span>
 </span><span id="Store-139"><a href="#Store-139"><span class="linenos">139</span></a>
 </span><span id="Store-140"><a href="#Store-140"><span class="linenos">140</span></a><span class="sd">        Returns</span>
@@ -1060,7 +1060,7 @@ The samples can be stored as a tensor or TensorDict in RAM or as an array of fil
     <a class="headerlink" href="#Store.remove"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.remove-45"><a href="#Store.remove-45"><span class="linenos">45</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.remove-46"><a href="#Store.remove-46"><span class="linenos">46</span></a>    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">:</span> <span class="n">List</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Store.remove-47"><a href="#Store.remove-47"><span class="linenos">47</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.remove-47"><a href="#Store.remove-47"><span class="linenos">47</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.remove-48"><a href="#Store.remove-48"><span class="linenos">48</span></a><span class="sd">        Remove the samples corresponding to indices</span>
 </span><span id="Store.remove-49"><a href="#Store.remove-49"><span class="linenos">49</span></a>
 </span><span id="Store.remove-50"><a href="#Store.remove-50"><span class="linenos">50</span></a><span class="sd">        Parameters</span>
@@ -1095,7 +1095,7 @@ The samples can be stored as a tensor or TensorDict in RAM or as an array of fil
     <a class="headerlink" href="#Store.key_objects"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.key_objects-56"><a href="#Store.key_objects-56"><span class="linenos">56</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.key_objects-57"><a href="#Store.key_objects-57"><span class="linenos">57</span></a>    <span class="k">def</span> <span class="nf">key_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">:</span>
-</span><span id="Store.key_objects-58"><a href="#Store.key_objects-58"><span class="linenos">58</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.key_objects-58"><a href="#Store.key_objects-58"><span class="linenos">58</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.key_objects-59"><a href="#Store.key_objects-59"><span class="linenos">59</span></a><span class="sd">        Return a tuple of the key objects necessary to re-create the Store</span>
 </span><span id="Store.key_objects-60"><a href="#Store.key_objects-60"><span class="linenos">60</span></a>
 </span><span id="Store.key_objects-61"><a href="#Store.key_objects-61"><span class="linenos">61</span></a><span class="sd">        Returns</span>
@@ -1130,7 +1130,7 @@ The samples can be stored as a tensor or TensorDict in RAM or as an array of fil
     <a class="headerlink" href="#Store.load_from_key_objects"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.load_from_key_objects-67"><a href="#Store.load_from_key_objects-67"><span class="linenos">67</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.load_from_key_objects-68"><a href="#Store.load_from_key_objects-68"><span class="linenos">68</span></a>    <span class="k">def</span> <span class="nf">load_from_key_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_objects</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Store.load_from_key_objects-69"><a href="#Store.load_from_key_objects-69"><span class="linenos">69</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.load_from_key_objects-69"><a href="#Store.load_from_key_objects-69"><span class="linenos">69</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.load_from_key_objects-70"><a href="#Store.load_from_key_objects-70"><span class="linenos">70</span></a><span class="sd">        Load the information from a tuple of key objects</span>
 </span><span id="Store.load_from_key_objects-71"><a href="#Store.load_from_key_objects-71"><span class="linenos">71</span></a>
 </span><span id="Store.load_from_key_objects-72"><a href="#Store.load_from_key_objects-72"><span class="linenos">72</span></a><span class="sd">        Parameters</span>
@@ -1165,7 +1165,7 @@ The samples can be stored as a tensor or TensorDict in RAM or as an array of fil
     <a class="headerlink" href="#Store.to_ram"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.to_ram-78"><a href="#Store.to_ram-78"><span class="linenos">78</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.to_ram-79"><a href="#Store.to_ram-79"><span class="linenos">79</span></a>    <span class="k">def</span> <span class="nf">to_ram</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Store.to_ram-80"><a href="#Store.to_ram-80"><span class="linenos">80</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.to_ram-80"><a href="#Store.to_ram-80"><span class="linenos">80</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.to_ram-81"><a href="#Store.to_ram-81"><span class="linenos">81</span></a><span class="sd">        Transfer the data samples to RAM if they were previously stored as file paths</span>
 </span><span id="Store.to_ram-82"><a href="#Store.to_ram-82"><span class="linenos">82</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span></pre></div>
@@ -1190,7 +1190,7 @@ The samples can be stored as a tensor or TensorDict in RAM or as an array of fil
     <a class="headerlink" href="#Store.get_original_coordinates"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.get_original_coordinates-84"><a href="#Store.get_original_coordinates-84"><span class="linenos">84</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.get_original_coordinates-85"><a href="#Store.get_original_coordinates-85"><span class="linenos">85</span></a>    <span class="k">def</span> <span class="nf">get_original_coordinates</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-</span><span id="Store.get_original_coordinates-86"><a href="#Store.get_original_coordinates-86"><span class="linenos">86</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.get_original_coordinates-86"><a href="#Store.get_original_coordinates-86"><span class="linenos">86</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.get_original_coordinates-87"><a href="#Store.get_original_coordinates-87"><span class="linenos">87</span></a><span class="sd">        Return the original coordinates array</span>
 </span><span id="Store.get_original_coordinates-88"><a href="#Store.get_original_coordinates-88"><span class="linenos">88</span></a>
 </span><span id="Store.get_original_coordinates-89"><a href="#Store.get_original_coordinates-89"><span class="linenos">89</span></a><span class="sd">        Returns</span>
@@ -1227,7 +1227,7 @@ The samples can be stored as a tensor or TensorDict in RAM or as an array of fil
     <a class="headerlink" href="#Store.create_subsample"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.create_subsample-96"><a href="#Store.create_subsample-96"><span class="linenos"> 96</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.create_subsample-97"><a href="#Store.create_subsample-97"><span class="linenos"> 97</span></a>    <span class="k">def</span> <span class="nf">create_subsample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">:</span> <span class="n">List</span><span class="p">,</span> <span class="n">ssl_indices</span><span class="p">:</span> <span class="n">List</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span><span id="Store.create_subsample-98"><a href="#Store.create_subsample-98"><span class="linenos"> 98</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.create_subsample-98"><a href="#Store.create_subsample-98"><span class="linenos"> 98</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.create_subsample-99"><a href="#Store.create_subsample-99"><span class="linenos"> 99</span></a><span class="sd">        Create a new store that contains a subsample of the data</span>
 </span><span id="Store.create_subsample-100"><a href="#Store.create_subsample-100"><span class="linenos">100</span></a>
 </span><span id="Store.create_subsample-101"><a href="#Store.create_subsample-101"><span class="linenos">101</span></a><span class="sd">        Parameters</span>
@@ -1268,7 +1268,7 @@ ssl_indices : list, optional
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.get_file_ids-109"><a href="#Store.get_file_ids-109"><span class="linenos">109</span></a>    <span class="nd">@classmethod</span>
 </span><span id="Store.get_file_ids-110"><a href="#Store.get_file_ids-110"><span class="linenos">110</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="Store.get_file_ids-111"><a href="#Store.get_file_ids-111"><span class="linenos">111</span></a>    <span class="k">def</span> <span class="nf">get_file_ids</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="Store.get_file_ids-112"><a href="#Store.get_file_ids-112"><span class="linenos">112</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.get_file_ids-112"><a href="#Store.get_file_ids-112"><span class="linenos">112</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.get_file_ids-113"><a href="#Store.get_file_ids-113"><span class="linenos">113</span></a><span class="sd">        Process data parameters and return a list of ids  of the videos that should</span>
 </span><span id="Store.get_file_ids-114"><a href="#Store.get_file_ids-114"><span class="linenos">114</span></a><span class="sd">        be processed by the __init__ function</span>
 </span><span id="Store.get_file_ids-115"><a href="#Store.get_file_ids-115"><span class="linenos">115</span></a>
@@ -1305,7 +1305,7 @@ be processed by the __init__ function</p>
     <a class="headerlink" href="#Store.get_parameters"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.get_parameters-122"><a href="#Store.get_parameters-122"><span class="linenos">122</span></a>    <span class="nd">@classmethod</span>
 </span><span id="Store.get_parameters-123"><a href="#Store.get_parameters-123"><span class="linenos">123</span></a>    <span class="k">def</span> <span class="nf">get_parameters</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="Store.get_parameters-124"><a href="#Store.get_parameters-124"><span class="linenos">124</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.get_parameters-124"><a href="#Store.get_parameters-124"><span class="linenos">124</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.get_parameters-125"><a href="#Store.get_parameters-125"><span class="linenos">125</span></a><span class="sd">        Generate a list of parameter names for the __init__ function</span>
 </span><span id="Store.get_parameters-126"><a href="#Store.get_parameters-126"><span class="linenos">126</span></a>
 </span><span id="Store.get_parameters-127"><a href="#Store.get_parameters-127"><span class="linenos">127</span></a><span class="sd">        Returns</span>
@@ -1342,7 +1342,7 @@ be processed by the __init__ function</p>
     <a class="headerlink" href="#Store.new"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Store.new-135"><a href="#Store.new-135"><span class="linenos">135</span></a>    <span class="nd">@classmethod</span>
 </span><span id="Store.new-136"><a href="#Store.new-136"><span class="linenos">136</span></a>    <span class="k">def</span> <span class="nf">new</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-</span><span id="Store.new-137"><a href="#Store.new-137"><span class="linenos">137</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Store.new-137"><a href="#Store.new-137"><span class="linenos">137</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Store.new-138"><a href="#Store.new-138"><span class="linenos">138</span></a><span class="sd">        Create a new instance of the same class</span>
 </span><span id="Store.new-139"><a href="#Store.new-139"><span class="linenos">139</span></a>
 </span><span id="Store.new-140"><a href="#Store.new-140"><span class="linenos">140</span></a><span class="sd">        Returns</span>
@@ -1378,7 +1378,7 @@ be processed by the __init__ function</p>
     </div>
     <a class="headerlink" href="#InputStore"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore-149"><a href="#InputStore-149"><span class="linenos">149</span></a><span class="k">class</span> <span class="nc">InputStore</span><span class="p">(</span><span class="n">Store</span><span class="p">):</span>  <span class="c1"># +</span>
-</span><span id="InputStore-150"><a href="#InputStore-150"><span class="linenos">150</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-150"><a href="#InputStore-150"><span class="linenos">150</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-151"><a href="#InputStore-151"><span class="linenos">151</span></a><span class="sd">    A class that generates model input data from video information and stores it</span>
 </span><span id="InputStore-152"><a href="#InputStore-152"><span class="linenos">152</span></a>
 </span><span id="InputStore-153"><a href="#InputStore-153"><span class="linenos">153</span></a><span class="sd">    Processes input video information and generates ordered arrays of data samples and corresponding unique</span>
@@ -1406,7 +1406,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-175"><a href="#InputStore-175"><span class="linenos">175</span></a>        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
 </span><span id="InputStore-176"><a href="#InputStore-176"><span class="linenos">176</span></a>        <span class="o">**</span><span class="n">kwargs</span>
 </span><span id="InputStore-177"><a href="#InputStore-177"><span class="linenos">177</span></a>    <span class="p">):</span>
-</span><span id="InputStore-178"><a href="#InputStore-178"><span class="linenos">178</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-178"><a href="#InputStore-178"><span class="linenos">178</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-179"><a href="#InputStore-179"><span class="linenos">179</span></a><span class="sd">        Parameters</span>
 </span><span id="InputStore-180"><a href="#InputStore-180"><span class="linenos">180</span></a><span class="sd">        ----------</span>
 </span><span id="InputStore-181"><a href="#InputStore-181"><span class="linenos">181</span></a><span class="sd">        video_order : list, optional</span>
@@ -1430,7 +1430,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-199"><a href="#InputStore-199"><span class="linenos">199</span></a>
 </span><span id="InputStore-200"><a href="#InputStore-200"><span class="linenos">200</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-201"><a href="#InputStore-201"><span class="linenos">201</span></a>    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ind</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="InputStore-202"><a href="#InputStore-202"><span class="linenos">202</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-202"><a href="#InputStore-202"><span class="linenos">202</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-203"><a href="#InputStore-203"><span class="linenos">203</span></a><span class="sd">        Return the sample corresponding to an index</span>
 </span><span id="InputStore-204"><a href="#InputStore-204"><span class="linenos">204</span></a>
 </span><span id="InputStore-205"><a href="#InputStore-205"><span class="linenos">205</span></a><span class="sd">        Parameters</span>
@@ -1446,7 +1446,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-215"><a href="#InputStore-215"><span class="linenos">215</span></a>
 </span><span id="InputStore-216"><a href="#InputStore-216"><span class="linenos">216</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-217"><a href="#InputStore-217"><span class="linenos">217</span></a>    <span class="k">def</span> <span class="nf">get_video_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="InputStore-218"><a href="#InputStore-218"><span class="linenos">218</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-218"><a href="#InputStore-218"><span class="linenos">218</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-219"><a href="#InputStore-219"><span class="linenos">219</span></a><span class="sd">        Get the video id from an element of original coordinates</span>
 </span><span id="InputStore-220"><a href="#InputStore-220"><span class="linenos">220</span></a>
 </span><span id="InputStore-221"><a href="#InputStore-221"><span class="linenos">221</span></a><span class="sd">        Parameters</span>
@@ -1462,7 +1462,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-231"><a href="#InputStore-231"><span class="linenos">231</span></a>
 </span><span id="InputStore-232"><a href="#InputStore-232"><span class="linenos">232</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-233"><a href="#InputStore-233"><span class="linenos">233</span></a>    <span class="k">def</span> <span class="nf">get_clip_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="InputStore-234"><a href="#InputStore-234"><span class="linenos">234</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-234"><a href="#InputStore-234"><span class="linenos">234</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-235"><a href="#InputStore-235"><span class="linenos">235</span></a><span class="sd">        Get the clip id from an element of original coordinates</span>
 </span><span id="InputStore-236"><a href="#InputStore-236"><span class="linenos">236</span></a>
 </span><span id="InputStore-237"><a href="#InputStore-237"><span class="linenos">237</span></a><span class="sd">        Parameters</span>
@@ -1478,7 +1478,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-247"><a href="#InputStore-247"><span class="linenos">247</span></a>
 </span><span id="InputStore-248"><a href="#InputStore-248"><span class="linenos">248</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-249"><a href="#InputStore-249"><span class="linenos">249</span></a>    <span class="k">def</span> <span class="nf">get_clip_length</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="InputStore-250"><a href="#InputStore-250"><span class="linenos">250</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-250"><a href="#InputStore-250"><span class="linenos">250</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-251"><a href="#InputStore-251"><span class="linenos">251</span></a><span class="sd">        Get the clip length from the id</span>
 </span><span id="InputStore-252"><a href="#InputStore-252"><span class="linenos">252</span></a>
 </span><span id="InputStore-253"><a href="#InputStore-253"><span class="linenos">253</span></a><span class="sd">        Parameters</span>
@@ -1496,7 +1496,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-265"><a href="#InputStore-265"><span class="linenos">265</span></a>
 </span><span id="InputStore-266"><a href="#InputStore-266"><span class="linenos">266</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-267"><a href="#InputStore-267"><span class="linenos">267</span></a>    <span class="k">def</span> <span class="nf">get_clip_start_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
-</span><span id="InputStore-268"><a href="#InputStore-268"><span class="linenos">268</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-268"><a href="#InputStore-268"><span class="linenos">268</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-269"><a href="#InputStore-269"><span class="linenos">269</span></a><span class="sd">        Get the clip start and end frames from an element of original coordinates</span>
 </span><span id="InputStore-270"><a href="#InputStore-270"><span class="linenos">270</span></a>
 </span><span id="InputStore-271"><a href="#InputStore-271"><span class="linenos">271</span></a><span class="sd">        Parameters</span>
@@ -1514,7 +1514,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-283"><a href="#InputStore-283"><span class="linenos">283</span></a>
 </span><span id="InputStore-284"><a href="#InputStore-284"><span class="linenos">284</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-285"><a href="#InputStore-285"><span class="linenos">285</span></a>    <span class="k">def</span> <span class="nf">get_clip_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="InputStore-286"><a href="#InputStore-286"><span class="linenos">286</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-286"><a href="#InputStore-286"><span class="linenos">286</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-287"><a href="#InputStore-287"><span class="linenos">287</span></a><span class="sd">        Get the clip start frame from the video id and the clip id</span>
 </span><span id="InputStore-288"><a href="#InputStore-288"><span class="linenos">288</span></a>
 </span><span id="InputStore-289"><a href="#InputStore-289"><span class="linenos">289</span></a><span class="sd">        Parameters</span>
@@ -1534,7 +1534,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-303"><a href="#InputStore-303"><span class="linenos">303</span></a>    <span class="k">def</span> <span class="nf">get_visibility</span><span class="p">(</span>
 </span><span id="InputStore-304"><a href="#InputStore-304"><span class="linenos">304</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">score</span><span class="p">:</span> <span class="nb">float</span>
 </span><span id="InputStore-305"><a href="#InputStore-305"><span class="linenos">305</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="InputStore-306"><a href="#InputStore-306"><span class="linenos">306</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-306"><a href="#InputStore-306"><span class="linenos">306</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-307"><a href="#InputStore-307"><span class="linenos">307</span></a><span class="sd">        Get the fraction of the frames in that have a visibility score better than a hard_threshold</span>
 </span><span id="InputStore-308"><a href="#InputStore-308"><span class="linenos">308</span></a>
 </span><span id="InputStore-309"><a href="#InputStore-309"><span class="linenos">309</span></a><span class="sd">        For example, in the case of keypoint data the visibility score can be the number of identified keypoints.</span>
@@ -1560,7 +1560,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-329"><a href="#InputStore-329"><span class="linenos">329</span></a>
 </span><span id="InputStore-330"><a href="#InputStore-330"><span class="linenos">330</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-331"><a href="#InputStore-331"><span class="linenos">331</span></a>    <span class="k">def</span> <span class="nf">get_annotation_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="InputStore-332"><a href="#InputStore-332"><span class="linenos">332</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-332"><a href="#InputStore-332"><span class="linenos">332</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-333"><a href="#InputStore-333"><span class="linenos">333</span></a><span class="sd">        Get a dictionary of objects necessary to create an AnnotationStore</span>
 </span><span id="InputStore-334"><a href="#InputStore-334"><span class="linenos">334</span></a>
 </span><span id="InputStore-335"><a href="#InputStore-335"><span class="linenos">335</span></a><span class="sd">        Returns</span>
@@ -1572,7 +1572,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-341"><a href="#InputStore-341"><span class="linenos">341</span></a>
 </span><span id="InputStore-342"><a href="#InputStore-342"><span class="linenos">342</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore-343"><a href="#InputStore-343"><span class="linenos">343</span></a>    <span class="k">def</span> <span class="nf">get_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="InputStore-344"><a href="#InputStore-344"><span class="linenos">344</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-344"><a href="#InputStore-344"><span class="linenos">344</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-345"><a href="#InputStore-345"><span class="linenos">345</span></a><span class="sd">        Get the input folder that the file with this video id was read from</span>
 </span><span id="InputStore-346"><a href="#InputStore-346"><span class="linenos">346</span></a>
 </span><span id="InputStore-347"><a href="#InputStore-347"><span class="linenos">347</span></a><span class="sd">        Parameters</span>
@@ -1587,7 +1587,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-356"><a href="#InputStore-356"><span class="linenos">356</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="InputStore-357"><a href="#InputStore-357"><span class="linenos">357</span></a>
 </span><span id="InputStore-358"><a href="#InputStore-358"><span class="linenos">358</span></a>    <span class="k">def</span> <span class="nf">get_clip_length_from_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="InputStore-359"><a href="#InputStore-359"><span class="linenos">359</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-359"><a href="#InputStore-359"><span class="linenos">359</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-360"><a href="#InputStore-360"><span class="linenos">360</span></a><span class="sd">        Get the length of a clip from an element of the original coordinates array</span>
 </span><span id="InputStore-361"><a href="#InputStore-361"><span class="linenos">361</span></a>
 </span><span id="InputStore-362"><a href="#InputStore-362"><span class="linenos">362</span></a><span class="sd">        Parameters</span>
@@ -1607,7 +1607,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-376"><a href="#InputStore-376"><span class="linenos">376</span></a>        <span class="k">return</span> <span class="n">l</span>
 </span><span id="InputStore-377"><a href="#InputStore-377"><span class="linenos">377</span></a>
 </span><span id="InputStore-378"><a href="#InputStore-378"><span class="linenos">378</span></a>    <span class="k">def</span> <span class="nf">get_folder_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore-379"><a href="#InputStore-379"><span class="linenos">379</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-379"><a href="#InputStore-379"><span class="linenos">379</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-380"><a href="#InputStore-380"><span class="linenos">380</span></a><span class="sd">        Get a list of folders corresponding to the data samples</span>
 </span><span id="InputStore-381"><a href="#InputStore-381"><span class="linenos">381</span></a>
 </span><span id="InputStore-382"><a href="#InputStore-382"><span class="linenos">382</span></a><span class="sd">        Returns</span>
@@ -1620,7 +1620,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-389"><a href="#InputStore-389"><span class="linenos">389</span></a>        <span class="k">return</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_folder</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_video_id_order</span><span class="p">()]</span>
 </span><span id="InputStore-390"><a href="#InputStore-390"><span class="linenos">390</span></a>
 </span><span id="InputStore-391"><a href="#InputStore-391"><span class="linenos">391</span></a>    <span class="k">def</span> <span class="nf">get_video_id_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore-392"><a href="#InputStore-392"><span class="linenos">392</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-392"><a href="#InputStore-392"><span class="linenos">392</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-393"><a href="#InputStore-393"><span class="linenos">393</span></a><span class="sd">        Get a list of video ids corresponding to the data samples</span>
 </span><span id="InputStore-394"><a href="#InputStore-394"><span class="linenos">394</span></a>
 </span><span id="InputStore-395"><a href="#InputStore-395"><span class="linenos">395</span></a><span class="sd">        Returns</span>
@@ -1632,7 +1632,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-401"><a href="#InputStore-401"><span class="linenos">401</span></a>        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">get_video_id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_original_coordinates</span><span class="p">()]</span>
 </span><span id="InputStore-402"><a href="#InputStore-402"><span class="linenos">402</span></a>
 </span><span id="InputStore-403"><a href="#InputStore-403"><span class="linenos">403</span></a>    <span class="k">def</span> <span class="nf">get_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
-</span><span id="InputStore-404"><a href="#InputStore-404"><span class="linenos">404</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-404"><a href="#InputStore-404"><span class="linenos">404</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-405"><a href="#InputStore-405"><span class="linenos">405</span></a><span class="sd">        Return a tag object corresponding to an index</span>
 </span><span id="InputStore-406"><a href="#InputStore-406"><span class="linenos">406</span></a>
 </span><span id="InputStore-407"><a href="#InputStore-407"><span class="linenos">407</span></a><span class="sd">        Tags can carry meta information (like annotator id) and are accepted by models that require</span>
@@ -1653,7 +1653,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-422"><a href="#InputStore-422"><span class="linenos">422</span></a>        <span class="k">return</span> <span class="kc">None</span>
 </span><span id="InputStore-423"><a href="#InputStore-423"><span class="linenos">423</span></a>
 </span><span id="InputStore-424"><a href="#InputStore-424"><span class="linenos">424</span></a>    <span class="k">def</span> <span class="nf">get_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore-425"><a href="#InputStore-425"><span class="linenos">425</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-425"><a href="#InputStore-425"><span class="linenos">425</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-426"><a href="#InputStore-426"><span class="linenos">426</span></a><span class="sd">        Get a list of indices of samples that have a specific meta tag</span>
 </span><span id="InputStore-427"><a href="#InputStore-427"><span class="linenos">427</span></a>
 </span><span id="InputStore-428"><a href="#InputStore-428"><span class="linenos">428</span></a><span class="sd">        Parameters</span>
@@ -1670,7 +1670,7 @@ be processed by the __init__ function</p>
 </span><span id="InputStore-439"><a href="#InputStore-439"><span class="linenos">439</span></a>        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)))</span>
 </span><span id="InputStore-440"><a href="#InputStore-440"><span class="linenos">440</span></a>
 </span><span id="InputStore-441"><a href="#InputStore-441"><span class="linenos">441</span></a>    <span class="k">def</span> <span class="nf">get_tags</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore-442"><a href="#InputStore-442"><span class="linenos">442</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore-442"><a href="#InputStore-442"><span class="linenos">442</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore-443"><a href="#InputStore-443"><span class="linenos">443</span></a><span class="sd">        Get a list of all meta tags</span>
 </span><span id="InputStore-444"><a href="#InputStore-444"><span class="linenos">444</span></a>
 </span><span id="InputStore-445"><a href="#InputStore-445"><span class="linenos">445</span></a><span class="sd">        Returns</span>
@@ -1722,7 +1722,7 @@ information from key objects</p>
 </span><span id="InputStore.__init__-175"><a href="#InputStore.__init__-175"><span class="linenos">175</span></a>        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
 </span><span id="InputStore.__init__-176"><a href="#InputStore.__init__-176"><span class="linenos">176</span></a>        <span class="o">**</span><span class="n">kwargs</span>
 </span><span id="InputStore.__init__-177"><a href="#InputStore.__init__-177"><span class="linenos">177</span></a>    <span class="p">):</span>
-</span><span id="InputStore.__init__-178"><a href="#InputStore.__init__-178"><span class="linenos">178</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.__init__-178"><a href="#InputStore.__init__-178"><span class="linenos">178</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.__init__-179"><a href="#InputStore.__init__-179"><span class="linenos">179</span></a><span class="sd">        Parameters</span>
 </span><span id="InputStore.__init__-180"><a href="#InputStore.__init__-180"><span class="linenos">180</span></a><span class="sd">        ----------</span>
 </span><span id="InputStore.__init__-181"><a href="#InputStore.__init__-181"><span class="linenos">181</span></a><span class="sd">        video_order : list, optional</span>
@@ -1780,7 +1780,7 @@ feature_extraction_pars : dict, optional
     <a class="headerlink" href="#InputStore.get_video_id"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_video_id-216"><a href="#InputStore.get_video_id-216"><span class="linenos">216</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_video_id-217"><a href="#InputStore.get_video_id-217"><span class="linenos">217</span></a>    <span class="k">def</span> <span class="nf">get_video_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="InputStore.get_video_id-218"><a href="#InputStore.get_video_id-218"><span class="linenos">218</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_video_id-218"><a href="#InputStore.get_video_id-218"><span class="linenos">218</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_video_id-219"><a href="#InputStore.get_video_id-219"><span class="linenos">219</span></a><span class="sd">        Get the video id from an element of original coordinates</span>
 </span><span id="InputStore.get_video_id-220"><a href="#InputStore.get_video_id-220"><span class="linenos">220</span></a>
 </span><span id="InputStore.get_video_id-221"><a href="#InputStore.get_video_id-221"><span class="linenos">221</span></a><span class="sd">        Parameters</span>
@@ -1825,7 +1825,7 @@ feature_extraction_pars : dict, optional
     <a class="headerlink" href="#InputStore.get_clip_id"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_clip_id-232"><a href="#InputStore.get_clip_id-232"><span class="linenos">232</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_clip_id-233"><a href="#InputStore.get_clip_id-233"><span class="linenos">233</span></a>    <span class="k">def</span> <span class="nf">get_clip_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="InputStore.get_clip_id-234"><a href="#InputStore.get_clip_id-234"><span class="linenos">234</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_clip_id-234"><a href="#InputStore.get_clip_id-234"><span class="linenos">234</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_clip_id-235"><a href="#InputStore.get_clip_id-235"><span class="linenos">235</span></a><span class="sd">        Get the clip id from an element of original coordinates</span>
 </span><span id="InputStore.get_clip_id-236"><a href="#InputStore.get_clip_id-236"><span class="linenos">236</span></a>
 </span><span id="InputStore.get_clip_id-237"><a href="#InputStore.get_clip_id-237"><span class="linenos">237</span></a><span class="sd">        Parameters</span>
@@ -1870,7 +1870,7 @@ feature_extraction_pars : dict, optional
     <a class="headerlink" href="#InputStore.get_clip_length"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_clip_length-248"><a href="#InputStore.get_clip_length-248"><span class="linenos">248</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_clip_length-249"><a href="#InputStore.get_clip_length-249"><span class="linenos">249</span></a>    <span class="k">def</span> <span class="nf">get_clip_length</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="InputStore.get_clip_length-250"><a href="#InputStore.get_clip_length-250"><span class="linenos">250</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_clip_length-250"><a href="#InputStore.get_clip_length-250"><span class="linenos">250</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_clip_length-251"><a href="#InputStore.get_clip_length-251"><span class="linenos">251</span></a><span class="sd">        Get the clip length from the id</span>
 </span><span id="InputStore.get_clip_length-252"><a href="#InputStore.get_clip_length-252"><span class="linenos">252</span></a>
 </span><span id="InputStore.get_clip_length-253"><a href="#InputStore.get_clip_length-253"><span class="linenos">253</span></a><span class="sd">        Parameters</span>
@@ -1919,7 +1919,7 @@ clip_id : str
     <a class="headerlink" href="#InputStore.get_clip_start_end"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_clip_start_end-266"><a href="#InputStore.get_clip_start_end-266"><span class="linenos">266</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_clip_start_end-267"><a href="#InputStore.get_clip_start_end-267"><span class="linenos">267</span></a>    <span class="k">def</span> <span class="nf">get_clip_start_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
-</span><span id="InputStore.get_clip_start_end-268"><a href="#InputStore.get_clip_start_end-268"><span class="linenos">268</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_clip_start_end-268"><a href="#InputStore.get_clip_start_end-268"><span class="linenos">268</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_clip_start_end-269"><a href="#InputStore.get_clip_start_end-269"><span class="linenos">269</span></a><span class="sd">        Get the clip start and end frames from an element of original coordinates</span>
 </span><span id="InputStore.get_clip_start_end-270"><a href="#InputStore.get_clip_start_end-270"><span class="linenos">270</span></a>
 </span><span id="InputStore.get_clip_start_end-271"><a href="#InputStore.get_clip_start_end-271"><span class="linenos">271</span></a><span class="sd">        Parameters</span>
@@ -1968,7 +1968,7 @@ end : int
     <a class="headerlink" href="#InputStore.get_clip_start"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_clip_start-284"><a href="#InputStore.get_clip_start-284"><span class="linenos">284</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_clip_start-285"><a href="#InputStore.get_clip_start-285"><span class="linenos">285</span></a>    <span class="k">def</span> <span class="nf">get_clip_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="InputStore.get_clip_start-286"><a href="#InputStore.get_clip_start-286"><span class="linenos">286</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_clip_start-286"><a href="#InputStore.get_clip_start-286"><span class="linenos">286</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_clip_start-287"><a href="#InputStore.get_clip_start-287"><span class="linenos">287</span></a><span class="sd">        Get the clip start frame from the video id and the clip id</span>
 </span><span id="InputStore.get_clip_start-288"><a href="#InputStore.get_clip_start-288"><span class="linenos">288</span></a>
 </span><span id="InputStore.get_clip_start-289"><a href="#InputStore.get_clip_start-289"><span class="linenos">289</span></a><span class="sd">        Parameters</span>
@@ -2019,7 +2019,7 @@ clip_id : str
 </span><span id="InputStore.get_visibility-303"><a href="#InputStore.get_visibility-303"><span class="linenos">303</span></a>    <span class="k">def</span> <span class="nf">get_visibility</span><span class="p">(</span>
 </span><span id="InputStore.get_visibility-304"><a href="#InputStore.get_visibility-304"><span class="linenos">304</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">score</span><span class="p">:</span> <span class="nb">float</span>
 </span><span id="InputStore.get_visibility-305"><a href="#InputStore.get_visibility-305"><span class="linenos">305</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-</span><span id="InputStore.get_visibility-306"><a href="#InputStore.get_visibility-306"><span class="linenos">306</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_visibility-306"><a href="#InputStore.get_visibility-306"><span class="linenos">306</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_visibility-307"><a href="#InputStore.get_visibility-307"><span class="linenos">307</span></a><span class="sd">        Get the fraction of the frames in that have a visibility score better than a hard_threshold</span>
 </span><span id="InputStore.get_visibility-308"><a href="#InputStore.get_visibility-308"><span class="linenos">308</span></a>
 </span><span id="InputStore.get_visibility-309"><a href="#InputStore.get_visibility-309"><span class="linenos">309</span></a><span class="sd">        For example, in the case of keypoint data the visibility score can be the number of identified keypoints.</span>
@@ -2084,7 +2084,7 @@ score : float
     <a class="headerlink" href="#InputStore.get_annotation_objects"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_annotation_objects-330"><a href="#InputStore.get_annotation_objects-330"><span class="linenos">330</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_annotation_objects-331"><a href="#InputStore.get_annotation_objects-331"><span class="linenos">331</span></a>    <span class="k">def</span> <span class="nf">get_annotation_objects</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="InputStore.get_annotation_objects-332"><a href="#InputStore.get_annotation_objects-332"><span class="linenos">332</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_annotation_objects-332"><a href="#InputStore.get_annotation_objects-332"><span class="linenos">332</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_annotation_objects-333"><a href="#InputStore.get_annotation_objects-333"><span class="linenos">333</span></a><span class="sd">        Get a dictionary of objects necessary to create an AnnotationStore</span>
 </span><span id="InputStore.get_annotation_objects-334"><a href="#InputStore.get_annotation_objects-334"><span class="linenos">334</span></a>
 </span><span id="InputStore.get_annotation_objects-335"><a href="#InputStore.get_annotation_objects-335"><span class="linenos">335</span></a><span class="sd">        Returns</span>
@@ -2121,7 +2121,7 @@ score : float
     <a class="headerlink" href="#InputStore.get_folder"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_folder-342"><a href="#InputStore.get_folder-342"><span class="linenos">342</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="InputStore.get_folder-343"><a href="#InputStore.get_folder-343"><span class="linenos">343</span></a>    <span class="k">def</span> <span class="nf">get_folder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">video_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="InputStore.get_folder-344"><a href="#InputStore.get_folder-344"><span class="linenos">344</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_folder-344"><a href="#InputStore.get_folder-344"><span class="linenos">344</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_folder-345"><a href="#InputStore.get_folder-345"><span class="linenos">345</span></a><span class="sd">        Get the input folder that the file with this video id was read from</span>
 </span><span id="InputStore.get_folder-346"><a href="#InputStore.get_folder-346"><span class="linenos">346</span></a>
 </span><span id="InputStore.get_folder-347"><a href="#InputStore.get_folder-347"><span class="linenos">347</span></a><span class="sd">        Parameters</span>
@@ -2164,7 +2164,7 @@ score : float
     </div>
     <a class="headerlink" href="#InputStore.get_clip_length_from_coords"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_clip_length_from_coords-358"><a href="#InputStore.get_clip_length_from_coords-358"><span class="linenos">358</span></a>    <span class="k">def</span> <span class="nf">get_clip_length_from_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="InputStore.get_clip_length_from_coords-359"><a href="#InputStore.get_clip_length_from_coords-359"><span class="linenos">359</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_clip_length_from_coords-359"><a href="#InputStore.get_clip_length_from_coords-359"><span class="linenos">359</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_clip_length_from_coords-360"><a href="#InputStore.get_clip_length_from_coords-360"><span class="linenos">360</span></a><span class="sd">        Get the length of a clip from an element of the original coordinates array</span>
 </span><span id="InputStore.get_clip_length_from_coords-361"><a href="#InputStore.get_clip_length_from_coords-361"><span class="linenos">361</span></a>
 </span><span id="InputStore.get_clip_length_from_coords-362"><a href="#InputStore.get_clip_length_from_coords-362"><span class="linenos">362</span></a><span class="sd">        Parameters</span>
@@ -2212,7 +2212,7 @@ score : float
     </div>
     <a class="headerlink" href="#InputStore.get_folder_order"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_folder_order-378"><a href="#InputStore.get_folder_order-378"><span class="linenos">378</span></a>    <span class="k">def</span> <span class="nf">get_folder_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore.get_folder_order-379"><a href="#InputStore.get_folder_order-379"><span class="linenos">379</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_folder_order-379"><a href="#InputStore.get_folder_order-379"><span class="linenos">379</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_folder_order-380"><a href="#InputStore.get_folder_order-380"><span class="linenos">380</span></a><span class="sd">        Get a list of folders corresponding to the data samples</span>
 </span><span id="InputStore.get_folder_order-381"><a href="#InputStore.get_folder_order-381"><span class="linenos">381</span></a>
 </span><span id="InputStore.get_folder_order-382"><a href="#InputStore.get_folder_order-382"><span class="linenos">382</span></a><span class="sd">        Returns</span>
@@ -2249,7 +2249,7 @@ score : float
     </div>
     <a class="headerlink" href="#InputStore.get_video_id_order"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_video_id_order-391"><a href="#InputStore.get_video_id_order-391"><span class="linenos">391</span></a>    <span class="k">def</span> <span class="nf">get_video_id_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore.get_video_id_order-392"><a href="#InputStore.get_video_id_order-392"><span class="linenos">392</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_video_id_order-392"><a href="#InputStore.get_video_id_order-392"><span class="linenos">392</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_video_id_order-393"><a href="#InputStore.get_video_id_order-393"><span class="linenos">393</span></a><span class="sd">        Get a list of video ids corresponding to the data samples</span>
 </span><span id="InputStore.get_video_id_order-394"><a href="#InputStore.get_video_id_order-394"><span class="linenos">394</span></a>
 </span><span id="InputStore.get_video_id_order-395"><a href="#InputStore.get_video_id_order-395"><span class="linenos">395</span></a><span class="sd">        Returns</span>
@@ -2284,7 +2284,7 @@ score : float
     </div>
     <a class="headerlink" href="#InputStore.get_tag"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_tag-403"><a href="#InputStore.get_tag-403"><span class="linenos">403</span></a>    <span class="k">def</span> <span class="nf">get_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
-</span><span id="InputStore.get_tag-404"><a href="#InputStore.get_tag-404"><span class="linenos">404</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_tag-404"><a href="#InputStore.get_tag-404"><span class="linenos">404</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_tag-405"><a href="#InputStore.get_tag-405"><span class="linenos">405</span></a><span class="sd">        Return a tag object corresponding to an index</span>
 </span><span id="InputStore.get_tag-406"><a href="#InputStore.get_tag-406"><span class="linenos">406</span></a>
 </span><span id="InputStore.get_tag-407"><a href="#InputStore.get_tag-407"><span class="linenos">407</span></a><span class="sd">        Tags can carry meta information (like annotator id) and are accepted by models that require</span>
@@ -2337,7 +2337,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
     </div>
     <a class="headerlink" href="#InputStore.get_indices"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_indices-424"><a href="#InputStore.get_indices-424"><span class="linenos">424</span></a>    <span class="k">def</span> <span class="nf">get_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore.get_indices-425"><a href="#InputStore.get_indices-425"><span class="linenos">425</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_indices-425"><a href="#InputStore.get_indices-425"><span class="linenos">425</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_indices-426"><a href="#InputStore.get_indices-426"><span class="linenos">426</span></a><span class="sd">        Get a list of indices of samples that have a specific meta tag</span>
 </span><span id="InputStore.get_indices-427"><a href="#InputStore.get_indices-427"><span class="linenos">427</span></a>
 </span><span id="InputStore.get_indices-428"><a href="#InputStore.get_indices-428"><span class="linenos">428</span></a><span class="sd">        Parameters</span>
@@ -2382,7 +2382,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
     </div>
     <a class="headerlink" href="#InputStore.get_tags"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="InputStore.get_tags-441"><a href="#InputStore.get_tags-441"><span class="linenos">441</span></a>    <span class="k">def</span> <span class="nf">get_tags</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="InputStore.get_tags-442"><a href="#InputStore.get_tags-442"><span class="linenos">442</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="InputStore.get_tags-442"><a href="#InputStore.get_tags-442"><span class="linenos">442</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="InputStore.get_tags-443"><a href="#InputStore.get_tags-443"><span class="linenos">443</span></a><span class="sd">        Get a list of all meta tags</span>
 </span><span id="InputStore.get_tags-444"><a href="#InputStore.get_tags-444"><span class="linenos">444</span></a>
 </span><span id="InputStore.get_tags-445"><a href="#InputStore.get_tags-445"><span class="linenos">445</span></a><span class="sd">        Returns</span>
@@ -2435,7 +2435,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
     </div>
     <a class="headerlink" href="#AnnotationStore"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore-454"><a href="#AnnotationStore-454"><span class="linenos">454</span></a><span class="k">class</span> <span class="nc">AnnotationStore</span><span class="p">(</span><span class="n">Store</span><span class="p">):</span>
-</span><span id="AnnotationStore-455"><a href="#AnnotationStore-455"><span class="linenos">455</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-455"><a href="#AnnotationStore-455"><span class="linenos">455</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-456"><a href="#AnnotationStore-456"><span class="linenos">456</span></a><span class="sd">    A class that generates annotation from video information and stores it</span>
 </span><span id="AnnotationStore-457"><a href="#AnnotationStore-457"><span class="linenos">457</span></a>
 </span><span id="AnnotationStore-458"><a href="#AnnotationStore-458"><span class="linenos">458</span></a><span class="sd">    Processes input video information and generates ordered arrays of annotation samples and corresponding unique</span>
@@ -2452,7 +2452,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-469"><a href="#AnnotationStore-469"><span class="linenos">469</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-470"><a href="#AnnotationStore-470"><span class="linenos">470</span></a>
 </span><span id="AnnotationStore-471"><a href="#AnnotationStore-471"><span class="linenos">471</span></a>    <span class="n">required_objects</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="AnnotationStore-472"><a href="#AnnotationStore-472"><span class="linenos">472</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-472"><a href="#AnnotationStore-472"><span class="linenos">472</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-473"><a href="#AnnotationStore-473"><span class="linenos">473</span></a><span class="sd">    A list of string names of the objects required from the input store</span>
 </span><span id="AnnotationStore-474"><a href="#AnnotationStore-474"><span class="linenos">474</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-475"><a href="#AnnotationStore-475"><span class="linenos">475</span></a>
@@ -2465,7 +2465,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-482"><a href="#AnnotationStore-482"><span class="linenos">482</span></a>        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
 </span><span id="AnnotationStore-483"><a href="#AnnotationStore-483"><span class="linenos">483</span></a>        <span class="o">**</span><span class="n">kwargs</span>
 </span><span id="AnnotationStore-484"><a href="#AnnotationStore-484"><span class="linenos">484</span></a>    <span class="p">):</span>
-</span><span id="AnnotationStore-485"><a href="#AnnotationStore-485"><span class="linenos">485</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-485"><a href="#AnnotationStore-485"><span class="linenos">485</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-486"><a href="#AnnotationStore-486"><span class="linenos">486</span></a><span class="sd">        Parameters</span>
 </span><span id="AnnotationStore-487"><a href="#AnnotationStore-487"><span class="linenos">487</span></a><span class="sd">        ----------</span>
 </span><span id="AnnotationStore-488"><a href="#AnnotationStore-488"><span class="linenos">488</span></a><span class="sd">        video_order : list, optional</span>
@@ -2482,7 +2482,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-499"><a href="#AnnotationStore-499"><span class="linenos">499</span></a>
 </span><span id="AnnotationStore-500"><a href="#AnnotationStore-500"><span class="linenos">500</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-501"><a href="#AnnotationStore-501"><span class="linenos">501</span></a>    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ind</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-</span><span id="AnnotationStore-502"><a href="#AnnotationStore-502"><span class="linenos">502</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-502"><a href="#AnnotationStore-502"><span class="linenos">502</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-503"><a href="#AnnotationStore-503"><span class="linenos">503</span></a><span class="sd">        Return the annotation of the sample corresponding to an index</span>
 </span><span id="AnnotationStore-504"><a href="#AnnotationStore-504"><span class="linenos">504</span></a>
 </span><span id="AnnotationStore-505"><a href="#AnnotationStore-505"><span class="linenos">505</span></a><span class="sd">        Parameters</span>
@@ -2498,7 +2498,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-515"><a href="#AnnotationStore-515"><span class="linenos">515</span></a>
 </span><span id="AnnotationStore-516"><a href="#AnnotationStore-516"><span class="linenos">516</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-517"><a href="#AnnotationStore-517"><span class="linenos">517</span></a>    <span class="k">def</span> <span class="nf">get_len</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">return_unlabeled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="AnnotationStore-518"><a href="#AnnotationStore-518"><span class="linenos">518</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-518"><a href="#AnnotationStore-518"><span class="linenos">518</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-519"><a href="#AnnotationStore-519"><span class="linenos">519</span></a><span class="sd">        Get the length of the subsample of labeled/unlabeled data</span>
 </span><span id="AnnotationStore-520"><a href="#AnnotationStore-520"><span class="linenos">520</span></a>
 </span><span id="AnnotationStore-521"><a href="#AnnotationStore-521"><span class="linenos">521</span></a><span class="sd">        If return_unlabeled is True, the index is in the subsample of unlabeled data, if False in labeled</span>
@@ -2519,7 +2519,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-536"><a href="#AnnotationStore-536"><span class="linenos">536</span></a>    <span class="k">def</span> <span class="nf">count_classes</span><span class="p">(</span>
 </span><span id="AnnotationStore-537"><a href="#AnnotationStore-537"><span class="linenos">537</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">frac</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">zeros</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">bouts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="AnnotationStore-538"><a href="#AnnotationStore-538"><span class="linenos">538</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="AnnotationStore-539"><a href="#AnnotationStore-539"><span class="linenos">539</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-539"><a href="#AnnotationStore-539"><span class="linenos">539</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-540"><a href="#AnnotationStore-540"><span class="linenos">540</span></a><span class="sd">        Get a dictionary with class-wise frame counts</span>
 </span><span id="AnnotationStore-541"><a href="#AnnotationStore-541"><span class="linenos">541</span></a>
 </span><span id="AnnotationStore-542"><a href="#AnnotationStore-542"><span class="linenos">542</span></a><span class="sd">        Parameters</span>
@@ -2540,7 +2540,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-557"><a href="#AnnotationStore-557"><span class="linenos">557</span></a>
 </span><span id="AnnotationStore-558"><a href="#AnnotationStore-558"><span class="linenos">558</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-559"><a href="#AnnotationStore-559"><span class="linenos">559</span></a>    <span class="k">def</span> <span class="nf">behaviors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="AnnotationStore-560"><a href="#AnnotationStore-560"><span class="linenos">560</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-560"><a href="#AnnotationStore-560"><span class="linenos">560</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-561"><a href="#AnnotationStore-561"><span class="linenos">561</span></a><span class="sd">        Get a dictionary of class names</span>
 </span><span id="AnnotationStore-562"><a href="#AnnotationStore-562"><span class="linenos">562</span></a>
 </span><span id="AnnotationStore-563"><a href="#AnnotationStore-563"><span class="linenos">563</span></a><span class="sd">        Returns</span>
@@ -2551,7 +2551,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-568"><a href="#AnnotationStore-568"><span class="linenos">568</span></a>
 </span><span id="AnnotationStore-569"><a href="#AnnotationStore-569"><span class="linenos">569</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-570"><a href="#AnnotationStore-570"><span class="linenos">570</span></a>    <span class="k">def</span> <span class="nf">annotation_class</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="AnnotationStore-571"><a href="#AnnotationStore-571"><span class="linenos">571</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-571"><a href="#AnnotationStore-571"><span class="linenos">571</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-572"><a href="#AnnotationStore-572"><span class="linenos">572</span></a><span class="sd">        Get the type of annotation (&#39;exclusive_classification&#39;, &#39;nonexclusive_classification&#39;, more coming soon)</span>
 </span><span id="AnnotationStore-573"><a href="#AnnotationStore-573"><span class="linenos">573</span></a>
 </span><span id="AnnotationStore-574"><a href="#AnnotationStore-574"><span class="linenos">574</span></a><span class="sd">        Returns</span>
@@ -2562,7 +2562,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-579"><a href="#AnnotationStore-579"><span class="linenos">579</span></a>
 </span><span id="AnnotationStore-580"><a href="#AnnotationStore-580"><span class="linenos">580</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-581"><a href="#AnnotationStore-581"><span class="linenos">581</span></a>    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="AnnotationStore-582"><a href="#AnnotationStore-582"><span class="linenos">582</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-582"><a href="#AnnotationStore-582"><span class="linenos">582</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-583"><a href="#AnnotationStore-583"><span class="linenos">583</span></a><span class="sd">        Get the total number of frames in the data</span>
 </span><span id="AnnotationStore-584"><a href="#AnnotationStore-584"><span class="linenos">584</span></a>
 </span><span id="AnnotationStore-585"><a href="#AnnotationStore-585"><span class="linenos">585</span></a><span class="sd">        Returns</span>
@@ -2573,7 +2573,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-590"><a href="#AnnotationStore-590"><span class="linenos">590</span></a>
 </span><span id="AnnotationStore-591"><a href="#AnnotationStore-591"><span class="linenos">591</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-592"><a href="#AnnotationStore-592"><span class="linenos">592</span></a>    <span class="k">def</span> <span class="nf">filtered_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="AnnotationStore-593"><a href="#AnnotationStore-593"><span class="linenos">593</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-593"><a href="#AnnotationStore-593"><span class="linenos">593</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-594"><a href="#AnnotationStore-594"><span class="linenos">594</span></a><span class="sd">        Return the indices of the samples that should be removed</span>
 </span><span id="AnnotationStore-595"><a href="#AnnotationStore-595"><span class="linenos">595</span></a>
 </span><span id="AnnotationStore-596"><a href="#AnnotationStore-596"><span class="linenos">596</span></a><span class="sd">        Choosing the indices can be based on any kind of filering defined in the __init__ function by the data</span>
@@ -2587,7 +2587,7 @@ When a tag is <code>None</code>, it is not passed to the model.</p>
 </span><span id="AnnotationStore-604"><a href="#AnnotationStore-604"><span class="linenos">604</span></a>
 </span><span id="AnnotationStore-605"><a href="#AnnotationStore-605"><span class="linenos">605</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore-606"><a href="#AnnotationStore-606"><span class="linenos">606</span></a>    <span class="k">def</span> <span class="nf">set_pseudo_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="AnnotationStore-607"><a href="#AnnotationStore-607"><span class="linenos">607</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore-607"><a href="#AnnotationStore-607"><span class="linenos">607</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore-608"><a href="#AnnotationStore-608"><span class="linenos">608</span></a><span class="sd">        Set pseudo labels to the unlabeled data</span>
 </span><span id="AnnotationStore-609"><a href="#AnnotationStore-609"><span class="linenos">609</span></a>
 </span><span id="AnnotationStore-610"><a href="#AnnotationStore-610"><span class="linenos">610</span></a><span class="sd">        Parameters</span>
@@ -2634,7 +2634,7 @@ information from key objects</p>
 </span><span id="AnnotationStore.__init__-482"><a href="#AnnotationStore.__init__-482"><span class="linenos">482</span></a>        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
 </span><span id="AnnotationStore.__init__-483"><a href="#AnnotationStore.__init__-483"><span class="linenos">483</span></a>        <span class="o">**</span><span class="n">kwargs</span>
 </span><span id="AnnotationStore.__init__-484"><a href="#AnnotationStore.__init__-484"><span class="linenos">484</span></a>    <span class="p">):</span>
-</span><span id="AnnotationStore.__init__-485"><a href="#AnnotationStore.__init__-485"><span class="linenos">485</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.__init__-485"><a href="#AnnotationStore.__init__-485"><span class="linenos">485</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.__init__-486"><a href="#AnnotationStore.__init__-486"><span class="linenos">486</span></a><span class="sd">        Parameters</span>
 </span><span id="AnnotationStore.__init__-487"><a href="#AnnotationStore.__init__-487"><span class="linenos">487</span></a><span class="sd">        ----------</span>
 </span><span id="AnnotationStore.__init__-488"><a href="#AnnotationStore.__init__-488"><span class="linenos">488</span></a><span class="sd">        video_order : list, optional</span>
@@ -2691,7 +2691,7 @@ annotation_path : str | set, optional
     <a class="headerlink" href="#AnnotationStore.get_len"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore.get_len-516"><a href="#AnnotationStore.get_len-516"><span class="linenos">516</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore.get_len-517"><a href="#AnnotationStore.get_len-517"><span class="linenos">517</span></a>    <span class="k">def</span> <span class="nf">get_len</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">return_unlabeled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="AnnotationStore.get_len-518"><a href="#AnnotationStore.get_len-518"><span class="linenos">518</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.get_len-518"><a href="#AnnotationStore.get_len-518"><span class="linenos">518</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.get_len-519"><a href="#AnnotationStore.get_len-519"><span class="linenos">519</span></a><span class="sd">        Get the length of the subsample of labeled/unlabeled data</span>
 </span><span id="AnnotationStore.get_len-520"><a href="#AnnotationStore.get_len-520"><span class="linenos">520</span></a>
 </span><span id="AnnotationStore.get_len-521"><a href="#AnnotationStore.get_len-521"><span class="linenos">521</span></a><span class="sd">        If return_unlabeled is True, the index is in the subsample of unlabeled data, if False in labeled</span>
@@ -2744,7 +2744,7 @@ and if return_unlabeled is None the index is already correct</p>
 </span><span id="AnnotationStore.count_classes-536"><a href="#AnnotationStore.count_classes-536"><span class="linenos">536</span></a>    <span class="k">def</span> <span class="nf">count_classes</span><span class="p">(</span>
 </span><span id="AnnotationStore.count_classes-537"><a href="#AnnotationStore.count_classes-537"><span class="linenos">537</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">frac</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">zeros</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">bouts</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="AnnotationStore.count_classes-538"><a href="#AnnotationStore.count_classes-538"><span class="linenos">538</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="AnnotationStore.count_classes-539"><a href="#AnnotationStore.count_classes-539"><span class="linenos">539</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.count_classes-539"><a href="#AnnotationStore.count_classes-539"><span class="linenos">539</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.count_classes-540"><a href="#AnnotationStore.count_classes-540"><span class="linenos">540</span></a><span class="sd">        Get a dictionary with class-wise frame counts</span>
 </span><span id="AnnotationStore.count_classes-541"><a href="#AnnotationStore.count_classes-541"><span class="linenos">541</span></a>
 </span><span id="AnnotationStore.count_classes-542"><a href="#AnnotationStore.count_classes-542"><span class="linenos">542</span></a><span class="sd">        Parameters</span>
@@ -2798,7 +2798,7 @@ bouts : bool, default False
     <a class="headerlink" href="#AnnotationStore.behaviors_dict"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore.behaviors_dict-558"><a href="#AnnotationStore.behaviors_dict-558"><span class="linenos">558</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore.behaviors_dict-559"><a href="#AnnotationStore.behaviors_dict-559"><span class="linenos">559</span></a>    <span class="k">def</span> <span class="nf">behaviors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
-</span><span id="AnnotationStore.behaviors_dict-560"><a href="#AnnotationStore.behaviors_dict-560"><span class="linenos">560</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.behaviors_dict-560"><a href="#AnnotationStore.behaviors_dict-560"><span class="linenos">560</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.behaviors_dict-561"><a href="#AnnotationStore.behaviors_dict-561"><span class="linenos">561</span></a><span class="sd">        Get a dictionary of class names</span>
 </span><span id="AnnotationStore.behaviors_dict-562"><a href="#AnnotationStore.behaviors_dict-562"><span class="linenos">562</span></a>
 </span><span id="AnnotationStore.behaviors_dict-563"><a href="#AnnotationStore.behaviors_dict-563"><span class="linenos">563</span></a><span class="sd">        Returns</span>
@@ -2833,7 +2833,7 @@ bouts : bool, default False
     <a class="headerlink" href="#AnnotationStore.annotation_class"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore.annotation_class-569"><a href="#AnnotationStore.annotation_class-569"><span class="linenos">569</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore.annotation_class-570"><a href="#AnnotationStore.annotation_class-570"><span class="linenos">570</span></a>    <span class="k">def</span> <span class="nf">annotation_class</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="AnnotationStore.annotation_class-571"><a href="#AnnotationStore.annotation_class-571"><span class="linenos">571</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.annotation_class-571"><a href="#AnnotationStore.annotation_class-571"><span class="linenos">571</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.annotation_class-572"><a href="#AnnotationStore.annotation_class-572"><span class="linenos">572</span></a><span class="sd">        Get the type of annotation (&#39;exclusive_classification&#39;, &#39;nonexclusive_classification&#39;, more coming soon)</span>
 </span><span id="AnnotationStore.annotation_class-573"><a href="#AnnotationStore.annotation_class-573"><span class="linenos">573</span></a>
 </span><span id="AnnotationStore.annotation_class-574"><a href="#AnnotationStore.annotation_class-574"><span class="linenos">574</span></a><span class="sd">        Returns</span>
@@ -2868,7 +2868,7 @@ bouts : bool, default False
     <a class="headerlink" href="#AnnotationStore.size"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore.size-580"><a href="#AnnotationStore.size-580"><span class="linenos">580</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore.size-581"><a href="#AnnotationStore.size-581"><span class="linenos">581</span></a>    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="AnnotationStore.size-582"><a href="#AnnotationStore.size-582"><span class="linenos">582</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.size-582"><a href="#AnnotationStore.size-582"><span class="linenos">582</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.size-583"><a href="#AnnotationStore.size-583"><span class="linenos">583</span></a><span class="sd">        Get the total number of frames in the data</span>
 </span><span id="AnnotationStore.size-584"><a href="#AnnotationStore.size-584"><span class="linenos">584</span></a>
 </span><span id="AnnotationStore.size-585"><a href="#AnnotationStore.size-585"><span class="linenos">585</span></a><span class="sd">        Returns</span>
@@ -2903,7 +2903,7 @@ bouts : bool, default False
     <a class="headerlink" href="#AnnotationStore.filtered_indices"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore.filtered_indices-591"><a href="#AnnotationStore.filtered_indices-591"><span class="linenos">591</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore.filtered_indices-592"><a href="#AnnotationStore.filtered_indices-592"><span class="linenos">592</span></a>    <span class="k">def</span> <span class="nf">filtered_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="AnnotationStore.filtered_indices-593"><a href="#AnnotationStore.filtered_indices-593"><span class="linenos">593</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.filtered_indices-593"><a href="#AnnotationStore.filtered_indices-593"><span class="linenos">593</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.filtered_indices-594"><a href="#AnnotationStore.filtered_indices-594"><span class="linenos">594</span></a><span class="sd">        Return the indices of the samples that should be removed</span>
 </span><span id="AnnotationStore.filtered_indices-595"><a href="#AnnotationStore.filtered_indices-595"><span class="linenos">595</span></a>
 </span><span id="AnnotationStore.filtered_indices-596"><a href="#AnnotationStore.filtered_indices-596"><span class="linenos">596</span></a><span class="sd">        Choosing the indices can be based on any kind of filering defined in the __init__ function by the data</span>
@@ -2944,7 +2944,7 @@ parameters</p>
     <a class="headerlink" href="#AnnotationStore.set_pseudo_labels"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="AnnotationStore.set_pseudo_labels-605"><a href="#AnnotationStore.set_pseudo_labels-605"><span class="linenos">605</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="AnnotationStore.set_pseudo_labels-606"><a href="#AnnotationStore.set_pseudo_labels-606"><span class="linenos">606</span></a>    <span class="k">def</span> <span class="nf">set_pseudo_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">labels</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="AnnotationStore.set_pseudo_labels-607"><a href="#AnnotationStore.set_pseudo_labels-607"><span class="linenos">607</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="AnnotationStore.set_pseudo_labels-607"><a href="#AnnotationStore.set_pseudo_labels-607"><span class="linenos">607</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="AnnotationStore.set_pseudo_labels-608"><a href="#AnnotationStore.set_pseudo_labels-608"><span class="linenos">608</span></a><span class="sd">        Set pseudo labels to the unlabeled data</span>
 </span><span id="AnnotationStore.set_pseudo_labels-609"><a href="#AnnotationStore.set_pseudo_labels-609"><span class="linenos">609</span></a>
 </span><span id="AnnotationStore.set_pseudo_labels-610"><a href="#AnnotationStore.set_pseudo_labels-610"><span class="linenos">610</span></a><span class="sd">        Parameters</span>
@@ -2995,7 +2995,7 @@ parameters</p>
     </div>
     <a class="headerlink" href="#PoseInputStore"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="PoseInputStore-617"><a href="#PoseInputStore-617"><span class="linenos">617</span></a><span class="k">class</span> <span class="nc">PoseInputStore</span><span class="p">(</span><span class="n">InputStore</span><span class="p">):</span>
-</span><span id="PoseInputStore-618"><a href="#PoseInputStore-618"><span class="linenos">618</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore-618"><a href="#PoseInputStore-618"><span class="linenos">618</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore-619"><a href="#PoseInputStore-619"><span class="linenos">619</span></a><span class="sd">    A subclass of InputStore for pose estimation data</span>
 </span><span id="PoseInputStore-620"><a href="#PoseInputStore-620"><span class="linenos">620</span></a>
 </span><span id="PoseInputStore-621"><a href="#PoseInputStore-621"><span class="linenos">621</span></a><span class="sd">    Contains methods used by pose estimation feature extractors.</span>
@@ -3008,7 +3008,7 @@ parameters</p>
 </span><span id="PoseInputStore-628"><a href="#PoseInputStore-628"><span class="linenos">628</span></a>    <span class="k">def</span> <span class="nf">get_likelihood</span><span class="p">(</span>
 </span><span id="PoseInputStore-629"><a href="#PoseInputStore-629"><span class="linenos">629</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bodypart</span><span class="p">:</span> <span class="nb">str</span>
 </span><span id="PoseInputStore-630"><a href="#PoseInputStore-630"><span class="linenos">630</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
-</span><span id="PoseInputStore-631"><a href="#PoseInputStore-631"><span class="linenos">631</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore-631"><a href="#PoseInputStore-631"><span class="linenos">631</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore-632"><a href="#PoseInputStore-632"><span class="linenos">632</span></a><span class="sd">        Get the likelihood values</span>
 </span><span id="PoseInputStore-633"><a href="#PoseInputStore-633"><span class="linenos">633</span></a>
 </span><span id="PoseInputStore-634"><a href="#PoseInputStore-634"><span class="linenos">634</span></a><span class="sd">        Parameters</span>
@@ -3030,7 +3030,7 @@ parameters</p>
 </span><span id="PoseInputStore-650"><a href="#PoseInputStore-650"><span class="linenos">650</span></a>
 </span><span id="PoseInputStore-651"><a href="#PoseInputStore-651"><span class="linenos">651</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="PoseInputStore-652"><a href="#PoseInputStore-652"><span class="linenos">652</span></a>    <span class="k">def</span> <span class="nf">get_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bodypart</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-</span><span id="PoseInputStore-653"><a href="#PoseInputStore-653"><span class="linenos">653</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore-653"><a href="#PoseInputStore-653"><span class="linenos">653</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore-654"><a href="#PoseInputStore-654"><span class="linenos">654</span></a><span class="sd">        Get the coordinates array of a specific body part in a specific clip</span>
 </span><span id="PoseInputStore-655"><a href="#PoseInputStore-655"><span class="linenos">655</span></a>
 </span><span id="PoseInputStore-656"><a href="#PoseInputStore-656"><span class="linenos">656</span></a><span class="sd">        Parameters</span>
@@ -3050,7 +3050,7 @@ parameters</p>
 </span><span id="PoseInputStore-670"><a href="#PoseInputStore-670"><span class="linenos">670</span></a>
 </span><span id="PoseInputStore-671"><a href="#PoseInputStore-671"><span class="linenos">671</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="PoseInputStore-672"><a href="#PoseInputStore-672"><span class="linenos">672</span></a>    <span class="k">def</span> <span class="nf">get_bodyparts</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="PoseInputStore-673"><a href="#PoseInputStore-673"><span class="linenos">673</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore-673"><a href="#PoseInputStore-673"><span class="linenos">673</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore-674"><a href="#PoseInputStore-674"><span class="linenos">674</span></a><span class="sd">        Get a list of bodypart names</span>
 </span><span id="PoseInputStore-675"><a href="#PoseInputStore-675"><span class="linenos">675</span></a>
 </span><span id="PoseInputStore-676"><a href="#PoseInputStore-676"><span class="linenos">676</span></a><span class="sd">        Returns</span>
@@ -3061,7 +3061,7 @@ parameters</p>
 </span><span id="PoseInputStore-681"><a href="#PoseInputStore-681"><span class="linenos">681</span></a>
 </span><span id="PoseInputStore-682"><a href="#PoseInputStore-682"><span class="linenos">682</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="PoseInputStore-683"><a href="#PoseInputStore-683"><span class="linenos">683</span></a>    <span class="k">def</span> <span class="nf">get_n_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="PoseInputStore-684"><a href="#PoseInputStore-684"><span class="linenos">684</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore-684"><a href="#PoseInputStore-684"><span class="linenos">684</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore-685"><a href="#PoseInputStore-685"><span class="linenos">685</span></a><span class="sd">        Get the length of the clip</span>
 </span><span id="PoseInputStore-686"><a href="#PoseInputStore-686"><span class="linenos">686</span></a>
 </span><span id="PoseInputStore-687"><a href="#PoseInputStore-687"><span class="linenos">687</span></a><span class="sd">        Parameters</span>
@@ -3103,7 +3103,7 @@ and clips.</p>
             <div class="pdoc-code codehilite"><pre><span></span><span id="PoseInputStore.get_likelihood-628"><a href="#PoseInputStore.get_likelihood-628"><span class="linenos">628</span></a>    <span class="k">def</span> <span class="nf">get_likelihood</span><span class="p">(</span>
 </span><span id="PoseInputStore.get_likelihood-629"><a href="#PoseInputStore.get_likelihood-629"><span class="linenos">629</span></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bodypart</span><span class="p">:</span> <span class="nb">str</span>
 </span><span id="PoseInputStore.get_likelihood-630"><a href="#PoseInputStore.get_likelihood-630"><span class="linenos">630</span></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
-</span><span id="PoseInputStore.get_likelihood-631"><a href="#PoseInputStore.get_likelihood-631"><span class="linenos">631</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore.get_likelihood-631"><a href="#PoseInputStore.get_likelihood-631"><span class="linenos">631</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore.get_likelihood-632"><a href="#PoseInputStore.get_likelihood-632"><span class="linenos">632</span></a><span class="sd">        Get the likelihood values</span>
 </span><span id="PoseInputStore.get_likelihood-633"><a href="#PoseInputStore.get_likelihood-633"><span class="linenos">633</span></a>
 </span><span id="PoseInputStore.get_likelihood-634"><a href="#PoseInputStore.get_likelihood-634"><span class="linenos">634</span></a><span class="sd">        Parameters</span>
@@ -3158,7 +3158,7 @@ bodypart : str
     <a class="headerlink" href="#PoseInputStore.get_coords"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="PoseInputStore.get_coords-651"><a href="#PoseInputStore.get_coords-651"><span class="linenos">651</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="PoseInputStore.get_coords-652"><a href="#PoseInputStore.get_coords-652"><span class="linenos">652</span></a>    <span class="k">def</span> <span class="nf">get_coords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bodypart</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
-</span><span id="PoseInputStore.get_coords-653"><a href="#PoseInputStore.get_coords-653"><span class="linenos">653</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore.get_coords-653"><a href="#PoseInputStore.get_coords-653"><span class="linenos">653</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore.get_coords-654"><a href="#PoseInputStore.get_coords-654"><span class="linenos">654</span></a><span class="sd">        Get the coordinates array of a specific body part in a specific clip</span>
 </span><span id="PoseInputStore.get_coords-655"><a href="#PoseInputStore.get_coords-655"><span class="linenos">655</span></a>
 </span><span id="PoseInputStore.get_coords-656"><a href="#PoseInputStore.get_coords-656"><span class="linenos">656</span></a><span class="sd">        Parameters</span>
@@ -3211,7 +3211,7 @@ bodypart : str
     <a class="headerlink" href="#PoseInputStore.get_bodyparts"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="PoseInputStore.get_bodyparts-671"><a href="#PoseInputStore.get_bodyparts-671"><span class="linenos">671</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="PoseInputStore.get_bodyparts-672"><a href="#PoseInputStore.get_bodyparts-672"><span class="linenos">672</span></a>    <span class="k">def</span> <span class="nf">get_bodyparts</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
-</span><span id="PoseInputStore.get_bodyparts-673"><a href="#PoseInputStore.get_bodyparts-673"><span class="linenos">673</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore.get_bodyparts-673"><a href="#PoseInputStore.get_bodyparts-673"><span class="linenos">673</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore.get_bodyparts-674"><a href="#PoseInputStore.get_bodyparts-674"><span class="linenos">674</span></a><span class="sd">        Get a list of bodypart names</span>
 </span><span id="PoseInputStore.get_bodyparts-675"><a href="#PoseInputStore.get_bodyparts-675"><span class="linenos">675</span></a>
 </span><span id="PoseInputStore.get_bodyparts-676"><a href="#PoseInputStore.get_bodyparts-676"><span class="linenos">676</span></a><span class="sd">        Returns</span>
@@ -3246,7 +3246,7 @@ bodypart : str
     <a class="headerlink" href="#PoseInputStore.get_n_frames"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="PoseInputStore.get_n_frames-682"><a href="#PoseInputStore.get_n_frames-682"><span class="linenos">682</span></a>    <span class="nd">@abstractmethod</span>
 </span><span id="PoseInputStore.get_n_frames-683"><a href="#PoseInputStore.get_n_frames-683"><span class="linenos">683</span></a>    <span class="k">def</span> <span class="nf">get_n_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">clip_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-</span><span id="PoseInputStore.get_n_frames-684"><a href="#PoseInputStore.get_n_frames-684"><span class="linenos">684</span></a>        <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="PoseInputStore.get_n_frames-684"><a href="#PoseInputStore.get_n_frames-684"><span class="linenos">684</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="PoseInputStore.get_n_frames-685"><a href="#PoseInputStore.get_n_frames-685"><span class="linenos">685</span></a><span class="sd">        Get the length of the clip</span>
 </span><span id="PoseInputStore.get_n_frames-686"><a href="#PoseInputStore.get_n_frames-686"><span class="linenos">686</span></a>
 </span><span id="PoseInputStore.get_n_frames-687"><a href="#PoseInputStore.get_n_frames-687"><span class="linenos">687</span></a><span class="sd">        Parameters</span>
