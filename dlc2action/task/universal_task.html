@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 13.1.1"/>
+    <meta name="generator" content="pdoc 14.0.0"/>
     <title>dlc2action.task.universal_task API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -36,6 +36,9 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#MyDataParallel.__init__">MyDataParallel</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MyDataParallel.process_labels">process_labels</a>
                         </li>
                         <li>
                                 <a class="function" href="#MyDataParallel.freeze_feature_extractor">freeze_feature_extractor</a>
@@ -72,6 +75,90 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#Task.__init__">Task</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.train_dataloader">train_dataloader</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.val_dataloader">val_dataloader</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.test_dataloader">test_dataloader</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.transformer">transformer</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.num_epochs">num_epochs</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.skip_metrics">skip_metrics</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.verbose">verbose</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.augment_train">augment_train</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.augment_val">augment_val</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.ignore_tags">ignore_tags</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.validation_interval">validation_interval</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.log_file">log_file</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.loss">loss</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.model_save_path">model_save_path</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.model_save_epochs">model_save_epochs</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.epoch">epoch</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.metrics">metrics</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.ssl_weights">ssl_weights</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.optimizer_class">optimizer_class</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.lr">lr</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.parallel">parallel</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.primary_predict_function">primary_predict_function</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.pseudolabel">pseudolabel</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.alpha_f">alpha_f</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.T2">T2</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.T1">T1</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.t">t</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Task.decision_thresholds">decision_thresholds</a>
                         </li>
                         <li>
                                 <a class="function" href="#Task.save_checkpoint">save_checkpoint</a>
@@ -2313,7 +2400,7 @@
 
             <div class="docstring"><p>Implements data parallelism at the module level.</p>
 
-<p>This container parallelizes the application of the given <code>module</code> by
+<p>This container parallelizes the application of the given <code><a href="#MyDataParallel.module">module</a></code> by
 splitting the input across the specified devices by chunking in the batch
 dimension (other objects will be copied once per device). In the forward
 pass, the module is replicated on each device, and each replica handles a
@@ -2336,20 +2423,20 @@ DataParallel but some types are specially handled. tensors will be
 be shallow copied. The other types will be shared among different threads
 and can be corrupted if written to in the model's forward pass.</p>
 
-<p>The parallelized <code>module</code> must have its parameters and buffers on
+<p>The parallelized <code><a href="#MyDataParallel.module">module</a></code> must have its parameters and buffers on
 <code>device_ids[0]</code> before running this <code>~torch.nn.DataParallel</code>
 module.</p>
 
 <div class="pdoc-alert pdoc-alert-warning">
 
-<p>In each forward, <code>module</code> is <strong>replicated</strong> on each device, so any
+<p>In each forward, <code><a href="#MyDataParallel.module">module</a></code> is <strong>replicated</strong> on each device, so any
 updates to the running module in <code><a href="#MyDataParallel.forward">forward</a></code> will be lost. For example,
-if <code>module</code> has a counter attribute that is incremented in each
+if <code><a href="#MyDataParallel.module">module</a></code> has a counter attribute that is incremented in each
 <code><a href="#MyDataParallel.forward">forward</a></code>, it will always stay at the initial value because the update
 is done on the replicas which are destroyed after <code><a href="#MyDataParallel.forward">forward</a></code>. However,
 <code>~torch.nn.DataParallel</code> guarantees that the replica on
 <code>device[0]</code> will have its parameters and buffers sharing storage with
-the base parallelized <code>module</code>. So <strong>in-place</strong> updates to the
+the base parallelized <code><a href="#MyDataParallel.module">module</a></code>. So <strong>in-place</strong> updates to the
 parameters or buffers on <code>device[0]</code> will be recorded. E.g.,
 <code>~torch.nn.BatchNorm2d</code> and <code>~torch.nn.utils.spectral_norm()</code>
 rely on this behavior to update the buffers.</p>
@@ -2358,7 +2445,7 @@ rely on this behavior to update the buffers.</p>
 
 <div class="pdoc-alert pdoc-alert-warning">
 
-<p>Forward and backward hooks defined on <code>module</code> and its submodules
+<p>Forward and backward hooks defined on <code><a href="#MyDataParallel.module">module</a></code> and its submodules
 will be invoked <code>len(device_ids)</code> times, each with inputs located on
 a particular device. Particularly, the hooks are only guaranteed to be
 executed in correct order with respect to operations on corresponding
@@ -2372,7 +2459,7 @@ that each such hook be executed before the corresponding
 
 <div class="pdoc-alert pdoc-alert-warning">
 
-<p>When <code>module</code> returns a scalar (i.e., 0-dimensional tensor) in
+<p>When <code><a href="#MyDataParallel.module">module</a></code> returns a scalar (i.e., 0-dimensional tensor) in
 <code><a href="#MyDataParallel.forward">forward()</a></code>, this wrapper will return a vector of length equal to
 number of devices used in data parallelism, containing the result from
 each device.</p>
@@ -2425,6 +2512,17 @@ details.</p>
             <div class="docstring"><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
 </div>
 
+
+                            </div>
+                            <div id="MyDataParallel.process_labels" class="classattr">
+                                <div class="attr variable">
+            <span class="name">process_labels</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MyDataParallel.process_labels"></a>
+    
+    
 
                             </div>
                             <div id="MyDataParallel.freeze_feature_extractor" class="classattr">
@@ -2654,7 +2752,12 @@ designed for end-users.</p>
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt>torch.nn.parallel.data_parallel.DataParallel</dt>
-                                <dd id="MyDataParallel.forward" class="function">forward</dd>
+                                <dd id="MyDataParallel.dim" class="variable">dim</dd>
+                <dd id="MyDataParallel.module" class="variable">module</dd>
+                <dd id="MyDataParallel.device_ids" class="variable">device_ids</dd>
+                <dd id="MyDataParallel.output_device" class="variable">output_device</dd>
+                <dd id="MyDataParallel.src_device_obj" class="variable">src_device_obj</dd>
+                <dd id="MyDataParallel.forward" class="function">forward</dd>
                 <dd id="MyDataParallel.replicate" class="function">replicate</dd>
                 <dd id="MyDataParallel.scatter" class="function">scatter</dd>
                 <dd id="MyDataParallel.parallel_apply" class="function">parallel_apply</dd>
@@ -2662,7 +2765,10 @@ designed for end-users.</p>
 
             </div>
             <div><dt>torch.nn.modules.module.Module</dt>
-                                <dd id="MyDataParallel.register_buffer" class="function">register_buffer</dd>
+                                <dd id="MyDataParallel.dump_patches" class="variable">dump_patches</dd>
+                <dd id="MyDataParallel.training" class="variable">training</dd>
+                <dd id="MyDataParallel.call_super_init" class="variable">call_super_init</dd>
+                <dd id="MyDataParallel.register_buffer" class="function">register_buffer</dd>
                 <dd id="MyDataParallel.register_parameter" class="function">register_parameter</dd>
                 <dd id="MyDataParallel.add_module" class="function">add_module</dd>
                 <dd id="MyDataParallel.register_module" class="function">register_module</dd>
@@ -5003,6 +5109,314 @@ alpha_growth_stop : int, default 600
     pseudolabeling alpha stops growing after this epoch</p>
 </div>
 
+
+                            </div>
+                            <div id="Task.train_dataloader" class="classattr">
+                                <div class="attr variable">
+            <span class="name">train_dataloader</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.train_dataloader"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.val_dataloader" class="classattr">
+                                <div class="attr variable">
+            <span class="name">val_dataloader</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.val_dataloader"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.test_dataloader" class="classattr">
+                                <div class="attr variable">
+            <span class="name">test_dataloader</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.test_dataloader"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.transformer" class="classattr">
+                                <div class="attr variable">
+            <span class="name">transformer</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.transformer"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.num_epochs" class="classattr">
+                                <div class="attr variable">
+            <span class="name">num_epochs</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.num_epochs"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.skip_metrics" class="classattr">
+                                <div class="attr variable">
+            <span class="name">skip_metrics</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.skip_metrics"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.verbose" class="classattr">
+                                <div class="attr variable">
+            <span class="name">verbose</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.verbose"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.augment_train" class="classattr">
+                                <div class="attr variable">
+            <span class="name">augment_train</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.augment_train"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.augment_val" class="classattr">
+                                <div class="attr variable">
+            <span class="name">augment_val</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.augment_val"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.ignore_tags" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ignore_tags</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.ignore_tags"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.validation_interval" class="classattr">
+                                <div class="attr variable">
+            <span class="name">validation_interval</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.validation_interval"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.log_file" class="classattr">
+                                <div class="attr variable">
+            <span class="name">log_file</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.log_file"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.loss" class="classattr">
+                                <div class="attr variable">
+            <span class="name">loss</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.loss"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.model_save_path" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_save_path</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.model_save_path"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.model_save_epochs" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_save_epochs</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.model_save_epochs"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.epoch" class="classattr">
+                                <div class="attr variable">
+            <span class="name">epoch</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.epoch"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.metrics" class="classattr">
+                                <div class="attr variable">
+            <span class="name">metrics</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.metrics"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.ssl_weights" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ssl_weights</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.ssl_weights"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.optimizer_class" class="classattr">
+                                <div class="attr variable">
+            <span class="name">optimizer_class</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.optimizer_class"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.lr" class="classattr">
+                                <div class="attr variable">
+            <span class="name">lr</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.lr"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.parallel" class="classattr">
+                                <div class="attr variable">
+            <span class="name">parallel</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.parallel"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.primary_predict_function" class="classattr">
+                                <div class="attr variable">
+            <span class="name">primary_predict_function</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.primary_predict_function"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.pseudolabel" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pseudolabel</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.pseudolabel"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.alpha_f" class="classattr">
+                                <div class="attr variable">
+            <span class="name">alpha_f</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.alpha_f"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.T2" class="classattr">
+                                <div class="attr variable">
+            <span class="name">T2</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.T2"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.T1" class="classattr">
+                                <div class="attr variable">
+            <span class="name">T1</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.T1"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.t" class="classattr">
+                                <div class="attr variable">
+            <span class="name">t</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.t"></a>
+    
+    
+
+                            </div>
+                            <div id="Task.decision_thresholds" class="classattr">
+                                <div class="attr variable">
+            <span class="name">decision_thresholds</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Task.decision_thresholds"></a>
+    
+    
 
                             </div>
                             <div id="Task.save_checkpoint" class="classattr">

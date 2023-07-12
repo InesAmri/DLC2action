@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 13.1.1"/>
+    <meta name="generator" content="pdoc 14.0.0"/>
     <title>dlc2action.ssl.masked API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -41,6 +41,12 @@
                                 <a class="variable" href="#MaskedFeaturesSSL.type">type</a>
                         </li>
                         <li>
+                                <a class="variable" href="#MaskedFeaturesSSL.mse">mse</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedFeaturesSSL.frac_masked">frac_masked</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#MaskedFeaturesSSL.transformation">transformation</a>
                         </li>
                         <li>
@@ -59,6 +65,9 @@
                                 <a class="function" href="#MaskedFeaturesSSL_FC.__init__">MaskedFeaturesSSL_FC</a>
                         </li>
                         <li>
+                                <a class="variable" href="#MaskedFeaturesSSL_FC.pars">pars</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#MaskedFeaturesSSL_FC.construct_module">construct_module</a>
                         </li>
                 </ul>
@@ -69,6 +78,9 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#MaskedFeaturesSSL_TCN.__init__">MaskedFeaturesSSL_TCN</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedFeaturesSSL_TCN.pars">pars</a>
                         </li>
                         <li>
                                 <a class="function" href="#MaskedFeaturesSSL_TCN.construct_module">construct_module</a>
@@ -84,6 +96,12 @@
                         </li>
                         <li>
                                 <a class="variable" href="#MaskedKinematicSSL.type">type</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedKinematicSSL.mse">mse</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedKinematicSSL.frac_masked">frac_masked</a>
                         </li>
                         <li>
                                 <a class="function" href="#MaskedKinematicSSL.transformation">transformation</a>
@@ -104,6 +122,9 @@
                                 <a class="function" href="#MaskedKinematicSSL_FC.__init__">MaskedKinematicSSL_FC</a>
                         </li>
                         <li>
+                                <a class="variable" href="#MaskedKinematicSSL_FC.pars">pars</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#MaskedKinematicSSL_FC.construct_module">construct_module</a>
                         </li>
                 </ul>
@@ -114,6 +135,9 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#MaskedKinematicSSL_TCN.__init__">MaskedKinematicSSL_TCN</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedKinematicSSL_TCN.pars">pars</a>
                         </li>
                         <li>
                                 <a class="function" href="#MaskedKinematicSSL_TCN.construct_module">construct_module</a>
@@ -129,6 +153,12 @@
                         </li>
                         <li>
                                 <a class="variable" href="#MaskedFramesSSL.type">type</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedFramesSSL.frac_masked">frac_masked</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedFramesSSL.mse">mse</a>
                         </li>
                         <li>
                                 <a class="function" href="#MaskedFramesSSL.transformation">transformation</a>
@@ -149,6 +179,9 @@
                                 <a class="function" href="#MaskedFramesSSL_FC.__init__">MaskedFramesSSL_FC</a>
                         </li>
                         <li>
+                                <a class="variable" href="#MaskedFramesSSL_FC.pars">pars</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#MaskedFramesSSL_FC.construct_module">construct_module</a>
                         </li>
                 </ul>
@@ -159,6 +192,9 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#MaskedFramesSSL_TCN.__init__">MaskedFramesSSL_TCN</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MaskedFramesSSL_TCN.pars">pars</a>
                         </li>
                         <li>
                                 <a class="function" href="#MaskedFramesSSL_TCN.construct_module">construct_module</a>
@@ -766,6 +802,28 @@ an (input results, modified results) tuple is returned as SSL output,</li>
 
 
                             </div>
+                            <div id="MaskedFeaturesSSL.mse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">mse</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFeaturesSSL.mse"></a>
+    
+    
+
+                            </div>
+                            <div id="MaskedFeaturesSSL.frac_masked" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frac_masked</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFeaturesSSL.frac_masked"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedFeaturesSSL.transformation" class="classattr">
                                         <input id="MaskedFeaturesSSL.transformation-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -975,6 +1033,17 @@ num_ssl_f_maps : int, default 16
 
 
                             </div>
+                            <div id="MaskedFeaturesSSL_FC.pars" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pars</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFeaturesSSL_FC.pars"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedFeaturesSSL_FC.construct_module" class="classattr">
                                         <input id="MaskedFeaturesSSL_FC.construct_module-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -1006,6 +1075,8 @@ num_ssl_f_maps : int, default 16
                                 <dl>
                                     <div><dt><a href="#MaskedFeaturesSSL">MaskedFeaturesSSL</a></dt>
                                 <dd id="MaskedFeaturesSSL_FC.type" class="variable"><a href="#MaskedFeaturesSSL.type">type</a></dd>
+                <dd id="MaskedFeaturesSSL_FC.mse" class="variable"><a href="#MaskedFeaturesSSL.mse">mse</a></dd>
+                <dd id="MaskedFeaturesSSL_FC.frac_masked" class="variable"><a href="#MaskedFeaturesSSL.frac_masked">frac_masked</a></dd>
                 <dd id="MaskedFeaturesSSL_FC.transformation" class="function"><a href="#MaskedFeaturesSSL.transformation">transformation</a></dd>
                 <dd id="MaskedFeaturesSSL_FC.loss" class="function"><a href="#MaskedFeaturesSSL.loss">loss</a></dd>
 
@@ -1131,6 +1202,17 @@ num_ssl_layers : int, default 5
 
 
                             </div>
+                            <div id="MaskedFeaturesSSL_TCN.pars" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pars</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFeaturesSSL_TCN.pars"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedFeaturesSSL_TCN.construct_module" class="classattr">
                                         <input id="MaskedFeaturesSSL_TCN.construct_module-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -1162,6 +1244,8 @@ num_ssl_layers : int, default 5
                                 <dl>
                                     <div><dt><a href="#MaskedFeaturesSSL">MaskedFeaturesSSL</a></dt>
                                 <dd id="MaskedFeaturesSSL_TCN.type" class="variable"><a href="#MaskedFeaturesSSL.type">type</a></dd>
+                <dd id="MaskedFeaturesSSL_TCN.mse" class="variable"><a href="#MaskedFeaturesSSL.mse">mse</a></dd>
+                <dd id="MaskedFeaturesSSL_TCN.frac_masked" class="variable"><a href="#MaskedFeaturesSSL.frac_masked">frac_masked</a></dd>
                 <dd id="MaskedFeaturesSSL_TCN.transformation" class="function"><a href="#MaskedFeaturesSSL.transformation">transformation</a></dd>
                 <dd id="MaskedFeaturesSSL_TCN.loss" class="function"><a href="#MaskedFeaturesSSL.loss">loss</a></dd>
 
@@ -1323,6 +1407,28 @@ an (input results, modified results) tuple is returned as SSL output,</li>
 </ul>
 </div>
 
+
+                            </div>
+                            <div id="MaskedKinematicSSL.mse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">mse</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedKinematicSSL.mse"></a>
+    
+    
+
+                            </div>
+                            <div id="MaskedKinematicSSL.frac_masked" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frac_masked</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedKinematicSSL.frac_masked"></a>
+    
+    
 
                             </div>
                             <div id="MaskedKinematicSSL.transformation" class="classattr">
@@ -1549,6 +1655,17 @@ num_ssl_f_maps : int, default 16
 
 
                             </div>
+                            <div id="MaskedKinematicSSL_FC.pars" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pars</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedKinematicSSL_FC.pars"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedKinematicSSL_FC.construct_module" class="classattr">
                                         <input id="MaskedKinematicSSL_FC.construct_module-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -1580,6 +1697,8 @@ num_ssl_f_maps : int, default 16
                                 <dl>
                                     <div><dt><a href="#MaskedKinematicSSL">MaskedKinematicSSL</a></dt>
                                 <dd id="MaskedKinematicSSL_FC.type" class="variable"><a href="#MaskedKinematicSSL.type">type</a></dd>
+                <dd id="MaskedKinematicSSL_FC.mse" class="variable"><a href="#MaskedKinematicSSL.mse">mse</a></dd>
+                <dd id="MaskedKinematicSSL_FC.frac_masked" class="variable"><a href="#MaskedKinematicSSL.frac_masked">frac_masked</a></dd>
                 <dd id="MaskedKinematicSSL_FC.transformation" class="function"><a href="#MaskedKinematicSSL.transformation">transformation</a></dd>
                 <dd id="MaskedKinematicSSL_FC.loss" class="function"><a href="#MaskedKinematicSSL.loss">loss</a></dd>
 
@@ -1699,6 +1818,17 @@ num_ssl_layers : int, default 5
 
 
                             </div>
+                            <div id="MaskedKinematicSSL_TCN.pars" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pars</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedKinematicSSL_TCN.pars"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedKinematicSSL_TCN.construct_module" class="classattr">
                                         <input id="MaskedKinematicSSL_TCN.construct_module-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -1730,6 +1860,8 @@ num_ssl_layers : int, default 5
                                 <dl>
                                     <div><dt><a href="#MaskedKinematicSSL">MaskedKinematicSSL</a></dt>
                                 <dd id="MaskedKinematicSSL_TCN.type" class="variable"><a href="#MaskedKinematicSSL.type">type</a></dd>
+                <dd id="MaskedKinematicSSL_TCN.mse" class="variable"><a href="#MaskedKinematicSSL.mse">mse</a></dd>
+                <dd id="MaskedKinematicSSL_TCN.frac_masked" class="variable"><a href="#MaskedKinematicSSL.frac_masked">frac_masked</a></dd>
                 <dd id="MaskedKinematicSSL_TCN.transformation" class="function"><a href="#MaskedKinematicSSL.transformation">transformation</a></dd>
                 <dd id="MaskedKinematicSSL_TCN.loss" class="function"><a href="#MaskedKinematicSSL.loss">loss</a></dd>
 
@@ -1858,6 +1990,28 @@ an (input results, modified results) tuple is returned as SSL output,</li>
 </ul>
 </div>
 
+
+                            </div>
+                            <div id="MaskedFramesSSL.frac_masked" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frac_masked</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFramesSSL.frac_masked"></a>
+    
+    
+
+                            </div>
+                            <div id="MaskedFramesSSL.mse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">mse</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFramesSSL.mse"></a>
+    
+    
 
                             </div>
                             <div id="MaskedFramesSSL.transformation" class="classattr">
@@ -2063,6 +2217,17 @@ num_ssl_f_maps : int, default 16
 
 
                             </div>
+                            <div id="MaskedFramesSSL_FC.pars" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pars</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFramesSSL_FC.pars"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedFramesSSL_FC.construct_module" class="classattr">
                                         <input id="MaskedFramesSSL_FC.construct_module-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -2094,6 +2259,8 @@ num_ssl_f_maps : int, default 16
                                 <dl>
                                     <div><dt><a href="#MaskedFramesSSL">MaskedFramesSSL</a></dt>
                                 <dd id="MaskedFramesSSL_FC.type" class="variable"><a href="#MaskedFramesSSL.type">type</a></dd>
+                <dd id="MaskedFramesSSL_FC.frac_masked" class="variable"><a href="#MaskedFramesSSL.frac_masked">frac_masked</a></dd>
+                <dd id="MaskedFramesSSL_FC.mse" class="variable"><a href="#MaskedFramesSSL.mse">mse</a></dd>
                 <dd id="MaskedFramesSSL_FC.transformation" class="function"><a href="#MaskedFramesSSL.transformation">transformation</a></dd>
                 <dd id="MaskedFramesSSL_FC.loss" class="function"><a href="#MaskedFramesSSL.loss">loss</a></dd>
 
@@ -2212,6 +2379,17 @@ num_ssl_layers : int, default 5
 
 
                             </div>
+                            <div id="MaskedFramesSSL_TCN.pars" class="classattr">
+                                <div class="attr variable">
+            <span class="name">pars</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MaskedFramesSSL_TCN.pars"></a>
+    
+    
+
+                            </div>
                             <div id="MaskedFramesSSL_TCN.construct_module" class="classattr">
                                         <input id="MaskedFramesSSL_TCN.construct_module-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -2243,6 +2421,8 @@ num_ssl_layers : int, default 5
                                 <dl>
                                     <div><dt><a href="#MaskedFramesSSL">MaskedFramesSSL</a></dt>
                                 <dd id="MaskedFramesSSL_TCN.type" class="variable"><a href="#MaskedFramesSSL.type">type</a></dd>
+                <dd id="MaskedFramesSSL_TCN.frac_masked" class="variable"><a href="#MaskedFramesSSL.frac_masked">frac_masked</a></dd>
+                <dd id="MaskedFramesSSL_TCN.mse" class="variable"><a href="#MaskedFramesSSL.mse">mse</a></dd>
                 <dd id="MaskedFramesSSL_TCN.transformation" class="function"><a href="#MaskedFramesSSL.transformation">transformation</a></dd>
                 <dd id="MaskedFramesSSL_TCN.loss" class="function"><a href="#MaskedFramesSSL.loss">loss</a></dd>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 13.1.1"/>
+    <meta name="generator" content="pdoc 14.0.0"/>
     <title>dlc2action.data.input_store API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -36,6 +36,90 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#GeneralInputStore.__init__">GeneralInputStore</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.data_suffix">data_suffix</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.loaded_max">loaded_max</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.bodyparts">bodyparts</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.visibility">visibility</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.normalize">normalize</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.video_order">video_order</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.centered">centered</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.feature_extraction">feature_extraction</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.len_segment">len_segment</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.data_suffices">data_suffices</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.data_prefixes">data_prefixes</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.feature_suffix">feature_suffix</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.convert_int_indices">convert_int_indices</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.overlap">overlap</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.canvas_shape">canvas_shape</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.default_agent_name">default_agent_name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.feature_save_path">feature_save_path</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.num_cpus">num_cpus</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.frame_limit">frame_limit</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.transpose">transpose</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.ram">ram</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.min_frames">min_frames</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.original_coordinates">original_coordinates</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.file_paths">file_paths</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.extractor">extractor</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.canvas_center">canvas_center</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GeneralInputStore.step">step</a>
                         </li>
                         <li>
                                 <a class="function" href="#GeneralInputStore.get_folder">get_folder</a>
@@ -139,6 +223,12 @@
                         <li>
                                 <a class="function" href="#PKUMMDInputStore.__init__">PKUMMDInputStore</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#PKUMMDInputStore.data_suffix">data_suffix</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PKUMMDInputStore.interactive">interactive</a>
+                        </li>
                 </ul>
 
             </li>
@@ -147,6 +237,15 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#CalMS21InputStore.__init__">CalMS21InputStore</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CalMS21InputStore.task_n">task_n</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CalMS21InputStore.include_task1">include_task1</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CalMS21InputStore.treba_files">treba_files</a>
                         </li>
                         <li>
                                 <a class="function" href="#CalMS21InputStore.get_file_ids">get_file_ids</a>
@@ -183,6 +282,9 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#SIMBAInputStore.__init__">SIMBAInputStore</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SIMBAInputStore.use_features">use_features</a>
                         </li>
                 </ul>
 
@@ -3841,7 +3943,7 @@
 └── video2_features.pt
 </code></pre>
 
-<p>Here <code>data_suffix</code> is <code>{'DLC1000.pickle', 'DLC400.pickle'}</code> and <code>feature_suffix</code> (optional) is <code>'_features.pt'</code>.</p>
+<p>Here <code><a href="#GeneralInputStore.data_suffix">data_suffix</a></code> is <code>{'DLC1000.pickle', 'DLC400.pickle'}</code> and <code><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></code> (optional) is <code>'_features.pt'</code>.</p>
 </div>
 
 
@@ -4021,7 +4123,7 @@
     a list of video ids that should be processed in the same order (not passed if creating from key objects
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#GeneralInputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)
@@ -4065,6 +4167,315 @@ feature_extraction_pars : dict, optional
     parameters of the feature extractor</p>
 </div>
 
+
+                            </div>
+                            <div id="GeneralInputStore.data_suffix" class="classattr">
+                                <div class="attr variable">
+            <span class="name">data_suffix</span>        =
+<span class="default_value">None</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.data_suffix"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.loaded_max" class="classattr">
+                                <div class="attr variable">
+            <span class="name">loaded_max</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.loaded_max"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.bodyparts" class="classattr">
+                                <div class="attr variable">
+            <span class="name">bodyparts</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.bodyparts"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.visibility" class="classattr">
+                                <div class="attr variable">
+            <span class="name">visibility</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.visibility"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.normalize" class="classattr">
+                                <div class="attr variable">
+            <span class="name">normalize</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.normalize"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.video_order" class="classattr">
+                                <div class="attr variable">
+            <span class="name">video_order</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.video_order"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.centered" class="classattr">
+                                <div class="attr variable">
+            <span class="name">centered</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.centered"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.feature_extraction" class="classattr">
+                                <div class="attr variable">
+            <span class="name">feature_extraction</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.feature_extraction"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.len_segment" class="classattr">
+                                <div class="attr variable">
+            <span class="name">len_segment</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.len_segment"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.data_suffices" class="classattr">
+                                <div class="attr variable">
+            <span class="name">data_suffices</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.data_suffices"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.data_prefixes" class="classattr">
+                                <div class="attr variable">
+            <span class="name">data_prefixes</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.data_prefixes"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.feature_suffix" class="classattr">
+                                <div class="attr variable">
+            <span class="name">feature_suffix</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.feature_suffix"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.convert_int_indices" class="classattr">
+                                <div class="attr variable">
+            <span class="name">convert_int_indices</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.convert_int_indices"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.overlap" class="classattr">
+                                <div class="attr variable">
+            <span class="name">overlap</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.overlap"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.canvas_shape" class="classattr">
+                                <div class="attr variable">
+            <span class="name">canvas_shape</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.canvas_shape"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.default_agent_name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">default_agent_name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.default_agent_name"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.feature_save_path" class="classattr">
+                                <div class="attr variable">
+            <span class="name">feature_save_path</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.feature_save_path"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.likelihood_threshold" class="classattr">
+                                <div class="attr variable">
+            <span class="name">likelihood_threshold</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.likelihood_threshold"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.num_cpus" class="classattr">
+                                <div class="attr variable">
+            <span class="name">num_cpus</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.num_cpus"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.frame_limit" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frame_limit</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.frame_limit"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.transpose" class="classattr">
+                                <div class="attr variable">
+            <span class="name">transpose</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.transpose"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.ram" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ram</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.ram"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.min_frames" class="classattr">
+                                <div class="attr variable">
+            <span class="name">min_frames</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.min_frames"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.original_coordinates" class="classattr">
+                                <div class="attr variable">
+            <span class="name">original_coordinates</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.original_coordinates"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.file_paths" class="classattr">
+                                <div class="attr variable">
+            <span class="name">file_paths</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.file_paths"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.extractor" class="classattr">
+                                <div class="attr variable">
+            <span class="name">extractor</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.extractor"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.canvas_center" class="classattr">
+                                <div class="attr variable">
+            <span class="name">canvas_center</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.canvas_center"></a>
+    
+    
+
+                            </div>
+                            <div id="GeneralInputStore.step" class="classattr">
+                                <div class="attr variable">
+            <span class="name">step</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GeneralInputStore.step"></a>
+    
+    
 
                             </div>
                             <div id="GeneralInputStore.get_folder" class="classattr">
@@ -4847,7 +5258,7 @@ be processed by the __init__ function</p>
     the suffix (or a set of suffixes) of the input data files
 data_path : set | str, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#GeneralInputStore.file_paths">file_paths</a></code>)
 data_prefix : set | str, optional
     the prefix or the set of prefixes such that the pose files for different video views of the same
     clip are named {prefix}{sep}{video_id}{data_suffix} (not passed if creating from key objects
@@ -4856,7 +5267,7 @@ file_paths : set, optional
     a set of string paths to the pose and feature files
 feature_suffix : str | set, optional
     the suffix or the set of suffices such that the additional feature files are named
-    {video_id}{feature_suffix} (and placed at the <code>data_path</code> folder or at <code>file_paths</code>)</p>
+    {video_id}{feature_suffix} (and placed at the <code>data_path</code> folder or at <code><a href="#GeneralInputStore.file_paths">file_paths</a></code>)</p>
 
 <h2 id="returns">Returns</h2>
 
@@ -5498,6 +5909,34 @@ that information. When a tag is <code>None</code>, it is not passed to the model
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
                                 <dd id="FileInputStore.__init__" class="function"><a href="#GeneralInputStore.__init__">GeneralInputStore</a></dd>
+                <dd id="FileInputStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="FileInputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="FileInputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="FileInputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="FileInputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="FileInputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="FileInputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="FileInputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="FileInputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="FileInputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="FileInputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="FileInputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="FileInputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="FileInputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="FileInputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="FileInputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="FileInputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="FileInputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="FileInputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="FileInputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="FileInputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="FileInputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="FileInputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="FileInputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="FileInputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="FileInputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="FileInputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="FileInputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
                 <dd id="FileInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="FileInputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="FileInputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
@@ -5871,7 +6310,7 @@ be processed by the __init__ function</p>
     a set of string filenames to search for (only basenames, not the whole paths)
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#SequenceInputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)</p>
@@ -5889,6 +6328,34 @@ file_paths : set, optional
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
                                 <dd id="SequenceInputStore.__init__" class="function"><a href="#GeneralInputStore.__init__">GeneralInputStore</a></dd>
+                <dd id="SequenceInputStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="SequenceInputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="SequenceInputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="SequenceInputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="SequenceInputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="SequenceInputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="SequenceInputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="SequenceInputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="SequenceInputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="SequenceInputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="SequenceInputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="SequenceInputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="SequenceInputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="SequenceInputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="SequenceInputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="SequenceInputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="SequenceInputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="SequenceInputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="SequenceInputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="SequenceInputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="SequenceInputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="SequenceInputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="SequenceInputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="SequenceInputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="SequenceInputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="SequenceInputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="SequenceInputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="SequenceInputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
                 <dd id="SequenceInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="SequenceInputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="SequenceInputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
@@ -6025,7 +6492,7 @@ file_paths : set, optional
 └── video2_features.pt
 </code></pre>
 
-<p>Here <code>data_suffix</code> is <code>{'DLC1000.pickle', 'DLC400.pickle'}</code> and <code>feature_suffix</code> (optional) is <code>'_features.pt'</code>.</p>
+<p>Here <code><a href="#DLCTrackStore.data_suffix">data_suffix</a></code> is <code>{'DLC1000.pickle', 'DLC400.pickle'}</code> and <code><a href="#DLCTrackStore.feature_suffix">feature_suffix</a></code> (optional) is <code>'_features.pt'</code>.</p>
 
 <p>The feature files should to be dictionaries where keys are clip IDs (e.g. animal names) and values are
 feature values (arrays of shape <code>(#frames, #features)</code>). If the arrays are shaped as <code>(#features, #frames)</code>,
@@ -6041,6 +6508,34 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
                                 <dd id="DLCTrackStore.__init__" class="function"><a href="#GeneralInputStore.__init__">GeneralInputStore</a></dd>
+                <dd id="DLCTrackStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="DLCTrackStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="DLCTrackStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="DLCTrackStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="DLCTrackStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="DLCTrackStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="DLCTrackStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="DLCTrackStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="DLCTrackStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="DLCTrackStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="DLCTrackStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="DLCTrackStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="DLCTrackStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="DLCTrackStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="DLCTrackStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="DLCTrackStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="DLCTrackStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="DLCTrackStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="DLCTrackStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="DLCTrackStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="DLCTrackStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="DLCTrackStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="DLCTrackStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="DLCTrackStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="DLCTrackStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="DLCTrackStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="DLCTrackStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="DLCTrackStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
                 <dd id="DLCTrackStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="DLCTrackStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="DLCTrackStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
@@ -6191,7 +6686,7 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
 └── video2_features.pt
 </code></pre>
 
-<p>Here <code>data_suffix</code> is <code>{'DLC1000.pickle', 'DLC400.pickle'}</code> and <code>feature_suffix</code> (optional) is <code>'_features.pt'</code>.</p>
+<p>Here <code><a href="#DLCTrackletStore.data_suffix">data_suffix</a></code> is <code>{'DLC1000.pickle', 'DLC400.pickle'}</code> and <code><a href="#DLCTrackletStore.feature_suffix">feature_suffix</a></code> (optional) is <code>'_features.pt'</code>.</p>
 
 <p>The feature files should to be dictionaries where keys are clip IDs (e.g. animal names) and values are
 feature values (arrays of shape <code>(#frames, #features)</code>). If the arrays are shaped as <code>(#features, #frames)</code>,
@@ -6207,6 +6702,34 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
                                 <dd id="DLCTrackletStore.__init__" class="function"><a href="#GeneralInputStore.__init__">GeneralInputStore</a></dd>
+                <dd id="DLCTrackletStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="DLCTrackletStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="DLCTrackletStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="DLCTrackletStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="DLCTrackletStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="DLCTrackletStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="DLCTrackletStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="DLCTrackletStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="DLCTrackletStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="DLCTrackletStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="DLCTrackletStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="DLCTrackletStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="DLCTrackletStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="DLCTrackletStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="DLCTrackletStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="DLCTrackletStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="DLCTrackletStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="DLCTrackletStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="DLCTrackletStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="DLCTrackletStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="DLCTrackletStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="DLCTrackletStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="DLCTrackletStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="DLCTrackletStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="DLCTrackletStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="DLCTrackletStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="DLCTrackletStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="DLCTrackletStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
                 <dd id="DLCTrackletStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="DLCTrackletStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="DLCTrackletStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
@@ -6498,7 +7021,7 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
     a list of video ids that should be processed in the same order (not passed if creating from key objects)
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#PKUMMDInputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)
@@ -6522,11 +7045,61 @@ feature_extraction_pars : dict, optional
 
 
                             </div>
+                            <div id="PKUMMDInputStore.data_suffix" class="classattr">
+                                <div class="attr variable">
+            <span class="name">data_suffix</span>        =
+<span class="default_value">&#39;.txt&#39;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKUMMDInputStore.data_suffix"></a>
+    
+    
+
+                            </div>
+                            <div id="PKUMMDInputStore.interactive" class="classattr">
+                                <div class="attr variable">
+            <span class="name">interactive</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKUMMDInputStore.interactive"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
-                                <dd id="PKUMMDInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
+                                <dd id="PKUMMDInputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="PKUMMDInputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="PKUMMDInputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="PKUMMDInputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="PKUMMDInputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="PKUMMDInputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="PKUMMDInputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="PKUMMDInputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="PKUMMDInputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="PKUMMDInputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="PKUMMDInputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="PKUMMDInputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="PKUMMDInputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="PKUMMDInputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="PKUMMDInputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="PKUMMDInputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="PKUMMDInputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="PKUMMDInputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="PKUMMDInputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="PKUMMDInputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="PKUMMDInputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="PKUMMDInputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="PKUMMDInputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="PKUMMDInputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="PKUMMDInputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="PKUMMDInputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="PKUMMDInputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
+                <dd id="PKUMMDInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="PKUMMDInputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="PKUMMDInputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
                 <dd id="PKUMMDInputStore.load_from_key_objects" class="function"><a href="#GeneralInputStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -6969,7 +7542,7 @@ the data from the test file will go into validation and the unlabeled files will
     a list of video ids that should be processed in the same order (not passed if creating from key objects)
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#CalMS21InputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)
@@ -6997,6 +7570,39 @@ feature_extraction_pars : dict, optional
     parameters of the feature extractor</p>
 </div>
 
+
+                            </div>
+                            <div id="CalMS21InputStore.task_n" class="classattr">
+                                <div class="attr variable">
+            <span class="name">task_n</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CalMS21InputStore.task_n"></a>
+    
+    
+
+                            </div>
+                            <div id="CalMS21InputStore.include_task1" class="classattr">
+                                <div class="attr variable">
+            <span class="name">include_task1</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CalMS21InputStore.include_task1"></a>
+    
+    
+
+                            </div>
+                            <div id="CalMS21InputStore.treba_files" class="classattr">
+                                <div class="attr variable">
+            <span class="name">treba_files</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CalMS21InputStore.treba_files"></a>
+    
+    
 
                             </div>
                             <div id="CalMS21InputStore.get_file_ids" class="classattr">
@@ -7083,7 +7689,7 @@ filenames : set, optional
     a set of string filenames to search for (only basenames, not the whole paths)
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#CalMS21InputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)</p>
@@ -7100,7 +7706,35 @@ file_paths : set, optional
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
-                                <dd id="CalMS21InputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
+                                <dd id="CalMS21InputStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="CalMS21InputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="CalMS21InputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="CalMS21InputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="CalMS21InputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="CalMS21InputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="CalMS21InputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="CalMS21InputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="CalMS21InputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="CalMS21InputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="CalMS21InputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="CalMS21InputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="CalMS21InputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="CalMS21InputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="CalMS21InputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="CalMS21InputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="CalMS21InputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="CalMS21InputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="CalMS21InputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="CalMS21InputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="CalMS21InputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="CalMS21InputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="CalMS21InputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="CalMS21InputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="CalMS21InputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="CalMS21InputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="CalMS21InputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="CalMS21InputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
+                <dd id="CalMS21InputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="CalMS21InputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="CalMS21InputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
                 <dd id="CalMS21InputStore.load_from_key_objects" class="function"><a href="#GeneralInputStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -7327,7 +7961,7 @@ file_paths : set, optional
 └── video2_features.pt
 </code></pre>
 
-<p>Here <code>data_suffix</code> is <code>{'_suffix1.npy', '_suffix1.npy'}</code> and <code>feature_suffix</code> (optional) is <code>'_features.pt'</code>.</p>
+<p>Here <code><a href="#Numpy3DInputStore.data_suffix">data_suffix</a></code> is <code>{'_suffix1.npy', '_suffix1.npy'}</code> and <code><a href="#Numpy3DInputStore.feature_suffix">feature_suffix</a></code> (optional) is <code>'_features.pt'</code>.</p>
 
 <p>The feature files should to be dictionaries where keys are clip IDs (e.g. animal names) and values are
 feature values (arrays of shape <code>(#frames, #features)</code>). If the arrays are shaped as <code>(#features, #frames)</code>,
@@ -7456,7 +8090,7 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
     a list of video ids that should be processed in the same order (not passed if creating from key objects
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#Numpy3DInputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)
@@ -7506,7 +8140,35 @@ feature_extraction_pars : dict, optional
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
-                                <dd id="Numpy3DInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
+                                <dd id="Numpy3DInputStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="Numpy3DInputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="Numpy3DInputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="Numpy3DInputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="Numpy3DInputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="Numpy3DInputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="Numpy3DInputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="Numpy3DInputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="Numpy3DInputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="Numpy3DInputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="Numpy3DInputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="Numpy3DInputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="Numpy3DInputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="Numpy3DInputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="Numpy3DInputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="Numpy3DInputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="Numpy3DInputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="Numpy3DInputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="Numpy3DInputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="Numpy3DInputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="Numpy3DInputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="Numpy3DInputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="Numpy3DInputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="Numpy3DInputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="Numpy3DInputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="Numpy3DInputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="Numpy3DInputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="Numpy3DInputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
+                <dd id="Numpy3DInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="Numpy3DInputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="Numpy3DInputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
                 <dd id="Numpy3DInputStore.load_from_key_objects" class="function"><a href="#GeneralInputStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -7855,7 +8517,7 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
 └── video2_features.pt
 </code></pre>
 
-<p>Here <code>feature_suffix</code> (optional) is <code>'_features.pt'</code>.</p>
+<p>Here <code><a href="#LoadedFeaturesInputStore.feature_suffix">feature_suffix</a></code> (optional) is <code>'_features.pt'</code>.</p>
 </div>
 
 
@@ -7944,7 +8606,7 @@ with <code>pickle.dump()</code> (with <code>.pickle</code> or <code>.pkl</code> 
     a list of video ids that should be processed in the same order (not passed if creating from key objects
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#LoadedFeaturesInputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)
@@ -8121,7 +8783,7 @@ be processed by the __init__ function</p>
     the suffix (or a set of suffixes) of the input data files
 data_path : set | str, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#LoadedFeaturesInputStore.file_paths">file_paths</a></code>)
 data_prefix : set | str, optional
     the prefix or the set of prefixes such that the pose files for different video views of the same
     clip are named {prefix}{sep}{video_id}{data_suffix} (not passed if creating from key objects
@@ -8130,7 +8792,7 @@ file_paths : set, optional
     a set of string paths to the pose and feature files
 feature_suffix : str | set, optional
     the suffix or the set of suffices such that the additional feature files are named
-    {video_id}{feature_suffix} (and placed at the <code>data_path</code> folder or at <code>file_paths</code>)</p>
+    {video_id}{feature_suffix} (and placed at the <code>data_path</code> folder or at <code><a href="#LoadedFeaturesInputStore.file_paths">file_paths</a></code>)</p>
 
 <h2 id="returns">Returns</h2>
 
@@ -8144,7 +8806,35 @@ feature_suffix : str | set, optional
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
-                                <dd id="LoadedFeaturesInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
+                                <dd id="LoadedFeaturesInputStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="LoadedFeaturesInputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="LoadedFeaturesInputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="LoadedFeaturesInputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="LoadedFeaturesInputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="LoadedFeaturesInputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="LoadedFeaturesInputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="LoadedFeaturesInputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="LoadedFeaturesInputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="LoadedFeaturesInputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="LoadedFeaturesInputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="LoadedFeaturesInputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="LoadedFeaturesInputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="LoadedFeaturesInputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="LoadedFeaturesInputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="LoadedFeaturesInputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="LoadedFeaturesInputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="LoadedFeaturesInputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="LoadedFeaturesInputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="LoadedFeaturesInputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="LoadedFeaturesInputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="LoadedFeaturesInputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="LoadedFeaturesInputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="LoadedFeaturesInputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="LoadedFeaturesInputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="LoadedFeaturesInputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="LoadedFeaturesInputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="LoadedFeaturesInputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
+                <dd id="LoadedFeaturesInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="LoadedFeaturesInputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="LoadedFeaturesInputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
                 <dd id="LoadedFeaturesInputStore.load_from_key_objects" class="function"><a href="#GeneralInputStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -8348,7 +9038,7 @@ feature_suffix : str | set, optional
 ...
 └── Video9.csv
 </code></pre>
- Here <code>data_suffix</code> is <code>.csv</code>.</p>
+ Here <code><a href="#SIMBAInputStore.data_suffix">data_suffix</a></code> is <code>.csv</code>.</p>
 </div>
 
 
@@ -8468,7 +9158,7 @@ feature_suffix : str | set, optional
     a list of video ids that should be processed in the same order (not passed if creating from key objects
 data_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#SIMBAInputStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)
@@ -8508,11 +9198,50 @@ feature_extraction_pars : dict, optional
 
 
                             </div>
+                            <div id="SIMBAInputStore.use_features" class="classattr">
+                                <div class="attr variable">
+            <span class="name">use_features</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SIMBAInputStore.use_features"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#GeneralInputStore">GeneralInputStore</a></dt>
-                                <dd id="SIMBAInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
+                                <dd id="SIMBAInputStore.data_suffix" class="variable"><a href="#GeneralInputStore.data_suffix">data_suffix</a></dd>
+                <dd id="SIMBAInputStore.loaded_max" class="variable"><a href="#GeneralInputStore.loaded_max">loaded_max</a></dd>
+                <dd id="SIMBAInputStore.bodyparts" class="variable"><a href="#GeneralInputStore.bodyparts">bodyparts</a></dd>
+                <dd id="SIMBAInputStore.visibility" class="variable"><a href="#GeneralInputStore.visibility">visibility</a></dd>
+                <dd id="SIMBAInputStore.normalize" class="variable"><a href="#GeneralInputStore.normalize">normalize</a></dd>
+                <dd id="SIMBAInputStore.video_order" class="variable"><a href="#GeneralInputStore.video_order">video_order</a></dd>
+                <dd id="SIMBAInputStore.centered" class="variable"><a href="#GeneralInputStore.centered">centered</a></dd>
+                <dd id="SIMBAInputStore.feature_extraction" class="variable"><a href="#GeneralInputStore.feature_extraction">feature_extraction</a></dd>
+                <dd id="SIMBAInputStore.len_segment" class="variable"><a href="#GeneralInputStore.len_segment">len_segment</a></dd>
+                <dd id="SIMBAInputStore.data_suffices" class="variable"><a href="#GeneralInputStore.data_suffices">data_suffices</a></dd>
+                <dd id="SIMBAInputStore.data_prefixes" class="variable"><a href="#GeneralInputStore.data_prefixes">data_prefixes</a></dd>
+                <dd id="SIMBAInputStore.feature_suffix" class="variable"><a href="#GeneralInputStore.feature_suffix">feature_suffix</a></dd>
+                <dd id="SIMBAInputStore.convert_int_indices" class="variable"><a href="#GeneralInputStore.convert_int_indices">convert_int_indices</a></dd>
+                <dd id="SIMBAInputStore.overlap" class="variable"><a href="#GeneralInputStore.overlap">overlap</a></dd>
+                <dd id="SIMBAInputStore.canvas_shape" class="variable"><a href="#GeneralInputStore.canvas_shape">canvas_shape</a></dd>
+                <dd id="SIMBAInputStore.default_agent_name" class="variable"><a href="#GeneralInputStore.default_agent_name">default_agent_name</a></dd>
+                <dd id="SIMBAInputStore.feature_save_path" class="variable"><a href="#GeneralInputStore.feature_save_path">feature_save_path</a></dd>
+                <dd id="SIMBAInputStore.likelihood_threshold" class="variable"><a href="#GeneralInputStore.likelihood_threshold">likelihood_threshold</a></dd>
+                <dd id="SIMBAInputStore.num_cpus" class="variable"><a href="#GeneralInputStore.num_cpus">num_cpus</a></dd>
+                <dd id="SIMBAInputStore.frame_limit" class="variable"><a href="#GeneralInputStore.frame_limit">frame_limit</a></dd>
+                <dd id="SIMBAInputStore.transpose" class="variable"><a href="#GeneralInputStore.transpose">transpose</a></dd>
+                <dd id="SIMBAInputStore.ram" class="variable"><a href="#GeneralInputStore.ram">ram</a></dd>
+                <dd id="SIMBAInputStore.min_frames" class="variable"><a href="#GeneralInputStore.min_frames">min_frames</a></dd>
+                <dd id="SIMBAInputStore.original_coordinates" class="variable"><a href="#GeneralInputStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="SIMBAInputStore.file_paths" class="variable"><a href="#GeneralInputStore.file_paths">file_paths</a></dd>
+                <dd id="SIMBAInputStore.extractor" class="variable"><a href="#GeneralInputStore.extractor">extractor</a></dd>
+                <dd id="SIMBAInputStore.canvas_center" class="variable"><a href="#GeneralInputStore.canvas_center">canvas_center</a></dd>
+                <dd id="SIMBAInputStore.step" class="variable"><a href="#GeneralInputStore.step">step</a></dd>
+                <dd id="SIMBAInputStore.get_folder" class="function"><a href="#GeneralInputStore.get_folder">get_folder</a></dd>
                 <dd id="SIMBAInputStore.remove" class="function"><a href="#GeneralInputStore.remove">remove</a></dd>
                 <dd id="SIMBAInputStore.key_objects" class="function"><a href="#GeneralInputStore.key_objects">key_objects</a></dd>
                 <dd id="SIMBAInputStore.load_from_key_objects" class="function"><a href="#GeneralInputStore.load_from_key_objects">load_from_key_objects</a></dd>

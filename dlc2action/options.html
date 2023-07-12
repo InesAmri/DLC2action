@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 13.1.1"/>
+    <meta name="generator" content="pdoc 14.0.0"/>
     <title>dlc2action.options API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -31,6 +31,57 @@
 
             <h2>API Documentation</h2>
                 <ul class="memberlist">
+            <li>
+                    <a class="variable" href="#input_stores">input_stores</a>
+            </li>
+            <li>
+                    <a class="variable" href="#annotation_stores">annotation_stores</a>
+            </li>
+            <li>
+                    <a class="variable" href="#feature_extractors">feature_extractors</a>
+            </li>
+            <li>
+                    <a class="variable" href="#ssl_constructors">ssl_constructors</a>
+            </li>
+            <li>
+                    <a class="variable" href="#transformers">transformers</a>
+            </li>
+            <li>
+                    <a class="variable" href="#losses">losses</a>
+            </li>
+            <li>
+                    <a class="variable" href="#losses_multistage">losses_multistage</a>
+            </li>
+            <li>
+                    <a class="variable" href="#metrics">metrics</a>
+            </li>
+            <li>
+                    <a class="variable" href="#metrics_minimize">metrics_minimize</a>
+            </li>
+            <li>
+                    <a class="variable" href="#metrics_no_direction">metrics_no_direction</a>
+            </li>
+            <li>
+                    <a class="variable" href="#optimizers">optimizers</a>
+            </li>
+            <li>
+                    <a class="variable" href="#models">models</a>
+            </li>
+            <li>
+                    <a class="variable" href="#blanks">blanks</a>
+            </li>
+            <li>
+                    <a class="variable" href="#extractor_to_transformer">extractor_to_transformer</a>
+            </li>
+            <li>
+                    <a class="variable" href="#partition_methods">partition_methods</a>
+            </li>
+            <li>
+                    <a class="variable" href="#basic_parameters">basic_parameters</a>
+            </li>
+            <li>
+                    <a class="variable" href="#model_hyperparameters">model_hyperparameters</a>
+            </li>
     </ul>
 
 
@@ -356,6 +407,219 @@
 
 
             </section>
+                <section id="input_stores">
+                    <div class="attr variable">
+            <span class="name">input_stores</span>        =
+<input id="input_stores-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="input_stores-view-value"></label><span class="default_value">{&#39;dlc_tracklet&#39;: &lt;class &#39;<a href="data/input_store.html#DLCTrackletStore">dlc2action.data.input_store.DLCTrackletStore</a>&#39;&gt;, &#39;dlc_track&#39;: &lt;class &#39;<a href="data/input_store.html#DLCTrackStore">dlc2action.data.input_store.DLCTrackStore</a>&#39;&gt;, &#39;pku-mmd&#39;: &lt;class &#39;<a href="data/input_store.html#PKUMMDInputStore">dlc2action.data.input_store.PKUMMDInputStore</a>&#39;&gt;, &#39;calms21&#39;: &lt;class &#39;<a href="data/input_store.html#CalMS21InputStore">dlc2action.data.input_store.CalMS21InputStore</a>&#39;&gt;, &#39;np_3d&#39;: &lt;class &#39;<a href="data/input_store.html#Numpy3DInputStore">dlc2action.data.input_store.Numpy3DInputStore</a>&#39;&gt;, &#39;features&#39;: &lt;class &#39;<a href="data/input_store.html#LoadedFeaturesInputStore">dlc2action.data.input_store.LoadedFeaturesInputStore</a>&#39;&gt;, &#39;simba&#39;: &lt;class &#39;<a href="data/input_store.html#SIMBAInputStore">dlc2action.data.input_store.SIMBAInputStore</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#input_stores"></a>
+    
+    
+
+                </section>
+                <section id="annotation_stores">
+                    <div class="attr variable">
+            <span class="name">annotation_stores</span>        =
+<input id="annotation_stores-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="annotation_stores-view-value"></label><span class="default_value">{&#39;dlc&#39;: &lt;class &#39;<a href="data/annotation_store.html#DLCAnnotationStore">dlc2action.data.annotation_store.DLCAnnotationStore</a>&#39;&gt;, &#39;pku-mmd&#39;: &lt;class &#39;<a href="data/annotation_store.html#PKUMMDAnnotationStore">dlc2action.data.annotation_store.PKUMMDAnnotationStore</a>&#39;&gt;, &#39;boris&#39;: &lt;class &#39;<a href="data/annotation_store.html#BorisAnnotationStore">dlc2action.data.annotation_store.BorisAnnotationStore</a>&#39;&gt;, &#39;none&#39;: &lt;class &#39;<a href="data/annotation_store.html#EmptyAnnotationStore">dlc2action.data.annotation_store.EmptyAnnotationStore</a>&#39;&gt;, &#39;calms21&#39;: &lt;class &#39;<a href="data/annotation_store.html#CalMS21AnnotationStore">dlc2action.data.annotation_store.CalMS21AnnotationStore</a>&#39;&gt;, &#39;csv&#39;: &lt;class &#39;<a href="data/annotation_store.html#CSVAnnotationStore">dlc2action.data.annotation_store.CSVAnnotationStore</a>&#39;&gt;, &#39;simba&#39;: &lt;class &#39;<a href="data/annotation_store.html#SIMBAAnnotationStore">dlc2action.data.annotation_store.SIMBAAnnotationStore</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#annotation_stores"></a>
+    
+    
+
+                </section>
+                <section id="feature_extractors">
+                    <div class="attr variable">
+            <span class="name">feature_extractors</span>        =
+<span class="default_value">{&#39;kinematic&#39;: &lt;class &#39;<a href="feature_extraction.html#KinematicExtractor">dlc2action.feature_extraction.KinematicExtractor</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#feature_extractors"></a>
+    
+    
+
+                </section>
+                <section id="ssl_constructors">
+                    <div class="attr variable">
+            <span class="name">ssl_constructors</span>        =
+<input id="ssl_constructors-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="ssl_constructors-view-value"></label><span class="default_value">{&#39;masked_features&#39;: &lt;class &#39;<a href="ssl/masked.html#MaskedFeaturesSSL_FC">dlc2action.ssl.masked.MaskedFeaturesSSL_FC</a>&#39;&gt;, &#39;masked_joints&#39;: &lt;class &#39;<a href="ssl/masked.html#MaskedKinematicSSL_FC">dlc2action.ssl.masked.MaskedKinematicSSL_FC</a>&#39;&gt;, &#39;masked_frames&#39;: &lt;class &#39;<a href="ssl/masked.html#MaskedFramesSSL_FC">dlc2action.ssl.masked.MaskedFramesSSL_FC</a>&#39;&gt;, &#39;contrastive&#39;: &lt;class &#39;<a href="ssl/contrastive.html#ContrastiveSSL">dlc2action.ssl.contrastive.ContrastiveSSL</a>&#39;&gt;, &#39;pairwise&#39;: &lt;class &#39;<a href="ssl/contrastive.html#PairwiseSSL">dlc2action.ssl.contrastive.PairwiseSSL</a>&#39;&gt;, &#39;contrastive_masked&#39;: &lt;class &#39;<a href="ssl/contrastive.html#ContrastiveMaskedSSL">dlc2action.ssl.contrastive.ContrastiveMaskedSSL</a>&#39;&gt;, &#39;pairwise_masked&#39;: &lt;class &#39;<a href="ssl/contrastive.html#PairwiseMaskedSSL">dlc2action.ssl.contrastive.PairwiseMaskedSSL</a>&#39;&gt;, &#39;reverse&#39;: &lt;class &#39;<a href="ssl/segment_order.html#ReverseSSL">dlc2action.ssl.segment_order.ReverseSSL</a>&#39;&gt;, &#39;order&#39;: &lt;class &#39;<a href="ssl/segment_order.html#OrderSSL">dlc2action.ssl.segment_order.OrderSSL</a>&#39;&gt;, &#39;contrastive_regression&#39;: &lt;class &#39;<a href="ssl/contrastive.html#ContrastiveRegressionSSL">dlc2action.ssl.contrastive.ContrastiveRegressionSSL</a>&#39;&gt;, &#39;tcc&#39;: &lt;class &#39;<a href="ssl/tcc.html#TCCSSL">dlc2action.ssl.tcc.TCCSSL</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ssl_constructors"></a>
+    
+    
+
+                </section>
+                <section id="transformers">
+                    <div class="attr variable">
+            <span class="name">transformers</span>        =
+<span class="default_value">{&#39;kinematic&#39;: &lt;class &#39;<a href="transformer/kinematic.html#KinematicTransformer">dlc2action.transformer.kinematic.KinematicTransformer</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#transformers"></a>
+    
+    
+
+                </section>
+                <section id="losses">
+                    <div class="attr variable">
+            <span class="name">losses</span>        =
+<span class="default_value">{&#39;ms_tcn&#39;: &lt;class &#39;<a href="loss/ms_tcn.html#MS_TCN_Loss">dlc2action.loss.ms_tcn.MS_TCN_Loss</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#losses"></a>
+    
+    
+
+                </section>
+                <section id="losses_multistage">
+                    <div class="attr variable">
+            <span class="name">losses_multistage</span>        =
+<span class="default_value">[&#39;ms_tcn&#39;]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#losses_multistage"></a>
+    
+    
+
+                </section>
+                <section id="metrics">
+                    <div class="attr variable">
+            <span class="name">metrics</span>        =
+<input id="metrics-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="metrics-view-value"></label><span class="default_value">{&#39;accuracy&#39;: &lt;class &#39;<a href="metric/metrics.html#Accuracy">dlc2action.metric.metrics.Accuracy</a>&#39;&gt;, &#39;precision&#39;: &lt;class &#39;<a href="metric/metrics.html#Precision">dlc2action.metric.metrics.Precision</a>&#39;&gt;, &#39;f1&#39;: &lt;class &#39;<a href="metric/metrics.html#F1">dlc2action.metric.metrics.F1</a>&#39;&gt;, &#39;recall&#39;: &lt;class &#39;<a href="metric/metrics.html#Recall">dlc2action.metric.metrics.Recall</a>&#39;&gt;, &#39;count&#39;: &lt;class &#39;<a href="metric/metrics.html#Count">dlc2action.metric.metrics.Count</a>&#39;&gt;, &#39;segmental_precision&#39;: &lt;class &#39;<a href="metric/metrics.html#SegmentalPrecision">dlc2action.metric.metrics.SegmentalPrecision</a>&#39;&gt;, &#39;segmental_recall&#39;: &lt;class &#39;<a href="metric/metrics.html#SegmentalRecall">dlc2action.metric.metrics.SegmentalRecall</a>&#39;&gt;, &#39;segmental_f1&#39;: &lt;class &#39;<a href="metric/metrics.html#SegmentalF1">dlc2action.metric.metrics.SegmentalF1</a>&#39;&gt;, &#39;edit_distance&#39;: &lt;class &#39;<a href="metric/metrics.html#EditDistance">dlc2action.metric.metrics.EditDistance</a>&#39;&gt;, &#39;f_beta&#39;: &lt;class &#39;<a href="metric/metrics.html#Fbeta">dlc2action.metric.metrics.Fbeta</a>&#39;&gt;, &#39;segmental_f_beta&#39;: &lt;class &#39;<a href="metric/metrics.html#SegmentalFbeta">dlc2action.metric.metrics.SegmentalFbeta</a>&#39;&gt;, &#39;semisegmental_precision&#39;: &lt;class &#39;<a href="metric/metrics.html#SemiSegmentalPrecision">dlc2action.metric.metrics.SemiSegmentalPrecision</a>&#39;&gt;, &#39;semisegmental_recall&#39;: &lt;class &#39;<a href="metric/metrics.html#SemiSegmentalRecall">dlc2action.metric.metrics.SemiSegmentalRecall</a>&#39;&gt;, &#39;semisegmental_f1&#39;: &lt;class &#39;<a href="metric/metrics.html#SemiSegmentalF1">dlc2action.metric.metrics.SemiSegmentalF1</a>&#39;&gt;, &#39;pr-auc&#39;: &lt;class &#39;<a href="metric/metrics.html#PR_AUC">dlc2action.metric.metrics.PR_AUC</a>&#39;&gt;, &#39;semisegmental_pr-auc&#39;: &lt;class &#39;<a href="metric/metrics.html#SemiSegmentalPR_AUC">dlc2action.metric.metrics.SemiSegmentalPR_AUC</a>&#39;&gt;, &#39;mAP&#39;: &lt;class &#39;<a href="metric/metrics.html#PKU_mAP">dlc2action.metric.metrics.PKU_mAP</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#metrics"></a>
+    
+    
+
+                </section>
+                <section id="metrics_minimize">
+                    <div class="attr variable">
+            <span class="name">metrics_minimize</span>        =
+<span class="default_value">[&#39;edit_distance&#39;]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#metrics_minimize"></a>
+    
+    
+
+                </section>
+                <section id="metrics_no_direction">
+                    <div class="attr variable">
+            <span class="name">metrics_no_direction</span>        =
+<span class="default_value">[&#39;count&#39;]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#metrics_no_direction"></a>
+    
+    
+
+                </section>
+                <section id="optimizers">
+                    <div class="attr variable">
+            <span class="name">optimizers</span>        =
+<span class="default_value">{&#39;Adam&#39;: &lt;class &#39;torch.optim.adam.Adam&#39;&gt;, &#39;SGD&#39;: &lt;class &#39;torch.optim.sgd.SGD&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#optimizers"></a>
+    
+    
+
+                </section>
+                <section id="models">
+                    <div class="attr variable">
+            <span class="name">models</span>        =
+<input id="models-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="models-view-value"></label><span class="default_value">{&#39;asformer&#39;: &lt;class &#39;<a href="model/asformer.html#ASFormer">dlc2action.model.asformer.ASFormer</a>&#39;&gt;, &#39;mlp&#39;: &lt;class &#39;<a href="model/mlp.html#MLP">dlc2action.model.mlp.MLP</a>&#39;&gt;, &#39;c2f_tcn&#39;: &lt;class &#39;<a href="model/c2f_tcn.html#C2F_TCN">dlc2action.model.c2f_tcn.C2F_TCN</a>&#39;&gt;, &#39;edtcn&#39;: &lt;class &#39;<a href="model/edtcn.html#EDTCN">dlc2action.model.edtcn.EDTCN</a>&#39;&gt;, &#39;transformer&#39;: &lt;class &#39;<a href="model/transformer.html#Transformer">dlc2action.model.transformer.Transformer</a>&#39;&gt;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#models"></a>
+    
+    
+
+                </section>
+                <section id="blanks">
+                    <div class="attr variable">
+            <span class="name">blanks</span>        =
+<input id="blanks-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="blanks-view-value"></label><span class="default_value">[&#39;dataset_inverse_weights&#39;, &#39;dataset_proportional_weights&#39;, &#39;dataset_classes&#39;, &#39;dataset_features&#39;, &#39;dataset_len_segment&#39;, &#39;dataset_bodyparts&#39;, &#39;dataset_boundary_weight&#39;, &#39;model_features&#39;]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#blanks"></a>
+    
+    
+
+                </section>
+                <section id="extractor_to_transformer">
+                    <div class="attr variable">
+            <span class="name">extractor_to_transformer</span>        =
+<span class="default_value">{&#39;kinematic&#39;: &#39;kinematic&#39;, &#39;heatmap&#39;: &#39;heatmap&#39;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#extractor_to_transformer"></a>
+    
+    
+
+                </section>
+                <section id="partition_methods">
+                    <div class="attr variable">
+            <span class="name">partition_methods</span>        =
+<input id="partition_methods-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="partition_methods-view-value"></label><span class="default_value">{&#39;random&#39;: [&#39;random&#39;, &#39;random:test-from-name&#39;, &#39;random:test-from-name:{name}&#39;, &#39;random:equalize:segments&#39;, &#39;random:equalize:videos&#39;], &#39;fixed&#39;: [&#39;val-from-name:{val_name}:test-from-name:{test_name}&#39;, &#39;time&#39;, &#39;time:start-from:{frac}&#39;, &#39;time:start-from:{frac}:strict&#39;, &#39;time:strict&#39;, &#39;file&#39;, &#39;folders&#39;]}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#partition_methods"></a>
+    
+    
+
+                </section>
+                <section id="basic_parameters">
+                    <div class="attr variable">
+            <span class="name">basic_parameters</span>        =
+<input id="basic_parameters-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="basic_parameters-view-value"></label><span class="default_value">{&#39;data&#39;: [&#39;data_suffix&#39;, &#39;feature_suffix&#39;, &#39;annotation_suffix&#39;, &#39;canvas_shape&#39;, &#39;ignored_bodyparts&#39;, &#39;likelihood_threshold&#39;, &#39;behaviors&#39;, &#39;filter_annotated&#39;, &#39;filter_background&#39;, &#39;visibility_min_score&#39;, &#39;visibility_min_frac&#39;], &#39;augmentations&#39;: {&#39;heatmap&#39;: [&#39;augmentations&#39;, &#39;rotation_degree_limits&#39;], &#39;kinematic&#39;: [&#39;augmentations&#39;, &#39;rotation_limits&#39;, &#39;mirror_dim&#39;, &#39;noise_std&#39;, &#39;zoom_limits&#39;, &#39;masking_probability&#39;]}, &#39;features&#39;: {&#39;heatmap&#39;: [&#39;keys&#39;, &#39;channel_policy&#39;, &#39;heatmap_width&#39;, &#39;sigma&#39;], &#39;kinematic&#39;: [&#39;keys&#39;, &#39;averaging_window&#39;, &#39;distance_pairs&#39;, &#39;angle_pairs&#39;, &#39;zone_vertices&#39;, &#39;zone_bools&#39;, &#39;zone_distances&#39;, &#39;area_vertices&#39;]}, &#39;model&#39;: {&#39;asformer&#39;: [&#39;num_decoders&#39;, &#39;num_layers&#39;, &#39;r1&#39;, &#39;r2&#39;, &#39;num_f_maps&#39;, &#39;channel_masking_rate&#39;], &#39;c2f_tcn&#39;: [&#39;num_f_maps&#39;, &#39;feature_dim&#39;], &#39;edtcn&#39;: [&#39;kernel_size&#39;, &#39;mid_channels&#39;], &#39;mlp&#39;: [&#39;f_maps_list&#39;, &#39;dropout_rates&#39;], &#39;transformer&#39;: [&#39;num_f_maps&#39;, &#39;N&#39;, &#39;heads&#39;, &#39;num_pool&#39;]}, &#39;general&#39;: [&#39;model_name&#39;, &#39;metric_functions&#39;, &#39;ignored_clips&#39;, &#39;len_segment&#39;, &#39;overlap&#39;, &#39;interactive&#39;], &#39;losses&#39;: {&#39;ms_tcn&#39;: [&#39;focal&#39;, &#39;gamma&#39;, &#39;alpha&#39;], &#39;clip&#39;: [&#39;focal&#39;, &#39;gamma&#39;, &#39;alpha&#39;, &#39;fix_text&#39;]}, &#39;metrics&#39;: {&#39;f1&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;], &#39;precision&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;], &#39;recall&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;], &#39;f_beta&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;, &#39;beta&#39;], &#39;count&#39;: [&#39;classes&#39;], &#39;segmental_precision&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;, &#39;iou_threshold&#39;], &#39;segmental_recall&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;, &#39;iou_threshold&#39;], &#39;segmental_f1&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;, &#39;iou_threshold&#39;], &#39;segmental_f_beta&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_value&#39;, &#39;iou_threshold&#39;], &#39;pr-auc&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;threshold_step&#39;], &#39;mAP&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;iou_threshold&#39;, &#39;threshold_value&#39;], &#39;semisegmental_precision&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;iou_threshold&#39;], &#39;semisegmental_recall&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;iou_threshold&#39;], &#39;semisegmental_f1&#39;: [&#39;average&#39;, &#39;ignored_classes&#39;, &#39;iou_threshold&#39;]}, &#39;training&#39;: [&#39;lr&#39;, &#39;device&#39;, &#39;num_epochs&#39;, &#39;to_ram&#39;, &#39;batch_size&#39;, &#39;normalize&#39;, &#39;temporal_subsampling_size&#39;, &#39;parallel&#39;, &#39;val_frac&#39;, &#39;test_frac&#39;, &#39;partition_method&#39;]}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#basic_parameters"></a>
+    
+    
+
+                </section>
+                <section id="model_hyperparameters">
+                    <div class="attr variable">
+            <span class="name">model_hyperparameters</span>        =
+<input id="model_hyperparameters-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="model_hyperparameters-view-value"></label><span class="default_value">{&#39;asformer&#39;: {&#39;losses/ms_tcn/alpha&#39;: (&#39;float_log&#39;, 1e-05, 0.01), &#39;losses/ms_tcn/focal&#39;: (&#39;categorical&#39;, [True, False]), &#39;training/temporal_subsampling_size&#39;: (&#39;float&#39;, 0.75, 1), &#39;model/num_decoders&#39;: (&#39;int&#39;, 1, 4), &#39;model/num_f_maps&#39;: (&#39;categorical&#39;, [32, 64, 128]), &#39;model/num_layers&#39;: (&#39;int&#39;, 5, 10), &#39;model/channel_masking_rate&#39;: (&#39;float&#39;, 0.2, 0.4), &#39;general/len_segment&#39;: (&#39;categorical&#39;, [64, 128])}, &#39;c2f_tcn&#39;: {&#39;losses/ms_tcn/alpha&#39;: (&#39;float_log&#39;, 1e-05, 0.01), &#39;losses/ms_tcn/focal&#39;: (&#39;categorical&#39;, [True, False]), &#39;training/temporal_subsampling_size&#39;: (&#39;float&#39;, 0.75, 1), &#39;model/num_f_maps&#39;: (&#39;int_log&#39;, 32, 128), &#39;general/len_segment&#39;: (&#39;categorical&#39;, [512, 1024])}, &#39;edtcn&#39;: {&#39;losses/ms_tcn/alpha&#39;: (&#39;float_log&#39;, 1e-05, 0.01), &#39;losses/ms_tcn/focal&#39;: (&#39;categorical&#39;, [True, False]), &#39;training/temporal_subsampling_size&#39;: (&#39;float&#39;, 0.75, 1), &#39;general/len_segment&#39;: (&#39;categorical&#39;, [128, 256, 512])}, &#39;transformer&#39;: {&#39;losses/ms_tcn/alpha&#39;: (&#39;float_log&#39;, 1e-05, 0.01), &#39;losses/ms_tcn/focal&#39;: (&#39;categorical&#39;, [True, False]), &#39;training/temporal_subsampling_size&#39;: (&#39;float&#39;, 0.75, 1), &#39;model/N&#39;: (&#39;int&#39;, 5, 12), &#39;model/heads&#39;: (&#39;categorical&#39;, [1, 2, 4, 8]), &#39;model/num_pool&#39;: (&#39;int&#39;, 0, 4), &#39;model/add_batchnorm&#39;: (&#39;categorical&#39;, [True, False]), &#39;general/len_segment&#39;: (&#39;categorical&#39;, [64, 128])}, &#39;mlp&#39;: {&#39;losses/ms_tcn/alpha&#39;: (&#39;float_log&#39;, 1e-05, 0.01), &#39;losses/ms_tcn/focal&#39;: (&#39;categorical&#39;, [True, False]), &#39;training/temporal_subsampling_size&#39;: (&#39;float&#39;, 0.75, 1), &#39;model/dropout_rates&#39;: (&#39;float&#39;, 0.3, 0.6)}}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#model_hyperparameters"></a>
+    
+    
+
+                </section>
     </main>
 <script>
     function escapeHTML(html) {

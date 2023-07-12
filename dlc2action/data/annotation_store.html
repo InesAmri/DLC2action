@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 13.1.1"/>
+    <meta name="generator" content="pdoc 14.0.0"/>
     <title>dlc2action.data.annotation_store API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -92,6 +92,90 @@
                                 <a class="function" href="#ActionSegmentationStore.__init__">ActionSegmentationStore</a>
                         </li>
                         <li>
+                                <a class="variable" href="#ActionSegmentationStore.len_segment">len_segment</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.exclusive">exclusive</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.overlap">overlap</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.video_order">video_order</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.min_frames">min_frames</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.max_frames">max_frames</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.visibility">visibility</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.vis_min_score">vis_min_score</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.mask">mask</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.use_negatives">use_negatives</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.interactive">interactive</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.ignored_clips">ignored_clips</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.file_paths">file_paths</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.ignored_classes">ignored_classes</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.update_behaviors">update_behaviors</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.ram">ram</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.original_coordinates">original_coordinates</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.filtered">filtered</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.step">step</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.ann_suffix">ann_suffix</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.annotation_folder">annotation_folder</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.filter_annotated">filter_annotated</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.filter_background">filter_background</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.frame_limit">frame_limit</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.min_frames_action">min_frames_action</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.error_class">error_class</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ActionSegmentationStore.correction">correction</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#ActionSegmentationStore.remove">remove</a>
                         </li>
                         <li>
@@ -166,6 +250,9 @@
                         <li>
                                 <a class="function" href="#BorisAnnotationStore.__init__">BorisAnnotationStore</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#BorisAnnotationStore.default_agent_name">default_agent_name</a>
+                        </li>
                 </ul>
 
             </li>
@@ -188,6 +275,15 @@
                                 <a class="function" href="#CalMS21AnnotationStore.__init__">CalMS21AnnotationStore</a>
                         </li>
                         <li>
+                                <a class="variable" href="#CalMS21AnnotationStore.task_n">task_n</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CalMS21AnnotationStore.include_task1">include_task1</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CalMS21AnnotationStore.treba_files">treba_files</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#CalMS21AnnotationStore.get_file_ids">get_file_ids</a>
                         </li>
                 </ul>
@@ -198,6 +294,15 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#CSVAnnotationStore.__init__">CSVAnnotationStore</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CSVAnnotationStore.default_agent_name">default_agent_name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CSVAnnotationStore.separator">separator</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CSVAnnotationStore.fps">fps</a>
                         </li>
                 </ul>
 
@@ -4594,6 +4699,314 @@ interactive : bool, default False
 
 
                             </div>
+                            <div id="ActionSegmentationStore.len_segment" class="classattr">
+                                <div class="attr variable">
+            <span class="name">len_segment</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.len_segment"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.exclusive" class="classattr">
+                                <div class="attr variable">
+            <span class="name">exclusive</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.exclusive"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.overlap" class="classattr">
+                                <div class="attr variable">
+            <span class="name">overlap</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.overlap"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.video_order" class="classattr">
+                                <div class="attr variable">
+            <span class="name">video_order</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.video_order"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.min_frames" class="classattr">
+                                <div class="attr variable">
+            <span class="name">min_frames</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.min_frames"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.max_frames" class="classattr">
+                                <div class="attr variable">
+            <span class="name">max_frames</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.max_frames"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.visibility" class="classattr">
+                                <div class="attr variable">
+            <span class="name">visibility</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.visibility"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.vis_min_score" class="classattr">
+                                <div class="attr variable">
+            <span class="name">vis_min_score</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.vis_min_score"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.vis_min_frac" class="classattr">
+                                <div class="attr variable">
+            <span class="name">vis_min_frac</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.vis_min_frac"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.mask" class="classattr">
+                                <div class="attr variable">
+            <span class="name">mask</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.mask"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.use_negatives" class="classattr">
+                                <div class="attr variable">
+            <span class="name">use_negatives</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.use_negatives"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.interactive" class="classattr">
+                                <div class="attr variable">
+            <span class="name">interactive</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.interactive"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.ignored_clips" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ignored_clips</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.ignored_clips"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.file_paths" class="classattr">
+                                <div class="attr variable">
+            <span class="name">file_paths</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.file_paths"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.ignored_classes" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ignored_classes</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.ignored_classes"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.update_behaviors" class="classattr">
+                                <div class="attr variable">
+            <span class="name">update_behaviors</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.update_behaviors"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.ram" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ram</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.ram"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.original_coordinates" class="classattr">
+                                <div class="attr variable">
+            <span class="name">original_coordinates</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.original_coordinates"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.filtered" class="classattr">
+                                <div class="attr variable">
+            <span class="name">filtered</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.filtered"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.step" class="classattr">
+                                <div class="attr variable">
+            <span class="name">step</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.step"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.ann_suffix" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ann_suffix</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.ann_suffix"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.annotation_folder" class="classattr">
+                                <div class="attr variable">
+            <span class="name">annotation_folder</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.annotation_folder"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.filter_annotated" class="classattr">
+                                <div class="attr variable">
+            <span class="name">filter_annotated</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.filter_annotated"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.filter_background" class="classattr">
+                                <div class="attr variable">
+            <span class="name">filter_background</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.filter_background"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.frame_limit" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frame_limit</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.frame_limit"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.min_frames_action" class="classattr">
+                                <div class="attr variable">
+            <span class="name">min_frames_action</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.min_frames_action"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.error_class" class="classattr">
+                                <div class="attr variable">
+            <span class="name">error_class</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.error_class"></a>
+    
+    
+
+                            </div>
+                            <div id="ActionSegmentationStore.correction" class="classattr">
+                                <div class="attr variable">
+            <span class="name">correction</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ActionSegmentationStore.correction"></a>
+    
+    
+
+                            </div>
                             <div id="ActionSegmentationStore.remove" class="classattr">
                                         <input id="ActionSegmentationStore.remove-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -5442,6 +5855,34 @@ annotation_suffix : str | set, optional
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
                                 <dd id="FileAnnotationStore.__init__" class="function"><a href="#ActionSegmentationStore.__init__">ActionSegmentationStore</a></dd>
+                <dd id="FileAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="FileAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="FileAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="FileAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="FileAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="FileAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="FileAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="FileAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="FileAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="FileAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="FileAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="FileAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="FileAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="FileAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="FileAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="FileAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="FileAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="FileAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="FileAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="FileAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="FileAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="FileAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="FileAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="FileAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="FileAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="FileAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="FileAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="FileAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
                 <dd id="FileAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="FileAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="FileAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -5689,6 +6130,34 @@ annotation_path : str, optional
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
                                 <dd id="SequenceAnnotationStore.__init__" class="function"><a href="#ActionSegmentationStore.__init__">ActionSegmentationStore</a></dd>
+                <dd id="SequenceAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="SequenceAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="SequenceAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="SequenceAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="SequenceAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="SequenceAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="SequenceAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="SequenceAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="SequenceAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="SequenceAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="SequenceAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="SequenceAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="SequenceAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="SequenceAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="SequenceAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="SequenceAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="SequenceAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="SequenceAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="SequenceAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="SequenceAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="SequenceAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="SequenceAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="SequenceAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="SequenceAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="SequenceAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="SequenceAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="SequenceAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="SequenceAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
                 <dd id="SequenceAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="SequenceAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="SequenceAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -5862,6 +6331,34 @@ for ind, ind_dict in data.items():
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
                                 <dd id="DLCAnnotationStore.__init__" class="function"><a href="#ActionSegmentationStore.__init__">ActionSegmentationStore</a></dd>
+                <dd id="DLCAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="DLCAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="DLCAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="DLCAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="DLCAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="DLCAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="DLCAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="DLCAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="DLCAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="DLCAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="DLCAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="DLCAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="DLCAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="DLCAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="DLCAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="DLCAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="DLCAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="DLCAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="DLCAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="DLCAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="DLCAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="DLCAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="DLCAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="DLCAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="DLCAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="DLCAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="DLCAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="DLCAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
                 <dd id="DLCAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="DLCAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="DLCAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
@@ -6280,11 +6777,50 @@ ignored_clips : set, optional
 
 
                             </div>
+                            <div id="BorisAnnotationStore.default_agent_name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">default_agent_name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#BorisAnnotationStore.default_agent_name"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
-                                <dd id="BorisAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
+                                <dd id="BorisAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="BorisAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="BorisAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="BorisAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="BorisAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="BorisAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="BorisAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="BorisAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="BorisAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="BorisAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="BorisAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="BorisAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="BorisAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="BorisAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="BorisAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="BorisAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="BorisAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="BorisAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="BorisAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="BorisAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="BorisAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="BorisAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="BorisAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="BorisAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="BorisAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="BorisAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="BorisAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="BorisAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
+                <dd id="BorisAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="BorisAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="BorisAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
                 <dd id="BorisAnnotationStore.to_ram" class="function"><a href="#ActionSegmentationStore.to_ram">to_ram</a></dd>
@@ -6769,7 +7305,35 @@ be processed by the __init__ function</p>
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
-                                <dd id="PKUMMDAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
+                                <dd id="PKUMMDAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="PKUMMDAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="PKUMMDAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="PKUMMDAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="PKUMMDAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="PKUMMDAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="PKUMMDAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="PKUMMDAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="PKUMMDAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="PKUMMDAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="PKUMMDAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="PKUMMDAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="PKUMMDAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="PKUMMDAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="PKUMMDAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="PKUMMDAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="PKUMMDAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="PKUMMDAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="PKUMMDAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="PKUMMDAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="PKUMMDAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="PKUMMDAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="PKUMMDAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="PKUMMDAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="PKUMMDAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="PKUMMDAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="PKUMMDAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="PKUMMDAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
+                <dd id="PKUMMDAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="PKUMMDAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="PKUMMDAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
                 <dd id="PKUMMDAnnotationStore.to_ram" class="function"><a href="#ActionSegmentationStore.to_ram">to_ram</a></dd>
@@ -7226,6 +7790,39 @@ treba_files : bool, default False
 
 
                             </div>
+                            <div id="CalMS21AnnotationStore.task_n" class="classattr">
+                                <div class="attr variable">
+            <span class="name">task_n</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CalMS21AnnotationStore.task_n"></a>
+    
+    
+
+                            </div>
+                            <div id="CalMS21AnnotationStore.include_task1" class="classattr">
+                                <div class="attr variable">
+            <span class="name">include_task1</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CalMS21AnnotationStore.include_task1"></a>
+    
+    
+
+                            </div>
+                            <div id="CalMS21AnnotationStore.treba_files" class="classattr">
+                                <div class="attr variable">
+            <span class="name">treba_files</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CalMS21AnnotationStore.treba_files"></a>
+    
+    
+
+                            </div>
                             <div id="CalMS21AnnotationStore.get_file_ids" class="classattr">
                                         <input id="CalMS21AnnotationStore.get_file_ids-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
@@ -7310,7 +7907,7 @@ filenames : set, optional
     a set of string filenames to search for (only basenames, not the whole paths)
 annotation_path : str | set, optional
     the path to the folder where the pose and feature files are stored or a set of such paths
-    (not passed if creating from key objects or from <code>file_paths</code>)
+    (not passed if creating from key objects or from <code><a href="#CalMS21AnnotationStore.file_paths">file_paths</a></code>)
 file_paths : set, optional
     a set of string paths to the pose and feature files
     (not passed if creating from key objects or from <code>data_path</code>)</p>
@@ -7327,7 +7924,35 @@ file_paths : set, optional
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
-                                <dd id="CalMS21AnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
+                                <dd id="CalMS21AnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="CalMS21AnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="CalMS21AnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="CalMS21AnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="CalMS21AnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="CalMS21AnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="CalMS21AnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="CalMS21AnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="CalMS21AnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="CalMS21AnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="CalMS21AnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="CalMS21AnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="CalMS21AnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="CalMS21AnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="CalMS21AnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="CalMS21AnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="CalMS21AnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="CalMS21AnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="CalMS21AnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="CalMS21AnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="CalMS21AnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="CalMS21AnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="CalMS21AnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="CalMS21AnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="CalMS21AnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="CalMS21AnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="CalMS21AnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="CalMS21AnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
+                <dd id="CalMS21AnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="CalMS21AnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="CalMS21AnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
                 <dd id="CalMS21AnnotationStore.to_ram" class="function"><a href="#ActionSegmentationStore.to_ram">to_ram</a></dd>
@@ -7557,7 +8182,7 @@ file_paths : set, optional
 <li>class / behavior / behaviour / label / type : action label.</li>
 </ul>
 
-<p>If the times are set in seconds instead of frames, don't forget to set the <code>fps</code> parameter to your frame rate.</p>
+<p>If the times are set in seconds instead of frames, don't forget to set the <code><a href="#CSVAnnotationStore.fps">fps</a></code> parameter to your frame rate.</p>
 
 <p>Assumes the following file structure:</p>
 
@@ -7766,11 +8391,72 @@ fps : int, default 30
 
 
                             </div>
+                            <div id="CSVAnnotationStore.default_agent_name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">default_agent_name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CSVAnnotationStore.default_agent_name"></a>
+    
+    
+
+                            </div>
+                            <div id="CSVAnnotationStore.separator" class="classattr">
+                                <div class="attr variable">
+            <span class="name">separator</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CSVAnnotationStore.separator"></a>
+    
+    
+
+                            </div>
+                            <div id="CSVAnnotationStore.fps" class="classattr">
+                                <div class="attr variable">
+            <span class="name">fps</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CSVAnnotationStore.fps"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
-                                <dd id="CSVAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
+                                <dd id="CSVAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="CSVAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="CSVAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="CSVAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="CSVAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="CSVAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="CSVAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="CSVAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="CSVAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="CSVAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="CSVAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="CSVAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="CSVAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="CSVAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="CSVAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="CSVAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="CSVAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="CSVAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="CSVAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="CSVAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="CSVAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="CSVAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="CSVAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="CSVAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="CSVAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="CSVAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="CSVAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="CSVAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
+                <dd id="CSVAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="CSVAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="CSVAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
                 <dd id="CSVAnnotationStore.to_ram" class="function"><a href="#ActionSegmentationStore.to_ram">to_ram</a></dd>
@@ -8193,7 +8879,35 @@ annotation_suffix : str | set, optional
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#ActionSegmentationStore">ActionSegmentationStore</a></dt>
-                                <dd id="SIMBAAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
+                                <dd id="SIMBAAnnotationStore.len_segment" class="variable"><a href="#ActionSegmentationStore.len_segment">len_segment</a></dd>
+                <dd id="SIMBAAnnotationStore.exclusive" class="variable"><a href="#ActionSegmentationStore.exclusive">exclusive</a></dd>
+                <dd id="SIMBAAnnotationStore.overlap" class="variable"><a href="#ActionSegmentationStore.overlap">overlap</a></dd>
+                <dd id="SIMBAAnnotationStore.video_order" class="variable"><a href="#ActionSegmentationStore.video_order">video_order</a></dd>
+                <dd id="SIMBAAnnotationStore.min_frames" class="variable"><a href="#ActionSegmentationStore.min_frames">min_frames</a></dd>
+                <dd id="SIMBAAnnotationStore.max_frames" class="variable"><a href="#ActionSegmentationStore.max_frames">max_frames</a></dd>
+                <dd id="SIMBAAnnotationStore.visibility" class="variable"><a href="#ActionSegmentationStore.visibility">visibility</a></dd>
+                <dd id="SIMBAAnnotationStore.vis_min_score" class="variable"><a href="#ActionSegmentationStore.vis_min_score">vis_min_score</a></dd>
+                <dd id="SIMBAAnnotationStore.vis_min_frac" class="variable"><a href="#ActionSegmentationStore.vis_min_frac">vis_min_frac</a></dd>
+                <dd id="SIMBAAnnotationStore.mask" class="variable"><a href="#ActionSegmentationStore.mask">mask</a></dd>
+                <dd id="SIMBAAnnotationStore.use_negatives" class="variable"><a href="#ActionSegmentationStore.use_negatives">use_negatives</a></dd>
+                <dd id="SIMBAAnnotationStore.interactive" class="variable"><a href="#ActionSegmentationStore.interactive">interactive</a></dd>
+                <dd id="SIMBAAnnotationStore.ignored_clips" class="variable"><a href="#ActionSegmentationStore.ignored_clips">ignored_clips</a></dd>
+                <dd id="SIMBAAnnotationStore.file_paths" class="variable"><a href="#ActionSegmentationStore.file_paths">file_paths</a></dd>
+                <dd id="SIMBAAnnotationStore.ignored_classes" class="variable"><a href="#ActionSegmentationStore.ignored_classes">ignored_classes</a></dd>
+                <dd id="SIMBAAnnotationStore.update_behaviors" class="variable"><a href="#ActionSegmentationStore.update_behaviors">update_behaviors</a></dd>
+                <dd id="SIMBAAnnotationStore.ram" class="variable"><a href="#ActionSegmentationStore.ram">ram</a></dd>
+                <dd id="SIMBAAnnotationStore.original_coordinates" class="variable"><a href="#ActionSegmentationStore.original_coordinates">original_coordinates</a></dd>
+                <dd id="SIMBAAnnotationStore.filtered" class="variable"><a href="#ActionSegmentationStore.filtered">filtered</a></dd>
+                <dd id="SIMBAAnnotationStore.step" class="variable"><a href="#ActionSegmentationStore.step">step</a></dd>
+                <dd id="SIMBAAnnotationStore.ann_suffix" class="variable"><a href="#ActionSegmentationStore.ann_suffix">ann_suffix</a></dd>
+                <dd id="SIMBAAnnotationStore.annotation_folder" class="variable"><a href="#ActionSegmentationStore.annotation_folder">annotation_folder</a></dd>
+                <dd id="SIMBAAnnotationStore.filter_annotated" class="variable"><a href="#ActionSegmentationStore.filter_annotated">filter_annotated</a></dd>
+                <dd id="SIMBAAnnotationStore.filter_background" class="variable"><a href="#ActionSegmentationStore.filter_background">filter_background</a></dd>
+                <dd id="SIMBAAnnotationStore.frame_limit" class="variable"><a href="#ActionSegmentationStore.frame_limit">frame_limit</a></dd>
+                <dd id="SIMBAAnnotationStore.min_frames_action" class="variable"><a href="#ActionSegmentationStore.min_frames_action">min_frames_action</a></dd>
+                <dd id="SIMBAAnnotationStore.error_class" class="variable"><a href="#ActionSegmentationStore.error_class">error_class</a></dd>
+                <dd id="SIMBAAnnotationStore.correction" class="variable"><a href="#ActionSegmentationStore.correction">correction</a></dd>
+                <dd id="SIMBAAnnotationStore.remove" class="function"><a href="#ActionSegmentationStore.remove">remove</a></dd>
                 <dd id="SIMBAAnnotationStore.key_objects" class="function"><a href="#ActionSegmentationStore.key_objects">key_objects</a></dd>
                 <dd id="SIMBAAnnotationStore.load_from_key_objects" class="function"><a href="#ActionSegmentationStore.load_from_key_objects">load_from_key_objects</a></dd>
                 <dd id="SIMBAAnnotationStore.to_ram" class="function"><a href="#ActionSegmentationStore.to_ram">to_ram</a></dd>

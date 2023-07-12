@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 13.1.1"/>
+    <meta name="generator" content="pdoc 14.0.0"/>
     <title>dlc2action.metric.metrics API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -109,6 +109,9 @@
                         <li>
                                 <a class="function" href="#Fbeta.__init__">Fbeta</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#Fbeta.beta2">beta2</a>
+                        </li>
                 </ul>
 
             </li>
@@ -120,6 +123,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#SegmentalFbeta.segmental">segmental</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SegmentalFbeta.beta2">beta2</a>
                         </li>
                 </ul>
 
@@ -167,6 +173,9 @@
                                 <a class="function" href="#Accuracy.__init__">Accuracy</a>
                         </li>
                         <li>
+                                <a class="variable" href="#Accuracy.ignore_index">ignore_index</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#Accuracy.reset">reset</a>
                         </li>
                         <li>
@@ -185,6 +194,12 @@
                                 <a class="function" href="#Count.__init__">Count</a>
                         </li>
                         <li>
+                                <a class="variable" href="#Count.classes">classes</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Count.exclusive">exclusive</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#Count.reset">reset</a>
                         </li>
                         <li>
@@ -201,6 +216,12 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#EditDistance.__init__">EditDistance</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#EditDistance.ignore_index">ignore_index</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#EditDistance.exclusive">exclusive</a>
                         </li>
                         <li>
                                 <a class="function" href="#EditDistance.reset">reset</a>
@@ -222,6 +243,21 @@
                         </li>
                         <li>
                                 <a class="variable" href="#PKU_mAP.needs_raw_data">needs_raw_data</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PKU_mAP.average">average</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PKU_mAP.iou_threshold">iou_threshold</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PKU_mAP.threshold">threshold</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PKU_mAP.exclusive">exclusive</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PKU_mAP.classes">classes</a>
                         </li>
                         <li>
                                 <a class="function" href="#PKU_mAP.match">match</a>
@@ -2546,6 +2582,16 @@ threshold_step : float, default 0.1
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="PR_AUC.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="PR_AUC.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="PR_AUC.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="PR_AUC.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="PR_AUC.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="PR_AUC.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="PR_AUC.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="PR_AUC.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="PR_AUC.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="PR_AUC.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="PR_AUC.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="PR_AUC.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="PR_AUC.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="PR_AUC.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="PR_AUC.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -2712,6 +2758,16 @@ threshold_value : float | list, optional
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="Precision.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="Precision.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="Precision.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="Precision.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="Precision.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="Precision.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="Precision.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="Precision.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="Precision.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="Precision.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="Precision.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="Precision.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="Precision.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="Precision.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="Precision.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -2903,6 +2959,16 @@ threshold_value : float | list, optional
                                 <dl>
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SegmentalPrecision.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
+                <dd id="SegmentalPrecision.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SegmentalPrecision.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SegmentalPrecision.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SegmentalPrecision.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SegmentalPrecision.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SegmentalPrecision.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SegmentalPrecision.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SegmentalPrecision.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SegmentalPrecision.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SegmentalPrecision.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SegmentalPrecision.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SegmentalPrecision.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="SegmentalPrecision.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -3069,6 +3135,16 @@ threshold_value : float | list, optional
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="Recall.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="Recall.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="Recall.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="Recall.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="Recall.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="Recall.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="Recall.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="Recall.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="Recall.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="Recall.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="Recall.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="Recall.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="Recall.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="Recall.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="Recall.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -3260,6 +3336,16 @@ threshold_value : float | list, optional
                                 <dl>
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SegmentalRecall.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
+                <dd id="SegmentalRecall.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SegmentalRecall.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SegmentalRecall.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SegmentalRecall.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SegmentalRecall.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SegmentalRecall.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SegmentalRecall.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SegmentalRecall.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SegmentalRecall.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SegmentalRecall.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SegmentalRecall.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SegmentalRecall.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="SegmentalRecall.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -3441,6 +3527,16 @@ threshold_value : float | list, optional
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="F1.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="F1.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="F1.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="F1.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="F1.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="F1.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="F1.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="F1.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="F1.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="F1.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="F1.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="F1.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="F1.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="F1.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="F1.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -3643,6 +3739,16 @@ threshold_value : float | list, optional
                                 <dl>
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SegmentalF1.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
+                <dd id="SegmentalF1.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SegmentalF1.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SegmentalF1.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SegmentalF1.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SegmentalF1.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SegmentalF1.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SegmentalF1.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SegmentalF1.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SegmentalF1.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SegmentalF1.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SegmentalF1.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SegmentalF1.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="SegmentalF1.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -3836,12 +3942,33 @@ threshold_value : float | list, optional
 
 
                             </div>
+                            <div id="Fbeta.beta2" class="classattr">
+                                <div class="attr variable">
+            <span class="name">beta2</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Fbeta.beta2"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="Fbeta.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="Fbeta.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="Fbeta.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="Fbeta.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="Fbeta.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="Fbeta.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="Fbeta.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="Fbeta.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="Fbeta.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="Fbeta.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="Fbeta.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="Fbeta.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="Fbeta.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="Fbeta.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="Fbeta.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -4061,11 +4188,32 @@ threshold_value : float | list, optional
 
 
                             </div>
+                            <div id="SegmentalFbeta.beta2" class="classattr">
+                                <div class="attr variable">
+            <span class="name">beta2</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SegmentalFbeta.beta2"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SegmentalFbeta.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
+                <dd id="SegmentalFbeta.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SegmentalFbeta.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SegmentalFbeta.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SegmentalFbeta.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SegmentalFbeta.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SegmentalFbeta.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SegmentalFbeta.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SegmentalFbeta.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SegmentalFbeta.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SegmentalFbeta.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SegmentalFbeta.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SegmentalFbeta.update" class="function"><a href="#_ClassificationMetric.update">update</a></dd>
                 <dd id="SegmentalFbeta.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
@@ -4190,13 +4338,13 @@ threshold_value : float | list, optional
 
 <p>This metric follows the following algorithm:
 1) smooth over too-short intervals, both in ground truth and in prediction (first remove
-    groups of zeros shorter than <code>smooth_interval</code> and then do the same with groups of ones),
-2) add <code>delta</code> frames to each ground truth interval at both ends and count the number of predicted
+    groups of zeros shorter than <code><a href="#SemiSegmentalRecall.smooth_interval">smooth_interval</a></code> and then do the same with groups of ones),
+2) add <code><a href="#SemiSegmentalRecall.delta">delta</a></code> frames to each ground truth interval at both ends and count the number of predicted
     positive frames at the resulting intervals (intersection),
 3) calculate the threshold for each interval as
     <code>t = sigmoid(4 * (a * x + b)) * (iou_threshold_long - iou_threshold_short))</code>, where
     <code>a = 2 / (long_length - short_length)</code>, <code>b = 1 - a * long_length</code>, <code>x</code> is the length of the interval
-    before <code>delta</code> was added,
+    before <code><a href="#SemiSegmentalRecall.delta">delta</a></code> was added,
 4) for each interval, if intersection is higher than <code>t * x</code>, the interval is labeled as true positive (<code>TP</code>),
     and otherwise as false negative (<code>FN</code>),
 5) the final metric value is computed as <code>TP / (TP + FN)</code>.</p>
@@ -4322,12 +4470,26 @@ long_length : int, default 300
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#_SemiSegmentalMetric">_SemiSegmentalMetric</a></dt>
-                                <dd id="SemiSegmentalRecall.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
+                                <dd id="SemiSegmentalRecall.delta" class="variable"><a href="#_SemiSegmentalMetric.delta">delta</a></dd>
+                <dd id="SemiSegmentalRecall.random_sampling" class="variable"><a href="#_SemiSegmentalMetric.random_sampling">random_sampling</a></dd>
+                <dd id="SemiSegmentalRecall.smooth_interval" class="variable"><a href="#_SemiSegmentalMetric.smooth_interval">smooth_interval</a></dd>
+                <dd id="SemiSegmentalRecall.threshold_function" class="variable"><a href="#_SemiSegmentalMetric.threshold_function">threshold_function</a></dd>
+                <dd id="SemiSegmentalRecall.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
 
             </div>
             <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SemiSegmentalRecall.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="SemiSegmentalRecall.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="SemiSegmentalRecall.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SemiSegmentalRecall.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SemiSegmentalRecall.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SemiSegmentalRecall.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SemiSegmentalRecall.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SemiSegmentalRecall.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SemiSegmentalRecall.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SemiSegmentalRecall.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SemiSegmentalRecall.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SemiSegmentalRecall.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SemiSegmentalRecall.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SemiSegmentalRecall.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
 
@@ -4451,13 +4613,13 @@ long_length : int, default 300
 
 <p>This metric follows the following algorithm:
 1) smooth over too-short intervals, both in ground truth and in prediction (first remove
-    groups of zeros shorter than <code>smooth_interval</code> and then do the same with groups of ones),
-2) add <code>delta</code> frames to each predicted interval at both ends and count the number of ground truth
+    groups of zeros shorter than <code><a href="#SemiSegmentalPrecision.smooth_interval">smooth_interval</a></code> and then do the same with groups of ones),
+2) add <code><a href="#SemiSegmentalPrecision.delta">delta</a></code> frames to each predicted interval at both ends and count the number of ground truth
     positive frames at the resulting intervals (intersection),
 3) calculate the threshold for each interval as
     <code>t = sigmoid(4 * (a * x + b)) * (iou_threshold_long - iou_threshold_short))</code>, where
     <code>a = 2 / (long_length - short_length)</code>, <code>b = 1 - a * long_length</code>, <code>x</code> is the length of the interval
-    before <code>delta</code> was added,
+    before <code><a href="#SemiSegmentalPrecision.delta">delta</a></code> was added,
 4) for each interval, if intersection is higher than <code>t * x</code>, the interval is labeled as true positive (<code>TP</code>),
     and otherwise as false positive (<code>FP</code>),
 5) the final metric value is computed as <code>TP / (TP + FP)</code>.</p>
@@ -4583,12 +4745,26 @@ long_length : int, default 300
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#_SemiSegmentalMetric">_SemiSegmentalMetric</a></dt>
-                                <dd id="SemiSegmentalPrecision.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
+                                <dd id="SemiSegmentalPrecision.delta" class="variable"><a href="#_SemiSegmentalMetric.delta">delta</a></dd>
+                <dd id="SemiSegmentalPrecision.random_sampling" class="variable"><a href="#_SemiSegmentalMetric.random_sampling">random_sampling</a></dd>
+                <dd id="SemiSegmentalPrecision.smooth_interval" class="variable"><a href="#_SemiSegmentalMetric.smooth_interval">smooth_interval</a></dd>
+                <dd id="SemiSegmentalPrecision.threshold_function" class="variable"><a href="#_SemiSegmentalMetric.threshold_function">threshold_function</a></dd>
+                <dd id="SemiSegmentalPrecision.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
 
             </div>
             <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SemiSegmentalPrecision.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="SemiSegmentalPrecision.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="SemiSegmentalPrecision.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SemiSegmentalPrecision.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SemiSegmentalPrecision.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SemiSegmentalPrecision.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SemiSegmentalPrecision.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SemiSegmentalPrecision.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SemiSegmentalPrecision.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SemiSegmentalPrecision.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SemiSegmentalPrecision.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SemiSegmentalPrecision.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SemiSegmentalPrecision.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SemiSegmentalPrecision.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
 
@@ -4825,12 +5001,26 @@ long_length : int, default 300
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#_SemiSegmentalMetric">_SemiSegmentalMetric</a></dt>
-                                <dd id="SemiSegmentalF1.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
+                                <dd id="SemiSegmentalF1.delta" class="variable"><a href="#_SemiSegmentalMetric.delta">delta</a></dd>
+                <dd id="SemiSegmentalF1.random_sampling" class="variable"><a href="#_SemiSegmentalMetric.random_sampling">random_sampling</a></dd>
+                <dd id="SemiSegmentalF1.smooth_interval" class="variable"><a href="#_SemiSegmentalMetric.smooth_interval">smooth_interval</a></dd>
+                <dd id="SemiSegmentalF1.threshold_function" class="variable"><a href="#_SemiSegmentalMetric.threshold_function">threshold_function</a></dd>
+                <dd id="SemiSegmentalF1.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
 
             </div>
             <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SemiSegmentalF1.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="SemiSegmentalF1.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="SemiSegmentalF1.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SemiSegmentalF1.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SemiSegmentalF1.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SemiSegmentalF1.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SemiSegmentalF1.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SemiSegmentalF1.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SemiSegmentalF1.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SemiSegmentalF1.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SemiSegmentalF1.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SemiSegmentalF1.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SemiSegmentalF1.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SemiSegmentalF1.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
 
@@ -4988,12 +5178,26 @@ long_length : int, default 300
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="#_SemiSegmentalMetric">_SemiSegmentalMetric</a></dt>
-                                <dd id="SemiSegmentalPR_AUC.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
+                                <dd id="SemiSegmentalPR_AUC.delta" class="variable"><a href="#_SemiSegmentalMetric.delta">delta</a></dd>
+                <dd id="SemiSegmentalPR_AUC.random_sampling" class="variable"><a href="#_SemiSegmentalMetric.random_sampling">random_sampling</a></dd>
+                <dd id="SemiSegmentalPR_AUC.smooth_interval" class="variable"><a href="#_SemiSegmentalMetric.smooth_interval">smooth_interval</a></dd>
+                <dd id="SemiSegmentalPR_AUC.threshold_function" class="variable"><a href="#_SemiSegmentalMetric.threshold_function">threshold_function</a></dd>
+                <dd id="SemiSegmentalPR_AUC.update" class="function"><a href="#_SemiSegmentalMetric.update">update</a></dd>
 
             </div>
             <div><dt><a href="#_ClassificationMetric">_ClassificationMetric</a></dt>
                                 <dd id="SemiSegmentalPR_AUC.needs_raw_data" class="variable"><a href="#_ClassificationMetric.needs_raw_data">needs_raw_data</a></dd>
                 <dd id="SemiSegmentalPR_AUC.segmental" class="variable"><a href="#_ClassificationMetric.segmental">segmental</a></dd>
+                <dd id="SemiSegmentalPR_AUC.ignore_index" class="variable"><a href="#_ClassificationMetric.ignore_index">ignore_index</a></dd>
+                <dd id="SemiSegmentalPR_AUC.average" class="variable"><a href="#_ClassificationMetric.average">average</a></dd>
+                <dd id="SemiSegmentalPR_AUC.tag_average" class="variable"><a href="#_ClassificationMetric.tag_average">tag_average</a></dd>
+                <dd id="SemiSegmentalPR_AUC.tags" class="variable"><a href="#_ClassificationMetric.tags">tags</a></dd>
+                <dd id="SemiSegmentalPR_AUC.exclusive" class="variable"><a href="#_ClassificationMetric.exclusive">exclusive</a></dd>
+                <dd id="SemiSegmentalPR_AUC.threshold" class="variable"><a href="#_ClassificationMetric.threshold">threshold</a></dd>
+                <dd id="SemiSegmentalPR_AUC.integration_interval" class="variable"><a href="#_ClassificationMetric.integration_interval">integration_interval</a></dd>
+                <dd id="SemiSegmentalPR_AUC.classes" class="variable"><a href="#_ClassificationMetric.classes">classes</a></dd>
+                <dd id="SemiSegmentalPR_AUC.optimize" class="variable"><a href="#_ClassificationMetric.optimize">optimize</a></dd>
+                <dd id="SemiSegmentalPR_AUC.threshold_values" class="variable"><a href="#_ClassificationMetric.threshold_values">threshold_values</a></dd>
                 <dd id="SemiSegmentalPR_AUC.reset" class="function"><a href="#_ClassificationMetric.reset">reset</a></dd>
                 <dd id="SemiSegmentalPR_AUC.calculate" class="function"><a href="#_ClassificationMetric.calculate">calculate</a></dd>
 
@@ -5110,6 +5314,17 @@ long_length : int, default 300
     the class index that indicates ignored sample</p>
 </div>
 
+
+                            </div>
+                            <div id="Accuracy.ignore_index" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ignore_index</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Accuracy.ignore_index"></a>
+    
+    
 
                             </div>
                             <div id="Accuracy.reset" class="classattr">
@@ -5365,6 +5580,28 @@ exclusive: bool, default True
     set to False for multi-label classification tasks</p>
 </div>
 
+
+                            </div>
+                            <div id="Count.classes" class="classattr">
+                                <div class="attr variable">
+            <span class="name">classes</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Count.classes"></a>
+    
+    
+
+                            </div>
+                            <div id="Count.exclusive" class="classattr">
+                                <div class="attr variable">
+            <span class="name">exclusive</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Count.exclusive"></a>
+    
+    
 
                             </div>
                             <div id="Count.reset" class="classattr">
@@ -5647,6 +5884,28 @@ exclusive : bool, default True
     set to False for multi-label classification tasks</p>
 </div>
 
+
+                            </div>
+                            <div id="EditDistance.ignore_index" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ignore_index</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EditDistance.ignore_index"></a>
+    
+    
+
+                            </div>
+                            <div id="EditDistance.exclusive" class="classattr">
+                                <div class="attr variable">
+            <span class="name">exclusive</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EditDistance.exclusive"></a>
+    
+    
 
                             </div>
                             <div id="EditDistance.reset" class="classattr">
@@ -6042,6 +6301,61 @@ function applied).
 Otherwise it will pass a prediction for the classes.</p>
 </div>
 
+
+                            </div>
+                            <div id="PKU_mAP.average" class="classattr">
+                                <div class="attr variable">
+            <span class="name">average</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKU_mAP.average"></a>
+    
+    
+
+                            </div>
+                            <div id="PKU_mAP.iou_threshold" class="classattr">
+                                <div class="attr variable">
+            <span class="name">iou_threshold</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKU_mAP.iou_threshold"></a>
+    
+    
+
+                            </div>
+                            <div id="PKU_mAP.threshold" class="classattr">
+                                <div class="attr variable">
+            <span class="name">threshold</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKU_mAP.threshold"></a>
+    
+    
+
+                            </div>
+                            <div id="PKU_mAP.exclusive" class="classattr">
+                                <div class="attr variable">
+            <span class="name">exclusive</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKU_mAP.exclusive"></a>
+    
+    
+
+                            </div>
+                            <div id="PKU_mAP.classes" class="classattr">
+                                <div class="attr variable">
+            <span class="name">classes</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PKU_mAP.classes"></a>
+    
+    
 
                             </div>
                             <div id="PKU_mAP.match" class="classattr">
