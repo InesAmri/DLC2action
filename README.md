@@ -26,22 +26,27 @@ conda create --name DLC2Action python=3.9
 conda activate DLC2Action
 python -m pip install .
 ```
+### Annotation Workflow Tutorial
+
+You can find step-by-step instructions and resources to help you navigate the annotation workflow effectively. Whether you're new to the process or seeking to refine your skills, these tutorials are designed to provide clear guidance and support. Explore the wealth of information available in our user guide and tutorials to make the most of your annotation workflow.
+
+Check out the tutorials and user guide here [dlc2action_annotation](https://github.com/amathislab/dlc2action_annotation)
 
 ## Features
 
-The functionality of DLC2Action includes:
- - compiling and updating project-specific configuration files,
- - filling in configuration dictionaries automatically whenever possible,
- - saving training parameters and results,
- - running predictions and hyperparameter searches,
- - creating active learning files,
- - loading hyperparameter search results in experiments and dumping them into configuration files,
- - comparing new experiment parameters with the project history and loading pre-computed features (to save time) and previously
-   created splits (to enforce consistency) when there is a match,
- - filtering and displaying training, prediction and hyperparameter search history,
- - plotting training curve comparisons
-
-and more.
+**The functionality of DLC2Action includes:**
+ - Setting labels and shortcuts
+ - Annotating videos
+ - Saving training parameters and results
+ - Running predictions and hyperparameter searches
+ - Creating active learning files
+ - Loading hyperparameter search results in experiments and dumping them into configuration files
+ - Comparing new experiment parameters with the project history and loading pre-computed features (to save time) and previously
+   created splits (to enforce consistency) when there is a match
+ - Filtering and displaying training, prediction and hyperparameter search history
+ - Plotting training curve comparisons
+ - Filling in configuration dictionaries automatically 
+ - Compiling and updating project-specific configuration files
 
 ## A quick example
 
